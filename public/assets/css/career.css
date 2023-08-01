@@ -1,0 +1,682 @@
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 60px;
+}
+
+.container {
+    width: 100%;
+}
+
+.main-page-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.main-page-header .page-header-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.main-page-header .page-header-content p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+.main-page-header .page-header-content.careers-content-block h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.main-page-header .page-header-content.careers-content-block span {
+    color: #0b6bd3;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.we-offer-section {
+    margin: 0 0 100px;
+    padding: 100px 0;
+}
+
+.we-offer-section .we-offer-content {
+    text-align: center;
+}
+
+.we-offer-section .we-offer-content h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.we-offer-section .we-offer-content p {
+    margin-top: 30px;
+    padding: 0 15%;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.position-listing {
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+.position-listing .listing-block {
+    margin-top: 60px;
+}
+
+.position-listing .listing-block h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.position-listing .listing-box:last-child {
+    margin-bottom: 0;
+}
+
+.position-listing .listing-box a {
+    /* background: #fff; */
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 26px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-listing .listing-box .position-name h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    line-height: 28px;
+}
+
+.position-listing .listing-box .position-number {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.position-listing .listing-box .position-number p {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.position-listing .listing-box a:hover {
+    background: #0b6bd3;
+    color: white;
+}
+
+.position-listing .listing-box {
+    margin-bottom: 20px;
+}
+
+.find-job-section {
+    padding-top: 100px;
+}
+
+.find-job-section .bg-color-box {
+    padding: 30px;
+    background: #0b6bd3;
+    background: linear-gradient(to top, #dbe6f3 20%, #95c1f1 0);
+}
+
+.find-job-section .img-box {
+    text-align: center;
+}
+
+.find-job-section .content-box {
+    padding-top: 20px;
+}
+
+.find-job-section .content-box h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.find-job-section .content-box p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.find-job-section .content-box p a {
+    font-weight: 600;
+    color: #0b6bd3;
+}
+
+.brave-thinker-section {
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.brave-thinker-section .brave-thinker-content {
+    margin-bottom: 40px;
+}
+
+.brave-thinker-section .brave-thinker-content h2 {
+    margin-bottom: 30px;
+}
+
+.brave-thinker-section .brave-thinker-content p {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+
+.brave-thinker-section .image-gallery {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.brave-thinker-section .image-gallery .image-row {
+    display: flex;
+    margin: 0 -5px;
+}
+
+.brave-thinker-section .image-gallery .grid-lg,
+.brave-thinker-section .image-gallery .grid-sm {
+    padding: 0 5px;
+}
+
+.brave-thinker-section .image-gallery .grid-sm .img-box {
+    margin-bottom: 10px;
+}
+
+.brave-thinker-section .image-gallery .grid-sm .img-box img {
+    width: 312px;
+    height: 312px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.brave-thinker-section .image-gallery .grid-lg .img-box img {
+    width: 634px;
+    height: 634px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.our-perks-sec h2 {
+    text-align: center;
+}
+
+.our-perks-sec {
+    padding: 0 0 100px;
+}
+
+.our-perks-sec .our-perks-box h3 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 800;
+}
+
+.our-perks-sec .our-perks-box p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.our-perks-sec .our-perks-box {
+    margin-top: 40px;
+}
+
+.team-testimonial {
+    margin: 0 0 100px;
+    padding: 100px 0;
+}
+
+.team-testimonial .team-testimonial-slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.team-testimonial h2 {
+    text-align: center;
+}
+
+.team-testimonial .team-testimonial-slider .team-col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    width: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 60px;
+}
+
+.team-testimonial .team-testimonial-content .img-box img {
+    width: 100px;
+    height: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.team-testimonial .team-testimonial-content p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 22px 0;
+}
+
+.team-testimonial .team-testimonial-content .team-profile h6 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.team-testimonial .team-testimonial-content .team-profile span {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.dedicated-faqs {
+    padding-bottom: 100px;
+}
+
+.dedicated-faqs .title-block h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faqs-accordian .card {
+    border: none;
+    background-color: transparent;
+}
+
+.card .faqs-collapse {
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.faqs-accordian .card-header {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 0;
+    cursor: pointer;
+}
+
+.faqs-accordian .card-header a.card-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+body.dark-mode .collapsible-header {
+    background-color: black;
+}
+
+.collapsible-header {
+    padding: 1rem 1rem !important;
+}
+
+.collapsible {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0;
+}
+
+.card-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.collapsible-body p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+
+.accordion .card-header.collapsed:after {
+    content: "\f054";
+}
+
+.accordion .card-header:after {
+    font-family: FontAwesome;
+    content: "\f078";
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.faqs-collapse .card-body {
+    padding: 0;
+}
+
+.card .faqs-collapse.faq-display {
+    display: block;
+}
+
+.listing-box a {
+    color: #252B33;
+}
+
+.collapsible-header {
+    display: flex;
+    cursor: pointer;
+    min-height: 3rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible-body {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.collapsible-header i {
+    width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+
+.collapsible-body p {
+    margin: 0;
+    padding: 2rem;
+}
+
+body.dark-mode .listing-box a {
+    color: white;
+}
+
+body.dark-mode .listing-box {
+    background-color: black;
+}
+
+@media only screen and (max-width: 576px){
+    .main-page-header {
+        padding: 0px !important;
+    }
+    .main-page-header .page-header-content h1 {
+        font-size: 28px !important;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .brave-thinker-section .image-gallery .grid-lg .img-box img {
+        width: 470px;
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .brave-thinker-section .image-gallery .grid-lg .img-box img {
+        width: 416px;
+        height: 416px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .brave-thinker-section .image-gallery .grid-sm .img-box img {
+        width: 163px;
+        height: 163px;
+    }
+
+    .brave-thinker-section .image-gallery .grid-lg .img-box img {
+        width: 336px;
+        height: 336px;
+    }
+
+    .our-perks-sec {
+        padding: 0 0 80px;
+    }
+
+    .team-testimonial {
+        margin: 0 0 80px;
+        padding: 80px 0;
+    }
+
+    .dedicated-faqs {
+        padding-bottom: 80px;
+    }
+
+    .we-offer-section .we-offer-content p {
+        padding: 0 5%;
+    }
+
+    .find-job-section {
+        padding-top: 80px;
+    }
+
+    .we-offer-section {
+        margin: 0 0 80px;
+        padding: 80px 0;
+    }
+
+    .brave-thinker-section {
+        margin-bottom: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .find-job-section .content-box h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    .find-job-section .content-box p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .find-job-section .bg-color-box {
+        background: #95c1f1;
+    }
+
+    .we-offer-section .we-offer-content p {
+        padding: 0;
+    }
+
+    .we-offer-section {
+        margin: 0 0 80px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .brave-thinker-section .image-gallery .image-row {
+        flex-wrap: wrap;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .brave-thinker-section .image-gallery .grid-lg .img-box img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .brave-thinker-section .image-gallery .grid-sm .img-box img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .brave-thinker-section .image-gallery .grid-lg .img-box,
+    .brave-thinker-section .image-gallery .grid-sm .img-box:last-child {
+        margin-bottom: 10px;
+    }
+
+    .brave-thinker-section .image-gallery .grid-sm {
+        display: flex;
+        margin: 0 -5px;
+    }
+
+
+    .brave-thinker-section .image-gallery .grid-lg,
+    .brave-thinker-section .image-gallery .grid-sm {
+        padding: 0;
+    }
+
+    .brave-thinker-section .image-gallery .grid-sm .img-box {
+        padding: 0 5px;
+    }
+
+    .our-perks-sec {
+        padding: 0 0 60px;
+    }
+
+    .we-offer-section .we-offer-content h2,
+    h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .our-perks-sec .our-perks-box {
+        margin-top: 30px;
+    }
+
+    .brave-thinker-section .brave-thinker-content,
+    .our-perks-sec .our-perks-box,
+    .team-testimonial-content {
+        text-align: center;
+    }
+
+    .our-perks-sec .our-perks-box h3,
+    .position-listing .listing-block h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .team-testimonial {
+        margin: 0 0 60px;
+        padding: 60px 0;
+    }
+
+    .team-testimonial .team-testimonial-slider {
+        display: block;
+        flex-wrap: inherit;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .team-testimonial .team-testimonial-slider .team-col {
+        flex: 100%;
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .team-testimonial .team-testimonial-content .img-box img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .dedicated-faqs {
+        padding-bottom: 60px;
+    }
+
+    .dedicated-faqs .title-block h2 {
+        margin-bottom: 15px;
+    }
+
+    .position-listing .listing-box a {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .main-page-header .page-header-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .main-page-header {
+        padding: 80px 0px;
+        height: auto;
+    }
+
+    .main-page-header .page-header-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .position-listing .listing-box .position-name h4 {
+        margin-right: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .find-job-section .content-box {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .find-job-section {
+        padding-top: 60px;
+    }
+
+    .we-offer-section {
+        margin: 0 0 60px;
+        padding: 60px 0;
+    }
+
+    .brave-thinker-section {
+        margin-bottom: 60px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+}

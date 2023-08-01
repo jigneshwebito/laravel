@@ -1,0 +1,1072 @@
+:root {
+    --color-1: #0675e8;
+    --color-2: #fff;
+    --color-3: #f2f2f2;
+    --color-4: #00366f;
+    --color-5: #000000;
+    --color-6: #004289;
+    --color-7: #222;
+    --color-8: #74b5fc;
+    --color-9: #283d50;
+    --color-10: #556877;
+    --color-11: #ecf5ff;
+    --color-12: #111;
+    --color-13: #333;
+    --color-14: #004a99;
+    --color-15: #00458f;
+    --color-16: #003b7a;
+    --color-17: #999;
+    --color-18: #f8f9fa;
+    --color-19: #bfc1c2;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+/* .solution_image {
+    height: 303px;
+    width: 519px;
+    box-shadow: 0 20px 30px 0 rgb(0 0 0 / 30%);
+    border-radius: 16px;
+    margin-top: 10px;
+} */
+
+
+/* @media (max-width: 992px) {
+    .solution_image {
+        height: 244px;
+    }
+} */
+p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.blue-color {
+    color: var(--color-1);
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    color: var(--color-1);
+}
+
+li {
+    font-size: 14px;
+}
+
+/*Webito infotech Design page stylesheet */
+
+/* Designing section*/
+/*
+.page-header-content {
+    margin-top: 92px !important;
+} */
+
+.main-page-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+.Designing-header {
+    font-size: 60px;
+    text-align: center;
+}
+
+.Designing-header h3 {
+    margin: 50px 20px 0 20px;
+}
+
+/* Designing section End*/
+
+/*The Difference section End*/
+
+.discovery-workshop-section {
+    padding-top: 120px;
+}
+
+.service-title-box {
+    text-align: center;
+}
+
+.discovery-content {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.discovery-workshop-section {
+    background-color: var(--color-18);
+}
+
+body.dark-mode .center-content-information-section {
+    /* background: #ebebeb;
+    color: black; */
+}
+
+body.dark-mode .dark-image-background {
+    background-color: #ebebeb;
+    margin-top: 8px;
+
+}
+
+body.dark-mode .discovery-workshop-section {
+    background-color: var(--color-7);
+    color: var(--color-2);
+}
+
+/*The Difference section End*/
+
+/*Workshop section*/
+
+.workshop-service-section .service-box {
+    height: 90%;
+}
+
+.workshop-service-section .service-box:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.workshop-service-section {
+    padding: 50px 0;
+}
+
+.service-title-box h2 {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 86%;
+    }
+}
+
+.service-box {
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 20px;
+    text-align: start;
+}
+
+.service-box:hover {
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+}
+
+.service-box h4 {
+    color: #252b33;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.service-box p {
+    margin: 0;
+}
+
+/*Workshop section End*/
+
+/*benefits discovery section */
+
+.discovery-benefits {
+    text-align: center;
+    /* padding-top: 100px; */
+    background-color: #f8f8f8;
+}
+
+.benefits-box h4,
+.mobile-app-col h4 {
+    color: #252b33;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin: 30px 0;
+}
+
+.benefits-box {
+    color: #252b33;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-top: 60px;
+}
+
+.benefits-services {
+    padding-bottom: 60px;
+}
+
+/*benefits discovery section End*/
+
+/*Agile Development section */
+
+.discovery-design-title {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.work-more-sec h3 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 48px;
+    border-top: 2px #eee solid;
+    padding-top: 80px;
+}
+
+.discovery-design-development {
+    padding-bottom: 120px;
+}
+
+/*Agile Development section End*/
+
+/*Work process section section */
+
+.work-process-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.work-process-img {
+    text-align: center;
+    margin: 80px 0;
+}
+
+/* Idea Owne Image*/
+
+/*Target Audience row1*/
+
+.target-audience-box {
+    text-align: start;
+    /* margin-top: 25px; */
+}
+.design-work-info-left {
+    margin-top: 22px;
+}
+.separator-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-1);
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.work-process-point h3 {
+    color: #323a45;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    /* margin-bottom: 12px; */
+    margin: 2px 0px;
+}
+
+.work-process-info-right p {
+    margin-bottom: 20px;
+}
+
+.work-process-info-left p {
+    margin-bottom: 20px;
+}
+
+.design-work-info-left p {
+    padding-top: 10px;
+}
+
+.work-process-info {
+    padding-top: 18px;
+}
+
+/*Target Audience row1 End*/
+
+/*Work process arrow section */
+
+.work-process-section .work-process-arrow {
+    text-align: center;
+}
+
+/*Work process arrow section End*/
+
+/*Blueprint Core row2 */
+
+/*Successful Designs */
+
+/*Successful Designs */
+
+.cs-listing-img img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*Successful Designs */
+
+/*Successful Designs */
+
+/*Blueprint Core row2 End*/
+
+/*Work process arrow section */
+
+.work-process-section .work-process-arrow.right-arrow {
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+/*Work process arrow section End*/
+
+/*Interface  row3 */
+
+/*Interface  row3 */
+
+.design-work-block {
+    padding-top: 80px;
+}
+
+.work-img-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
+.work-img-left {
+    display: flex;
+    justify-content: flex-start;
+    /* padding-right: 20px; */
+    padding-top: 30px;
+}
+
+.work-process-info-right {
+    /* display: flex; */
+    justify-content: flex-end;
+}
+
+.work-process-info-left {
+    /* display: flex; */
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.work-process-section .design-work-block .work-img {
+    text-align: right;
+}
+
+.color {
+    padding: 100px 0 0 0;
+    background-color: #f8f8f8;
+}
+
+/*Work process section section End*/
+
+/*Clients' praise is Music section section */
+
+/*Clients' praise is Music section section */
+
+.design-testimonial {
+    background-color: var(--color-2);
+    padding: 120px 0;
+    text-align: center;
+}
+
+/*Clients' praise is Music section section End*/
+
+/*Good to Know section section */
+
+/*Good to Know section section */
+
+/*Good to Know section section End*/
+
+/*Successful Designs section section */
+
+/*Successful Designs section section */
+
+.wwd-content-center {
+    text-align: center;
+}
+
+.our-work-listing-section .case-listing-col {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.our-work-listing-section .cs-project-detail {
+    text-align: center;
+}
+
+.wwd-content-center h2 {
+    /* margin-bottom: 40px; */
+}
+.our {
+    font-size: 33px;
+}
+.cs-technology span {
+    border: 1px solid #dae1e4;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #81959e;
+    font-weight: 400;
+    padding: 1px 10px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.cs-project-detail p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #81959e;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+    min-height: 26px;
+}
+
+.cs-project-detail a {
+    color: var(--color-1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cs-technology {
+    margin-top: 15px;
+    font-weight: 600;
+}
+.help {
+    margin-top: 25px;
+}
+
+.center-btn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-work-listing-section {
+    padding-bottom: 100px;
+}
+
+#footer .footer-top .footer-contact p {
+    line-height: 26px;
+    color: var(--color-2);
+}
+
+/* .fa {
+        color: var(--color-2);
+    } */
+
+strong {
+    color: var(--color-2);
+}
+
+.footer-newsletter p {
+    color: var(--color-2);
+}
+
+.copyright {
+    color: var(--color-2);
+}
+
+/*Successful Designs section section End*/
+
+/*Successful Designs  End*/
+
+/*Successful Designs  End*/
+
+/*Successful Designs  End*/
+
+/* media query  */
+
+@media only screen and (max-width: 768px) {
+    .service-box h4 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .center-content-information-section {
+        padding: 30px 0 !important;
+    }
+    .app_col {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .service-box {
+        margin: 0;
+    }
+
+    .discovery-benefits {
+        padding-top: 0;
+    }
+
+    .technology-icon {
+        justify-content: center;
+    }
+
+    .main-page-header {
+        padding: 33px 0;
+    }
+
+    .Designing-header h3 {
+        margin: 26px 20px 0 20px;
+    }
+    .work-process-section{
+        padding: 80px 0;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .float-right {
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    #devops-secondsection .devops-section-inner {
+        padding: 0;
+    }
+
+    #devops-secondsection h4 {
+        padding: 0 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+    .our {
+        font-size: 36px;
+    }
+    .office {
+        margin-top: 15px;
+    }
+    .h-marginbottom12 {
+        margin-top: 15px;
+    }
+    .design-work-block {
+        padding-top: 0;
+    }
+
+    .list-mobile-padding {
+        padding: 0 26px;
+        /* padding: 0 0px 0px 30px; */
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .workshop-service-section .service-box {
+        height: 98%;
+        padding: 17px;
+    }
+    .help {
+        margin-top: 25px;
+        font-size: 22px;
+    }
+    .color {
+        padding: 0px 0 0 0;
+    }
+    .discovery-workshop-section {
+        padding-top: 30px;
+    }
+    .h-marginbottom12 {
+        font-size: 18px !important;
+    }
+    .work-process-section {
+        padding: 40px 0;
+    }
+    .design {
+        margin-top: 20px;
+    }
+    .work-more-sec h3 {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    .discovery-design-development {
+        padding-bottom: 30px;
+    }
+    h2.sad {
+        font-size: 15px !important;
+        margin-top: 12px !important;
+    }
+    h2 {
+        font-size: 23px !important;
+    }
+    .col-6.manage {
+        margin: 20px 0px;
+    }
+    .center-content-information-section {
+        padding: 30px 0 !important;
+    }
+    .center-content-information-section .content-information-block img {
+        margin-top: 25px !important;
+    }
+    .devops-benefits-section {
+        padding: 47px 0 !important;
+    }
+    .devops-benefits-section .devops-benefits-block {
+        margin-top: 40px !important;
+    }
+    .mobile-app-col {
+        padding-bottom: 0px;
+    }
+    .our-work-listing-section {
+        padding-bottom: 0px;
+    }
+    .target-content-center {
+        padding: 30px 0px !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .discovery-content {
+        width: 100%;
+    }
+    .target-content-center {
+        padding-bottom: 30px !important;
+    }
+    .mobile-app-col {
+        padding-bottom: 0px !important;
+    }
+    .methodology-title h2 {
+        font-size:32px !important;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .discovery-content {
+        width: 103%;
+    }
+
+}
+
+@media only screen and (max-width: 510px) {
+    h1 {
+        font-size: 41px;
+    }
+    .our {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 456px) {
+    h1 {
+        font-size: 38px;
+    }
+    .our {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    h1 {
+        font-size: 37px;
+    }
+    .service-title-box h2 {
+        font-size: 31px;
+        margin-bottom: 27px;
+    }
+    .sad {
+        font-size: 26px;
+    }
+    h2.sad {
+        font-size: 20px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 426px) {
+    /* p {
+        font-size: 14px;
+    } */
+
+    h1 {
+        font-size: 24px;
+    }
+    .sec-pad-50 {
+        padding: 0 !important;
+    }
+    h2 {
+        font-size: 26px;
+        line-height: normal;
+    }
+    .work-process-info-left p {
+        margin-bottom: 0px !important;
+    }
+    .service-points {
+        margin: 0 !important;
+    }
+    h2.hire {
+        font-size: 23px;
+    }
+    .clients {
+        font-size: 22px;
+        line-height: normal;
+    }
+    .work-more-sec h3 {
+        line-height: normal;
+    }
+    .service-title-box h2 {
+        font-size: 29px;
+        margin-bottom: 27px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 28px;
+    }
+    .service-title-box h2 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
+/* media query End*/
+
+.app_col {
+    margin: 0 0 20px 0;
+}
+.target-content-center {
+    padding: 30px 0 !important;
+}
+.mobile-app-col {
+    padding-bottom: 20px !important;
+}
+.dark-mode-btn .fa-sun-o {
+    color: var(--color-2);
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.dark-mode-btn .fa-moon-o {
+    color: var(--color-12);
+    margin-left: -20px;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+body.dark-mode #devops-secondsection {
+    background: #222222;
+}
+
+body.dark-mode #continuous-delivery {
+    background: #222222 !important;
+    color: white !important;
+}
+
+body.dark-mode .dark-mode-btn .fa-moon-o {
+    opacity: 0;
+}
+
+body.dark-mode .dark-mode-btn .fa-sun-o {
+    opacity: 1;
+}
+
+body.dark-mode .discovery-benefits {
+    color: var(--color-2);
+    background-color: var(--color-12);
+}
+
+body.dark-mode .benefits-box h4 {
+    color: var(--color-1);
+}
+
+body.dark-mode .work-process-section {
+    color: var(--color-2);
+    background-color: var(--color-12);
+}
+
+body.dark-mode .work-process-point h3 {
+    color: var(--color-1);
+}
+
+body.dark-mode .design-testimonial {
+    background-color: var(--color-7);
+}
+
+body.dark-mode .color {
+    background-color: #222222;
+}
+
+body.dark-mode .service-section {
+    background-color: #222222;
+}
+
+body.dark-mode .devops-section-inner h2 {
+    color: var(--color-2);
+}
+
+body.dark-mode .devops-section-inner h4 {
+    color: var(--color-4);
+}
+
+body.dark-mode .mobile-app-col h4 {
+    color: var(--color-1);
+}
+
+body.dark-mode .devops-benefits-section {
+    background-color: var(--color-7);
+    padding: 100px 0;
+}
+
+body.dark-mode .benefits-box p {
+    color: var(--color-2);
+}
+
+.preloader {
+    display: flex;
+    animation: spin-1 linear infinite;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    color: #337ab7;
+    z-index: -99999;
+}
+
+.preloader,
+.preloader-ring {
+    transform-style: preserve-3d;
+}
+
+.preloader-ring {
+    animation: spin-2 4s linear infinite;
+    position: relative;
+    height: 60px;
+    width: 20px;
+}
+
+.preloader-ring:nth-child(even) {
+    animation-direction: reverse;
+}
+
+.preloader-sector {
+    font-size: 40px;
+    line-height: 60px;
+    font-family: Consolas, Lucida Console, Menlo, Monaco, monospace;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    transform: translateZ(160px);
+}
+
+.preloader-sector,
+.preloader-sector:empty:before {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.preloader-sector:empty:before {
+    background: linear-gradient(transparent 50%,
+            #bfe2ff 50% 55%,
+            transparent 55%);
+    content: "";
+}
+
+@keyframes spin-1 {
+    from {
+        transform: rotateY(0) rotateX(30deg);
+    }
+
+    to {
+        transform: rotateY(1turn) rotateX(30deg);
+    }
+}
+
+@keyframes spin-2 {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(1turn);
+    }
+}
+
+.service-section {
+    background-color: #f8f8f8;
+    padding: 40px 0 80px 0;
+}
+
+.content-center {
+    padding: 20px 0;
+    color: var(--color-20);
+    text-align: center;
+}
+
+.content-center h2 {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.technology-icon {
+    margin: 16px 0;
+    display: flex;
+    font-size: 45px;
+    /* justify-content: space-evenly; */
+}
+
+.list-group {
+    list-style: none;
+    flex-direction: row;
+}
+
+.img-box {
+    margin-top: 60px;
+}
+
+.target-customer-section {
+    /* margin-top: 80px; */
+}
+
+.devops-banner-info .devops-section-inner {
+    padding: 0 15%;
+}
+
+.devops-section-inner h2 {
+    color: #252b33;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 46px;
+    margin-bottom: 40px;
+}
+
+.devops-section-inner h4 {
+    color: #252b33;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.devops-section-inner {
+    padding: 5% 15%;
+}
+
+.service-points {
+    margin: 40px 0;
+}
+
+.center-content-information-section .content-information-block img {
+    margin-top: 80px;
+}
+
+.center-content-information-section {
+    padding: 100px 0;
+    text-align: center;
+    background: rgb(37, 43, 51);
+    color: white;
+}
+
+.center-content-information-section .content-information-block h2 {
+    margin-bottom: 30px;
+}
+
+.target-content-center {
+    padding-bottom: 60px;
+}
+
+.devops-process-section {
+    text-align: start;
+}
+
+.white-content-sec-delivery {
+    padding: 20px 0 60px 0;
+}
+
+.devops-benefits-section {
+    background-color: #323a45;
+    padding: 100px 0;
+}
+
+.devops-benefits-section h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.devops-benefits-section .devops-benefits-block {
+    margin-top: 60px;
+    padding-right: 30px;
+}
+
+.devops-benefits-section .devops-benefits-block h3 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.devops-benefits-section .devops-benefits-block p {
+    color: #fff;
+}
+
+#devops-secondsection {
+    background: #F8F9FA;
+}

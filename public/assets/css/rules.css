@@ -1,0 +1,86 @@
+.main-page-header.inner-page-header {
+    padding: 150px 0;
+    height: auto;
+}
+
+.main-page-header .page-header-content {
+    text-align: center;
+}
+
+.main-page-header .page-header-content h1 {
+    font-size: 60px;
+    color: #252B33;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.main-page-header .page-header-content p {
+    font-size: 20px;
+    color: #252B33;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+.wwd-service-section {
+    margin-bottom: 100px;
+}
+
+.container-box {
+    max-width: 1430px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 360px) {
+    .main-page-header .page-header-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-page-header.inner-page-header {
+        padding: 100px 0px;
+    }
+
+    .main-page-header .page-header-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .main-page-header .page-header-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .wwd-service-section {
+        margin-bottom: 60px;
+    }
+
+
+}
+
+@media only screen and (max-width: 992px) {
+    .main-page-header .page-header-content {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wwd-service-section {
+        margin-bottom: 80px;
+    }
+}

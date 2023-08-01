@@ -1,0 +1,503 @@
+:root {
+    --color-1: #0675e8;
+    --color-2: #fff;
+    --color-3: #f2f2f2;
+    --color-4: #00366f;
+    --color-5: #000000;
+    --color-6: #004289;
+    --color-7: #222;
+    --color-8: #74b5fc;
+    --color-9: #283d50;
+    --color-10: #556877;
+    --color-11: #ecf5ff;
+    --color-12: #111;
+    --color-13: #333;
+    --color-14: #004a99;
+    --color-15: #00458f;
+    --color-16: #003b7a;
+    --color-17: #999;
+    --color-18: #f8f9fa;
+    --color-19: #bfc1c2;
+    --color-20: #444;
+    --color-21: #06376b;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.blue-color {
+    color: var(--color-1);
+}
+
+h1 {
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 60px;
+    color: var(--color-20);
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    color: var(--color-1);
+}
+
+.navbar {
+    padding: 20px 40px;
+    background: white;
+}
+
+.navbar-toggler {
+    border-color: black;
+    background-color: white;
+}
+
+.navbar-brand {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar-brand img {
+    width: 90px;
+}
+
+.technology-icon li {
+    padding: 0px 4px;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand img {
+        min-width: 60px;
+    }
+}
+
+.header-link {
+    padding: 12px 25px !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+.header-link:hover {
+    color: #0b6bd3 !important;
+}
+
+.nav-item {
+    align-items: center;
+}
+
+.contact-btn {
+    background-color: #0b6bd3;
+    color: white !important;
+    padding: 10px 30px !important;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-btn {
+        background-color: #0b6bd3;
+        color: white !important;
+        padding: 10px 30px !important;
+        text-decoration: none;
+        white-space: nowrap;
+        border-radius: 25px;
+    }
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #0b6bd3 !important;
+    border: 2px solid #0b6bd3 !important;
+}
+
+.main-page-header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 120px 0;
+    margin-top: 92px;
+}
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    font-family: inherit;
+    margin-bottom: 50px;
+    color: var(--color-20);
+}
+
+@media screen and (min-width: 576px) {
+    h1.web {
+        font-size: 31px !important;
+    }
+    .main-page-header {
+        padding: 0 !important;
+    }
+    .methodology-head {
+        font-size: 26px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.header-content>h1 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .web {
+        font-size: 33px !important;
+    }
+    .main-page-header {
+        padding: 18px 0;
+    }
+}
+
+
+.header-content p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #444444;
+    line-height: 1.6;
+}
+
+.methodology-section {
+    padding: 80px 0px;
+    background: #F8F8F8;
+}
+
+.methodology-title h6 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--color-1);
+}
+
+.methodology-title h2 {
+    text-align: center;
+    color: var(--color-20);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .methodology-title>h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.method-link-page {
+    padding: 35px 25px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #d9dee2;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.method-link-page:hover {
+    text-decoration: none;
+    background: #0b6bd3;
+    color: white;
+}
+
+.method-link-page:hover>.method-link>p {
+    color: white;
+}
+
+.method-link-page:hover>.method-link img {
+    filter: brightness(100);
+}
+
+.mt {
+    margin-top: 30px !important;
+}
+
+.method-link h4 {
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+.method-link p {
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.content-center {
+    padding: 20px 40px;
+    color: var(--color-20);
+    text-align: center;
+}
+
+.content-center h2 {
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .content-center h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.target-content-center h2 {
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-20);
+}
+
+@media screen and (max-width: 768px) {
+    .target-content-center h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+ul {
+    align-items: center;
+    align-content: center;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.technology-icon {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+}
+
+.list-group a {
+    padding: 3px 14px;
+}
+
+.list-group {
+    list-style: none;
+    flex-direction: row;
+}
+
+.service-section {
+    background-color: var(--color-2);
+    padding: 50px 0px;
+}
+
+.img-box {
+    margin-top: 60px;
+}
+
+img.ng-lazyloaded {
+    -webkit-animation: 0.5s fadein;
+    animation: 0.5s fadein;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+}
+
+.target-customer-section {
+    padding: 100px 0px;
+    background: #F8F8F8;
+}
+
+.target-customer-section .mobile-app-services {
+    margin-top: 60px;
+}
+
+.mobile-app-services h3 {
+    font-size: 24px;
+    margin: 32px 0px 16px;
+    font-weight: bold;
+}
+
+.footer-address-section {
+    padding: 60px 0px;
+    background-color: rgb(250, 250, 250);
+}
+
+.address {
+    align-content: center;
+    text-align: center;
+}
+
+.address h4 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.address a {
+    color: black;
+    font-size: 14px;
+    text-align: center !important;
+}
+
+.map-url:hover {
+    text-decoration: none;
+}
+
+.footer-section p {
+    font-size: 14px !important;
+    color: black;
+}
+
+.footer-section {
+    padding: 60px 0px 0px;
+}
+
+.email {
+    color: #0b6bd3 !important;
+}
+
+.title {
+    color: #8b969f !important;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-section a {
+    color: black;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    color: #0b6bd3;
+}
+
+body.dark-mode .target-content-center h2 {
+    color: var(--color-2);
+}
+
+body.dark-mode .service-section {
+    background-color: var(--color-7);
+}
+
+.content-center h2 body.dark-mode .content-center h2,
+p {
+    /* color: var(--color-21); */
+}
+
+body.dark-mode .technology-comman-p {
+    color: white;
+}
+
+body.dark-mode .content-center h2 {
+    color: var(--color-2);
+}
+
+body.dark-mode .method-link h4 {
+    color: var(--color-2);
+}
+
+body.dark-mode .header-content h1 {
+    color: var(--color-2);
+}
+
+body.dark-mode .methodology-title h2 {
+    color: var(--color-2);
+}
+
+@media only screen and (max-width: 576px) { 
+    .main-page-header {
+        padding: 0px !important;
+    }
+    div.header-content>h1 {
+        font-size: 30px !important;
+    }
+    .methodology-section {
+        padding: 38px 0px;
+    }
+    .target-customer-section {
+        padding: 71px 0px;
+    }
+    .mobile-app-col {
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    div.header-content>h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .list-group a {
+        padding: 3px 0px;
+    }
+
+    .main-page-header {
+        padding: 60px 0 0 0;
+    }
+}
+
+body.dark-mode .methodology-section {
+    padding: 80px 0px;
+    background: #222222;
+}
+
+body.dark-mode .header-content p {
+    color: white;
+}
+
+body.dark-mode .method-link p {
+    color: white;
+}
+
+body.dark-mode .target-customer-section {
+    background: #222222;
+}
+
+body.dark-mode .service-section {
+    background-color: black;
+}
