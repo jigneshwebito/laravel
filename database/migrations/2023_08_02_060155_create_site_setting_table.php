@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('site_setting', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->bigInteger('clients')->nullable();
             $table->bigInteger('projects')->nullable();
             $table->bigInteger('employees')->nullable();

@@ -14,13 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('contact', function (Blueprint $table) {
+            $table->id();
             $table->string('username', 20)->nullable();
             $table->string('email', 100);
             $table->string('phone', 60)->nullable();
             $table->string('service', 60)->nullable();
             $table->string('message');
-            $table->timestamp('updated_at')->useCurrent();
-            $table->timestamp('created_at')->useCurrent();
+            $table->timestamps();
         });
     }
 

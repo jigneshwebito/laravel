@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('personal_info', function (Blueprint $table) {
-            $table->integer('id', true);
+            $table->id();
             $table->string('position_applied')->nullable();
             $table->string('u_name')->nullable();
             $table->integer('u_age')->nullable();
@@ -34,8 +34,7 @@ return new class extends Migration
             $table->string('resume')->nullable();
             $table->longText('ip')->nullable();
             $table->longText('time')->nullable();
-            $table->date('created_at');
-            $table->date('updated_at');
+            $table->timestamps();
         });
     }
 

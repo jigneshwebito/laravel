@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('emp_skill', function (Blueprint $table) {
-            $table->integer('id', true);
+            $table->id();
             $table->string('technical_skill', 500)->nullable();
             $table->string('personal_attribute', 500)->nullable();
             $table->string('professional_detail', 500)->nullable();
@@ -26,8 +26,7 @@ return new class extends Migration
             $table->string('family_background', 500)->nullable();
             $table->timestamp('time')->useCurrent();
             $table->string('ip', 200)->nullable();
-            $table->date('created_at')->nullable();
-            $table->date('updated_at');
+            $table->timestamps();
         });
     }
 
