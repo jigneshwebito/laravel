@@ -25,21 +25,30 @@ class pagesController extends Controller
         $data['tm'] = Testimonials::where([['isDeleted', 0], ['isHide', 0]])->get();
         $data['our_client'] = Client::all();
         $siteSetting = SiteSetting::first();
-        $updatedDate = $siteSetting->updated_at->format('d-m-Y');
+        $updatedDate = isset($siteSetting) ? $siteSetting->updated_at->format('d-m-Y') : Carbon::now()->subDays(1)->format('d-m-Y');
         $currentDate = Carbon::now()->format('d-m-Y');
        
         if(!($updatedDate == $currentDate))
         {
-            $employeeHours = $siteSetting->employees * 8;
+            $employeeHours = isset($siteSetting) ? $siteSetting->employees : 1 * 8;
             $to = Carbon::createFromFormat('d-m-Y', $updatedDate);
             $from = Carbon::createFromFormat('d-m-Y', $currentDate);
             $diff_in_days = $to->diffInDays($from);
             $hoursDays = $employeeHours * $diff_in_days;
-            $totalDays = $hoursDays + $siteSetting->hours;
-
-            $siteSetting = SiteSetting::find(1);
-            $siteSetting->hours = $totalDays;
-            $siteSetting->update();
+            $hours = isset($siteSetting->hours) ? $siteSetting->hours : 0;
+            $totalDays = $hoursDays + $hours;
+            if($siteSetting){
+                $siteSetting = SiteSetting::find(1);
+                $siteSetting->hours = $totalDays;
+                $siteSetting->update();
+            }else{
+                $siteSetting = new SiteSetting();
+                $siteSetting->clients = "100";
+                $siteSetting->projects = "50";
+                $siteSetting->employees = "40";
+                $siteSetting->hours = $totalDays;
+                $siteSetting->save();
+            }
         }
         $data['clients'] = $siteSetting->clients;
         $data['projects'] = $siteSetting->projects;
