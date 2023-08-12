@@ -6,7 +6,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body {
@@ -3031,7 +3031,7 @@ a:hover:after{
   background: black;
 } */
 
-.cursor {
+/* .cursor {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -3043,9 +3043,9 @@ a:hover:after{
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
     z-index: 10000;
-}
+} */
 
-.cursor2 {
+/* .cursor2 {
     width: 5px;
     height: 5px;
     border-radius: 100%;
@@ -3057,18 +3057,18 @@ a:hover:after{
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
     z-index: 10000;
-}
+} */
 
 .hover {
     background-color: #719cd8;
     opacity: 0.5;
 }
 
-.cursorinnerhover {
+/* .cursorinnerhover {
     width: 50px;
     height: 50px;
     opacity: .5;
-}
+} */
 
 #directLinks {
     bottom: 30px;
