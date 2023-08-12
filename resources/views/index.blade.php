@@ -81,7 +81,8 @@
                                     </div>
                                     <input type="hidden" name="fullDate" id="fullDate">
                                     <div class="col-md-6 p-5" style="    background: white;">
-                                        <h5 class="card-title titleText">Meeting Duration <span style="font-size: 14px;">(Minutes)</span></h5>
+                                        <h5 class="card-title titleText">Meeting Duration <span
+                                                style="font-size: 14px;">(Minutes)</span></h5>
                                         <input type="text" class="col-12 meetingDuration" id="meetingDuration"
                                             value="30" oninput="timeDuration()">
                                         <br><br>
@@ -128,11 +129,11 @@
                         </div>
                         <div class="row d-flex justify-content-between">
                             {{-- <div class="col-md-6"> --}}
-                                <button type="button" class="textButton backBtn" type="button">Back</button>
+                            <button type="button" class="textButton backBtn" type="button">Back</button>
                             {{-- </div> --}}
                             {{-- <div class="col-md-6 d-flex justify-content-end"> --}}
-                                <button type="button" class="textButton confirmMeeting" disabled
-                                    style="opacity:0.5">Confirm</button>
+                            <button type="button" class="textButton confirmMeeting" disabled
+                                style="opacity:0.5">Confirm</button>
                             {{-- </div> --}}
                         </div>
                     </div>
@@ -143,7 +144,7 @@
                             </div>
                             <div>
                                 <h3 class="d-flex justify-content-center" style="color:#0675e8;">Book A
-                                   <span>(Meeting)</span> 
+                                    <span>(Meeting)</span>
                                 </h3>
                                 <p class="confirmText bg_dark">
                                     Thank you for request us for meeting appointment. Your appointment request
@@ -180,8 +181,12 @@
                     delivery success. Hire the best programmers at affordable prices. Our design-focused approach and
                     project execution processes help you
                     to deliver the right solutions.</p>
-                <a href="{{ url('contact') }}"><div class="btn">Let's Start</div></a>   
-                <a href="#"><div class="btn book_meeting">Book A Meeting</div></a>   
+                <a href="{{ url('contact') }}">
+                    <div class="btn">Let's Start</div>
+                </a>
+                <a href="#">
+                    <div class="btn book_meeting">Book A Meeting</div>
+                </a>
             </div>
         </div>
     </section>
@@ -202,6 +207,78 @@
             </div>
         </section>
         <!--==========================/About Us Section============================-->
+
+        <!--==========================Transalating Your Ideas Section============================-->
+        <section id="ideas_section">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Translating your ideas into reality.</h3>
+                    <p class="p-padding20">We work with companies large and small in the India and beyond. From
+                        sophisticated API-driven platforms to cutting-edge websites, we will assist you from concept to
+                        completion, bringing your ideas to life.</p>
+                </header>
+                <div class="row">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/laravel.png') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>Laravel</h3>
+                                <p class="p-padding20">Laravel is our go-to back-end technology, Our impressive team of
+                                    talented developers has successfully finished over 30 projects. We deliver reliable and
+                                    high-performance solutions.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <div class="btn">View More</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/flutter.png') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>Flutter</h3>
+                                <p class="p-padding20">The synergy of our seasoned onshore developers and our extensive expertise has been the driving force behind our achievement in delivering over 50 tailor-made Flutter mobile applications.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <div class="btn">View More</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/react.png') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>React</h3>
+                                <p class="p-padding20">Our exceptional team of developers has an impressive track record of delivering over 45+ React projects with great success. At the moment, we are fully immersed in tackling our most ambitious React project to date.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <div class="btn">View More</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/.net.png') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>.Net</h3>
+                                <p class="p-padding20">We have a large range of brilliant developers who have successfully completed more than 20 .NET projects. Currently, we are engaged in working on our biggest project yet.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <div class="btn">View More</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--==========================Services Section============================-->
         <section id="services" class="section-bg">
             <div class="container">
@@ -544,7 +621,7 @@
                     }
                 }
             </style>
-           
+
             <link rel="stylesheet" type="text/css"
                 href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
             <link rel="stylesheet" type="text/css"
