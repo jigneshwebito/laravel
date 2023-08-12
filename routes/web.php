@@ -69,7 +69,7 @@ route::get('/technology/master', 'App\Http\Controllers\pagesController@master');
 route::get('/technology/mobile/ios', 'App\Http\Controllers\pagesController@ios');
 route::get('/technology/mobile/android', 'App\Http\Controllers\pagesController@android');
 route::get('/technology/mobile/react-native', 'App\Http\Controllers\pagesController@react_native');
-route::get('/technology/mobile/flutter', 'App\Http\Controllers\pagesController@flutter');
+route::get('/technology/mobile/flutter', 'App\Http\Controllers\pagesController@flutter')->name('mobile.flutter');
 route::get('/technology/mobile/ionic', 'App\Http\Controllers\pagesController@ionic');
 route::get('/technology/mobile/xamarin', 'App\Http\Controllers\pagesController@xamarin');
 
@@ -83,7 +83,7 @@ route::get('/technology/database/redis', 'App\Http\Controllers\pagesController@r
 
 //Frontend pages//
 route::get('/technology/frontend/angular', 'App\Http\Controllers\pagesController@angular');
-route::get('/technology/frontend/reactjs', 'App\Http\Controllers\pagesController@reactjs');
+route::get('/technology/frontend/reactjs', 'App\Http\Controllers\pagesController@reactjs')->name('frontend.reactjs');
 route::get('/technology/frontend/vue', 'App\Http\Controllers\pagesController@vue');
 route::get('/technology/frontend/typescript', 'App\Http\Controllers\pagesController@typescript');
 route::get('/technology/frontend/wpf', 'App\Http\Controllers\pagesController@wpf');
@@ -92,14 +92,14 @@ route::get('/technology/frontend/html5', 'App\Http\Controllers\pagesController@h
 //Backend pages//
 route::get('/technology/backend/node', 'App\Http\Controllers\pagesController@node');
 route::get('/technology/backend/php', 'App\Http\Controllers\pagesController@php');
-route::get('/technology/backend/dotnet', 'App\Http\Controllers\pagesController@dotnet');
+route::get('/technology/backend/dotnet', 'App\Http\Controllers\pagesController@dotnet')->name('backend.dotnet');
 route::get('/technology/backend/java', 'App\Http\Controllers\pagesController@java');
 route::get('/technology/backend/python', 'App\Http\Controllers\pagesController@python');
 route::get('/technology/backend/rails', 'App\Http\Controllers\pagesController@rails');
 route::get('/technology/backend/codeigniter', 'App\Http\Controllers\pagesController@codeigniter');
 route::get('/technology/backend/cakephp', 'App\Http\Controllers\pagesController@cakephp');
 route::get('/technology/backend/zend', 'App\Http\Controllers\pagesController@zend');
-route::get('/technology/backend/laravel', 'App\Http\Controllers\pagesController@laravel');
+route::get('/technology/backend/laravel', 'App\Http\Controllers\pagesController@laravel')->name('backend.laravel');
 
 //Devops pages//
 route::get('/technology/devops/aws', 'App\Http\Controllers\pagesController@aws');

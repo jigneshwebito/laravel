@@ -3851,11 +3851,14 @@ ul {
 #ideas_section .first-ideas img{
     height: 11rem;
 }
-#ideas_section .row div div{
+/* #ideas_section .row div div{
     background: #F9FAFE;
-}
+} */
 .ideas-sec-hover:hover{
     background: white;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.15);
 
+}
+.ideas-bg{
+    background: #F9FAFE;
 }

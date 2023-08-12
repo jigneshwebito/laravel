@@ -219,7 +219,7 @@
                 </header>
                 <div class="row">
                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                        <div class="mb-4 p-4 ideas-sec-hover">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
                                 <img src="{{ asset('assets/img/index/illustration/laravel.png') }}" alt="">
                             </div>
@@ -230,49 +230,64 @@
                                     high-performance solutions.</p>
                             </div>
                             <div class="third-ideas">
-                                <div class="btn">View More</div>
+                                <a href="{{ route('backend.laravel') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                        <div class="mb-4 p-4 ideas-sec-hover">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
                                 <img src="{{ asset('assets/img/index/illustration/flutter.png') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>Flutter</h3>
-                                <p class="p-padding20">The synergy of our seasoned onshore developers and our extensive expertise has been the driving force behind our achievement in delivering over 50 tailor-made Flutter mobile applications.</p>
+                                <p class="p-padding20">The synergy of our seasoned onshore developers and our extensive
+                                    expertise has been the driving force behind our achievement in delivering over 50
+                                    tailor-made Flutter mobile applications.</p>
                             </div>
-                            <div class="third-ideas">
-                                <div class="btn">View More</div>
+                            <div class="third-ideas mt-4">
+                                <a href="{{ route('mobile.flutter') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                        <div class="mb-4 p-4 ideas-sec-hover">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
                                 <img src="{{ asset('assets/img/index/illustration/react.png') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>React</h3>
-                                <p class="p-padding20">Our exceptional team of developers has an impressive track record of delivering over 45+ React projects with great success. At the moment, we are fully immersed in tackling our most ambitious React project to date.</p>
+                                <p class="p-padding20">Our exceptional team of developers has an impressive track record of
+                                    delivering over 45+ React projects with great success. At the moment, we are fully
+                                    immersed in tackling our most ambitious React project to date.</p>
                             </div>
-                            <div class="third-ideas">
-                                <div class="btn">View More</div>
+                            <div class="third-ideas mt-4">
+                                <a href="{{ route('frontend.reactjs') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                        <div class="mb-4 p-4 ideas-sec-hover">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
                                 <img src="{{ asset('assets/img/index/illustration/.net.png') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>.Net</h3>
-                                <p class="p-padding20">We have a large range of brilliant developers who have successfully completed more than 20 .NET projects. Currently, we are engaged in working on our biggest project yet.</p>
+                                <p class="p-padding20">We have a large range of brilliant developers who have successfully
+                                    completed more than 20 .NET projects. Currently, we are engaged in working on our
+                                    biggest project yet.</p>
                             </div>
                             <div class="third-ideas">
-                                <div class="btn">View More</div>
+                                <a href="{{ route('backend.dotnet') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
+
                             </div>
                         </div>
                     </div>
