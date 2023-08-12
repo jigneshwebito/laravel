@@ -240,6 +240,9 @@
             li.activeJs a {
     color: #0576EB !important;
 }
+ul.sub-menu a {
+    color: #111!important;
+}
         </style>
         <!--Off Canvas Navigation Start-->
         <aside class="off-canvas-wrapper">
