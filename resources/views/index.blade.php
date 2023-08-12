@@ -415,7 +415,7 @@
 
 
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row counters">
                     <div class="col-lg-3 col-6 text-center media-query-by-p">
                         <h1><span class="counter">{{ $clients }}</span></h1>
