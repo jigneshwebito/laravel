@@ -3647,12 +3647,16 @@ button.active li:nth-child(5) {
 }
 /* whatsapp */
 .whatsappIcon {
-    padding: 7px 9px 3px 9px;
-    border: 2px solid green;
-    background: green;
-    color: green;
+    /* padding: 6px 9px 3px 9px; */
+    /* border: 2px solid #2db13f; */
+    /* background: #2db13f; */
+    /* color: #2db13f; */
     cursor: pointer;
-    border-radius:22px;
+    /* border-radius:22px; */
+}
+.whatsappIcon img{
+    height: 4.5rem;
+    margin-right: -4px;
 }
 .whatsappIcon i{
     font-size:22px;

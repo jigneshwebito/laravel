@@ -33,7 +33,7 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
                         <p class="text-break">
-                            Headquarter - USA
+                            Headquarter - USA <br>    
                             Branch - Surat, India | Ahmedabad, India. <br>
                         <strong>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 52px;">
                         +91 9724259460</a><br></strong>
@@ -109,7 +109,8 @@
 
 <div id="preloader"></div>
 <a href="https://wa.me/+919104500673?text=Hello , I have a questions about your services. Can you please help me?"
-    target="_blank" style="position: fixed;bottom: 89px;right: 18px;"><span class="whatsappIcon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+    target="_blank" style="position: fixed;bottom: 89px;right: 18px;
+    z-index: 20;"><span class="whatsappIcon"><img src="{{ asset('assets/img/index/illustration/whatsapp.gif') }}" alt=""></span></a>
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;" aria-label="Top To Scroll"><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i></a>
 <script>
 // function redirectLinks(url) {

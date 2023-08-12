@@ -20,13 +20,13 @@
                 <div class="information">
                     <img src="https://img.icons8.com/cute-clipart/36/4a90e2/globe.png" />
 
-                    <p> Headquarter - USA
+                    <p> Headquarter - USA <br>
                         Branch - Surat, India | Ahmedabad, India.</p>
                 </div>
                 <div class="information">
                     <img src="https://img.icons8.com/cute-clipart/36/4a90e2/apple-mail.png" />
 
-                    <p style=""><a href="mailto:social@webitoinfotech.com"target="_blank">
+                    <p style="white-space: pre-line;"><a href="mailto:social@webitoinfotech.com" target="_blank" style="margin-top: -15px;">
                             social@webitoinfotech.com</a>
                         webitoinfotech.com</p>
                 </div>

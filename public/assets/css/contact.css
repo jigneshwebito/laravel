@@ -256,10 +256,11 @@ body.dark-mode .btn{
 
 .information {
     display: flex;
-    color: #555;
+    color: black;
     margin: 0.7rem 0;
     align-items: center;
     font-size: 0.95rem;
+    font-size: 12px;
 }
 
 .information p {
@@ -578,11 +579,11 @@ body.dark-mode .big-circle b {
             padding: 1.7rem 1.6rem;
         }
 
-        .text,
+        /* .text,
         .information,
         .social-media p {
             font-size: 0.8rem;
-        }
+        } */
 
         .title {
             font-size: 1.15rem;
