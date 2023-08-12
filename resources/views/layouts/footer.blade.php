@@ -19,7 +19,7 @@
                             our
                             blog section.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 footer-links"p>
+                    <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/">Home</a></li>
@@ -32,9 +32,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
-                        <p style="font-size: 12px;">
-                        303-305, Golden Square, Beside D-mart <br>
-                        Mota Varachha, Surat 394101,<br>
+                        <p class="text-break">
+                        303-305, Golden Square, Beside D-mart
+                        Mota Varachha, Surat 394101,
                         Gujarat India. <br>
                         <strong>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 52px;">
                         +91 9724259460</a><br></strong>
