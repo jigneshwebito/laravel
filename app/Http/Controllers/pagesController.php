@@ -9,6 +9,7 @@ use App\Models\Article_category;
 use App\Models\personal_info;
 use App\Models\BookMeeting;
 use App\Models\Client;
+use App\Models\Employee;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
@@ -21,7 +22,7 @@ class pagesController extends Controller
    
     public function index()
     {
-        
+        $data['team_img'] = Employee::whereNull('deleted_at')->orderBy('position', 'ASC')->get();
         $data['tm'] = Testimonials::where([['isDeleted', 0], ['isHide', 0]])->get();
         $data['our_client'] = Client::all();
         $siteSetting = SiteSetting::first();

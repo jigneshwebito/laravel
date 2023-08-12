@@ -431,8 +431,8 @@
 
             </div>
             <div class="counter-bg">
-            <div class="container">
-                <div class="row counters">
+                <div class="container">
+                    <div class="row counters">
                         <div class="col-lg-3 col-6 text-center media-query-by-p">
                             <h1><span class="counter">{{ $clients }}</span></h1>
                             <p>Clients</p>
@@ -449,9 +449,9 @@
                             <h1><span class="counter">{{ $employees }}</span></h1>
                             <p>Hard Workers</p>
                         </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <!--==========================/Why Us Section============================-->
         <!--==========================Portfolio Section============================-->
@@ -470,110 +470,78 @@
                 </div>
                 <div class="row">
                     <section class="customer-logos mb-0 slider slik-container">
-                        {{-- krishna --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/kp_img.webp') }}"
+                        @foreach ($team_img as $team_images)
+                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/'. $team_images->image) }}"
                                 class="grid__item-img remove" alt="Image 3">
                         </div>
-                        {{-- chelsi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/cv_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 4">
-                        </div>
-                        {{-- rushikesh --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ra_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 5">
-                        </div>
-                        {{-- shivani --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ss_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 6">
-                        </div>
-                        {{-- shruti --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/sm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 1">
-                        </div>
-                        {{-- prachi --}}
-                        <div class="slide  side-img-p"><img src="{{ asset('assets/img/team/pd_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 7">
-                        </div>
-                        {{-- juli --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dj_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 8">
-                        </div>
-                        {{-- rutvik --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/rk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 10">
-                        </div>
-                        {{-- atul --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/am_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 11">
-                        </div>
-                        {{-- princi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/pm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 13">
-                        </div>
-                        {{-- nishtha --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/nb_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 14">
-                        </div>
-                        {{-- harmi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/hv_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 16">
-                        </div>
-                        {{-- dipesh --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/db_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 17">
-                        </div>
-                        {{-- divya --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dt_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 18">
-                        </div>
-                        {{-- chirag --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/cs_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- parth --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/pak_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- harshit --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/hm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- dhruv --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- ankita --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ag_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- janvi --}}
-                        {{-- mansi --}}
-                        {{-- jenil --}}
-                        {{-- darshna --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/td_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- vishal --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/vk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- shreya --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/srs_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- meet --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/md_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- dhruvi --}}
-                        {{-- mukund --}}
-                        {{-- archit --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ma_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- keval --}}
-                        {{-- zeel --}}
+                        @endforeach
                     </section>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/manav.jpg" class="img-fluid remove" alt="manav-kanpariya">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Manav Kanpariya</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://mobile.twitter.com/manav_kanpariya"><i
+                                                class="fa fa-twitter"></i></a>
+                                        <a href="https://m.facebook.com/profile.php?id=100005575876256"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/mr_kanpariya?igshid=YmMyMTA2M2Y="><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a
+                                            href="https://www.linkedin.com/in/manav-kanpariya-8488a4193/?originalSubdomain=in"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/brijesh.webp" class="img-fluid remove" alt="brijesh-goyani">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Brijesh Goyani</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://twitter.com/goyani_brijesh"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/brijesh.goyani.24"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/brijesh_goyani?igshid=gpyxfim09pem"><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/brijesh-goyani-497969189/"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp data" data-wow-delay="0.3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/ravi.webp" class="img-fluid remove" alt="ravi-sheladiya">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ravi Sheladiya</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://twitter.com/ravisheladiya1?s=21&amp;t=bOsNGPQFR5Pp3yzzcnsVug"><i
+                                                class="fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/ravi.sheladiya1?mibextid=LQQJ4d"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/ravi__s?igshid=MzRlODBiNWFlZA=="><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a href="http://www.linkedin.com/in/ravisheladiya"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -741,9 +709,9 @@
             $(document).ready(function() {
                 $('.customer-logos').slick({
                     slidesToShow: 6,
-                    slidesToScroll: 6,
+                    slidesToScroll: 1,
                     autoplay: true,
-                    autoplaySpeed: 1500,
+                    autoplaySpeed: 1000,
                     arrows: false,
                     dots: false,
                     pauseOnHover: false,
