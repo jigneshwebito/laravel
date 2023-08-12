@@ -469,7 +469,7 @@
                     <h3 class="h-paddingbottom30">Team</h3>
                 </div>
                 <div class="row">
-                    <section class="customer-logos mb-0 slider slik-container ">
+                    <section class="customer-logos mb-0 slider slik-container">
                         {{-- krishna --}}
                         <div class="slide side-img-p"><img src="{{ asset('assets/img/team/kp_img.webp') }}"
                                 class="grid__item-img remove" alt="Image 3">
@@ -685,7 +685,7 @@
                     <div class="section-header">
                         <h3 class="h-paddingbottom30">Our Clients</h3>
                     </div>
-                    <div class="customer-logos slider">
+                    <div class="customer-logos1 slider">
                         @foreach ($our_client as $client)
                             <a href="{{ $client->link ? $client->link : '#' }}">
                                 <div class="slide"><img src="{{ asset('assets/img/index/clients/' . $client->image) }}"
@@ -741,7 +741,38 @@
             $(document).ready(function() {
                 $('.customer-logos').slick({
                     slidesToShow: 6,
-                    slidesToScroll: 1,
+                    slidesToScroll: 6,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+
+                    responsive: [{
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 5
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 4
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 3
+                            }
+                        }
+                    ]
+                });
+            });
+            $(document).ready(function() {
+                $('.customer-logos1').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 3,
                     autoplay: true,
                     autoplaySpeed: 1500,
                     arrows: false,
