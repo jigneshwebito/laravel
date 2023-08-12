@@ -33,9 +33,8 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
                         <p class="text-break">
-                        303-305, Golden Square, Beside D-mart
-                        Mota Varachha, Surat 394101,
-                        Gujarat India. <br>
+                            Headquarter - USA
+                            Branch - Surat, India | Ahmedabad, India. <br>
                         <strong>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 52px;">
                         +91 9724259460</a><br></strong>
                         <strong style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
