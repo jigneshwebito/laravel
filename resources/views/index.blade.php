@@ -430,26 +430,28 @@
 
 
             </div>
+            <div class="counter-bg">
             <div class="container">
                 <div class="row counters">
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $clients }}</span></h1>
-                        <p>Clients</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $projects }}</span></h1>
-                        <p>Projects</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $hours }}</span></h1>
-                        <p>Hours Of Support</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $employees }}</span></h1>
-                        <p>Hard Workers</p>
-                    </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $clients }}</span></h1>
+                            <p>Clients</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $projects }}</span></h1>
+                            <p>Projects</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $hours }}</span></h1>
+                            <p>Hours Of Support</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $employees }}</span></h1>
+                            <p>Hard Workers</p>
+                        </div>
                 </div>
             </div>
+        </div>
         </section>
         <!--==========================/Why Us Section============================-->
         <!--==========================Portfolio Section============================-->

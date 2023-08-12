@@ -640,7 +640,7 @@ body.dark-mode #why-us .card:hover {
     padding: 40px 0;
     background: var(--color-11);
     margin-top: 56px;
-    box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
 }
 body.dark-mode #why-us .counters{
     background: var(--color-5);
@@ -3862,6 +3862,7 @@ background:var(--color-7);
     font-weight: 600;
     border: 2px solid white;
 }
+
 #ideas_section .first-ideas img{
     height: 11rem;
 }
@@ -3879,3 +3880,11 @@ body.dark-mode .ideas-sec-hover:hover{
 .ideas-bg{
     background: #F9FAFE;
 }
+.counter-bg{
+    background-color:var(--color-11);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
+}
+body.dark-mode .counter-bg{
+    background-color:var(--color-5);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
+} 
