@@ -23,9 +23,6 @@
             display: none;
         }
 
-        /* input {
-                                        margin-top: 40px;
-                                    } */
 
         .section {
             margin-top: 150px;
@@ -39,6 +36,8 @@
     </style>
     <div class="content-wrapper">
         <div class="container-full">
+            <form action="/work-slider/store/data" method="POST" enctype="multipart/form-data">
+                @csrf
             <section class="content">
                 <span class="profile_image_preview_span">
                     <img class="profile_front_image_preview" src="" style="height: 100px;" />
@@ -60,92 +59,59 @@
                 <div class="form-outline mb-4">
                     <textarea type="text" name="review" id="review" class="form-control" required></textarea>
                 </div>
-                <button type='button' class="btn btn-primary" id="save1"
-                    onclick="pageRedirectProfileUpdate()">Save</button>
+                <button type='submit' class="btn btn-primary" id="save1">Save</button>
             </section>
-
-            <div class="modal fade" id="profile_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
-                aria-hidden="true" data-backdrop="static" data-keyboard="false">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalLabel"></h5>
-                            <button type="button" class="close front_cancel" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="img-container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div style="height:500px;width:100%">
-                                            <img id="profile_image" src="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="preview" style="width: 160px;height: 160px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary front_cancel"
-                                data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary" id="front_crop">Crop</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
+           
 
         </div>
     </div>
     <script>
-        function pageRedirectProfileUpdate() {
+        // function pageRedirectProfileUpdate() {
 
-            var profile_image = $('#Profile_image_card').val();
-            var name = $('#name').val();
-            var year = $('#year').val();
-            var review = $('#review').val();
-            var p_imagePathProfileFront = $('.profile_front_image_preview').attr('src');
+        //     var profile_image = $('#Profile_image_card').val();
+        //     var name = $('#name').val();
+        //     var year = $('#year').val();
+        //     var review = $('#review').val();
+        //     var p_imagePathProfileFront = $('.profile_front_image_preview').attr('src');
 
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-            $.ajax({
-                type: 'POST',
-                url: ' {{ route('work_slider_store_data') }}',
-                data: {
-                    _token: '{{ csrf_token() }}',
-                    'p_image': profile_image,
-                    'p_imagePathProfileFront': p_imagePathProfileFront,
-                    'name': name,
-                    'year': year,
-                    'review': review
-                },
+        //     $.ajaxSetup({
+        //         headers: {
+        //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //         }
+        //     });
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: ' {{ route('work_slider_store_data') }}',
+        //         data: {
+        //             _token: '{{ csrf_token() }}',
+        //             'p_image': profile_image,
+        //             'p_imagePathProfileFront': p_imagePathProfileFront,
+        //             'name': name,
+        //             'year': year,
+        //             'review': review
+        //         },
 
-                dataType: 'json',
-                success: function(response_msg) {
-                    if (response_msg.success == true) {
-                        window.location.reload();
-                        console.log('Your Profile Data Is Updated...');
-                    } else if (response_msg.success == 408) {
-                        console.log(' Wrong...');
-                    }
-                }
-            });
+        //         dataType: 'json',
+        //         success: function(response_msg) {
+        //             if (response_msg.success == true) {
+        //                 window.location.reload();
+        //                 console.log('Your Profile Data Is Updated...');
+        //             } else if (response_msg.success == 408) {
+        //                 console.log(' Wrong...');
+        //             }
+        //         }
+        //     });
 
-        }
+        // }
     </script>
-    <script>
+    {{-- <script>
         var profile_avtar_fr = $('#profile_up_fr').val();
         var $profile_modal = $('#profile_modal');
         var profile_image = document.getElementById('profile_image');
         var cropper;
         $("#Profile_image_card").on("change", function(e) {
-            // $('#remove_avtar_profile_front').css("display", "none");
+           
             var files = e.target.files;
             var fileExtension = files[0].name.split('.').pop().toLowerCase();
             var allowedExtensions = ['png', 'jpg', 'jpeg'];
@@ -233,5 +199,5 @@
                 $('#Profile_image_card').val('');
             }
         });
-    </script>
+    </script> --}}
 @endsection
