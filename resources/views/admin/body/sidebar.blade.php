@@ -38,6 +38,12 @@ $route = Route::current()->getName();
                 <span>Clients</span>
             </a>
         </li>
+        <li class="{{ $route == 'our-events.index' ? 'active' : '' }}">
+            <a href="{{ route('our-events.index') }}">
+                <i data-feather="box"></i>
+                <span>Our Event</span>
+            </a>
+        </li>
         <li class="{{ $route == 'employee.index' ? 'active' : '' }}">
             <a href="{{ route('employee.index') }}">
                 <i data-feather="box"></i>

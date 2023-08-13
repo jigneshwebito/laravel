@@ -7,6 +7,7 @@ use App\Http\Controllers\backend\TestimonialsController;
 use App\Http\Controllers\backend\ClientsController;
 use App\Http\Controllers\backend\WorkSliderController;
 use App\Http\Controllers\backend\ArticleTagController;
+use App\Http\Controllers\backend\OurEventController;
 use App\Http\Controllers\backend\ArticleCategoryController;
 use App\Http\Controllers\backend\articleController;
 use App\Http\Controllers\backend\EmployeeController;
@@ -128,6 +129,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 route::get('/admin/logout', 'App\Http\Controllers\AdminController@Logout')->name('admin.logout');
 
 Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/our-events','App\Http\Controllers\backend\OurEventController@index')->name('our-events.index');
+    Route::get('/our-events/create','App\Http\Controllers\backend\OurEventController@create')->name('our-events.create');
+
 
     Route::resource('/testimonials', TestimonialsController::class);
     Route::post('/testimonials/delete/{id}', 'App\Http\Controllers\backend\TestimonialsController@tmDelete');
