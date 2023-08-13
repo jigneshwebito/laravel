@@ -107,7 +107,7 @@
 </div>
 
 
-<div id="preloader"></div>
+
 <a href="https://wa.me/+919104500673?text=Hello , I have a questions about your services. Can you please help me?"
     target="_blank" style="position: fixed;bottom: 89px;right: 18px;
     z-index: 20;"><span class="whatsappIcon"><img src="{{ asset('assets/img/index/illustration/whatsapp.gif') }}" alt=""></span></a>

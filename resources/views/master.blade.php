@@ -8,6 +8,7 @@
 
 </head>
 
+<div id="preloader"></div>
 <body class="dark-mode-sdec">
       <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZKQ6Z5"
