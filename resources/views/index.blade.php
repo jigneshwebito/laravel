@@ -221,7 +221,7 @@
                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
                         <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
-                                <img src="{{ asset('assets/img/index/illustration/laravel.png') }}" alt="">
+                                <img src="{{ asset('assets/img/index/illustration/laravel.svg') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>Laravel</h3>
@@ -239,7 +239,7 @@
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
                         <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
-                                <img src="{{ asset('assets/img/index/illustration/flutter.png') }}" alt="">
+                                <img src="{{ asset('assets/img/index/illustration/flutter.svg') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>Flutter</h3>
@@ -257,7 +257,7 @@
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
                         <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
-                                <img src="{{ asset('assets/img/index/illustration/react.png') }}" alt="">
+                                <img src="{{ asset('assets/img/index/illustration/react.svg') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>React</h3>
@@ -275,7 +275,7 @@
                     <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
                         <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
                             <div class="first-ideas d-flex justify-content-center mb-5">
-                                <img src="{{ asset('assets/img/index/illustration/.net.png') }}" alt="">
+                                <img src="{{ asset('assets/img/index/illustration/.net.svg') }}" alt="">
                             </div>
                             <div class="second-ideas">
                                 <h3>.Net</h3>
