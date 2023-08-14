@@ -6,7 +6,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    cursor: none;
+    /* cursor: none; */
 }
 
 body {
@@ -640,7 +640,7 @@ body.dark-mode #why-us .card:hover {
     padding: 40px 0;
     background: var(--color-11);
     margin-top: 56px;
-    box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
 }
 body.dark-mode #why-us .counters{
     background: var(--color-5);
@@ -3031,7 +3031,7 @@ a:hover:after{
   background: black;
 } */
 
-.cursor {
+/* .cursor {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -3043,9 +3043,9 @@ a:hover:after{
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
     z-index: 10000;
-}
+} */
 
-.cursor2 {
+/* .cursor2 {
     width: 5px;
     height: 5px;
     border-radius: 100%;
@@ -3057,18 +3057,18 @@ a:hover:after{
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
     z-index: 10000;
-}
+} */
 
 .hover {
     background-color: #719cd8;
     opacity: 0.5;
 }
 
-.cursorinnerhover {
+/* .cursorinnerhover {
     width: 50px;
     height: 50px;
     opacity: .5;
-}
+} */
 
 #directLinks {
     bottom: 30px;
@@ -3647,14 +3647,21 @@ button.active li:nth-child(5) {
 }
 /* whatsapp */
 .whatsappIcon {
-    padding: 7px 9px 3px 9px;
-    border: 2px solid #83c3ff;
-    background: rgba(255,255,255,.9);
-    color: green;
+    /* padding: 6px 9px 3px 9px; */
+    /* border: 2px solid #2db13f; */
+    /* background: #2db13f; */
+    /* color: #2db13f; */
     cursor: pointer;
+    /* border-radius:22px; */
+}
+.whatsappIcon img{
+    /* height: 4.5rem; */
+    height:59px;
+    margin-right: -4px;
 }
 .whatsappIcon i{
     font-size:22px;
+    color:white;
 }
 /* metting book */
 body.dark-mode .book_a_meeting
@@ -3839,3 +3846,61 @@ ul {
 .calendar-main {
     background: #0675e8;
 }
+
+/* new section add below about us */
+/**************************************  
+    Module: new section add below about us
+    Name: Chelsi Vachhani
+    Date: 11-08-2023
+**************************************/
+body.dark-mode .ideas-bg{
+background:var(--color-7);
+}
+#ideas_section{
+    margin-top: 27px;
+}
+#ideas_section .third-ideas .btn{
+    background: #0675e8;
+    padding: 9px 10px;
+    color: white;
+    border-radius: 100px;
+    font-weight: 600;
+    border: 2px solid white;
+}
+
+#ideas_section .first-ideas img{
+    height: 11rem;
+}
+#ideas_section p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.ideas-sec-hover:hover{
+    background: white;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.15);
+
+}
+body.dark-mode .ideas-sec-hover:hover{
+    background-color: #0b6bd3;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.15);
+
+}
+.ideas-bg{
+    background: #F9FAFE;
+}
+.counter-bg{
+    background-color:var(--color-11);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
+}
+body.dark-mode .counter-bg{
+    background-color:var(--color-5);
+    /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
+} 
+#about{
+    background: var(--color-11);
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* .color-grey{
+    color: var(--color-10);
+} */

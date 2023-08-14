@@ -24,10 +24,7 @@ class ClientsController extends Controller
 
     public function tmDelete($id)
     {
-        $tm = Client::where('id', $id)->update([
-            // 'images_path' => $request->images_path,
-            'isDeleted' => 1,
-        ]);
+        $tm = Client::where('id', $id)->delete();
         return redirect('/clients');
     }
     public function tmShow($id)
@@ -98,7 +95,7 @@ class ClientsController extends Controller
          $saveFile->name = $request->name;
          $saveFile->save();
     
-        return response()->json(['success'=>'Crop Image Uploaded Successfully']);
+        return redirect('/clients')->json(['success'=>'Crop Image Uploaded Successfully']);
 
 
         // $newImageName = time() . '-' . $request->name . '.' . $request->image->extension();

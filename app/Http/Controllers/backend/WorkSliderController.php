@@ -24,10 +24,8 @@ class WorkSliderController extends Controller
 
     public function tmDelete($id)
     {
-        $tm =  WorkSlider::where('id', $id)->update([
-            // 'images_path' => $request->images_path,
-            'isDeleted' => 1,
-        ]);
+        $tm =  WorkSlider::find($id);
+        $tm->delete();
         return redirect('/work-slider');
     }
     public function tmShow($id)
@@ -79,7 +77,10 @@ class WorkSliderController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        $path = $request->profile_image;
+        $image_name = str_replace('C:\fakepath\\', '', $path);
+        dd($image_name);
         $folderPath = public_path('assets/img/index/work-slider/');
 
         $image_parts = explode(";base64,", $request->image);
@@ -112,33 +113,19 @@ class WorkSliderController extends Controller
     public function ClientsStore(Request $request)
     {
         // try {
-
+            $image_name = $request->Profile_image_card;
+            // dd($path);
+            // $image_name = str_replace('C:\fakepath\\', '', $path);
+            // dd($image_name);
             $saveFile = new  WorkSlider;
-            //  $saveFile->name = $imageName;
-
             //PROFILE FRONT IMAGE
-            if ($request->p_image && $request->p_imagePathProfileFront) {
-                $original_image_parts = explode(";base64,", $request->p_imagePathProfileFront);
-                $original_image_base64 = base64_decode($original_image_parts[1]);
-                $imageDimension = getimagesizefromstring($original_image_base64);
-
-                if ($imageDimension[0] > 500 && $imageDimension[1] > 500) {
-                    $imagePath  = Image::make($request->p_imagePathProfileFront)->resize(500, 500)->encode('data-url');
-                    $imageArr = explode(";base64,", $imagePath);
-                    $data = base64_decode($imageArr[1]);
-                } else {
-                    $imageArr = explode(";base64,",  $request->p_imagePathProfileFront);
-                    $data = $original_image_base64;
-                }
-
-                $extension = explode("image/", $imageArr[0]);
-                $original_name = 3 . '-' . uniqid() . '.' . $extension[1];
-
-                $imageName = public_path('/assets/img/Portfolio/app/' . $original_name);
-
-                file_put_contents($imageName, $data);
-
-                $saveFile->image = $original_name;
+            if ($request->Profile_image_card) {
+                $file_image = $request->file('Profile_image_card');
+                $file_image_rename = str_replace(' ', '_', $file_image);
+                $image_name = date('YmdHi') . $image_name->getClientOriginalName();
+                $file1 = $file_image->move(public_path('/assets/img/Portfolio/app/'), $image_name);
+                // $inputs['profile_photo'] = $image_name;
+                $saveFile->image = $image_name;
             } else {
                 $saveFile->image = null;
             }
@@ -146,8 +133,8 @@ class WorkSliderController extends Controller
             $saveFile->year = $request->year;
             $saveFile->review = $request->review;
             $saveFile->save();
-
-            return Response::json(array('success' => true));
+            return redirect('/work-slider');
+            // return Response::json(array('success' => true));
         // } catch (\Throwable $th) {
         //     return Response::json(array('success' => 408));
         // }

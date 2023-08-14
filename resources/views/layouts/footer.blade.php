@@ -19,7 +19,7 @@
                             our
                             blog section.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 footer-links"p>
+                    <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/">Home</a></li>
@@ -32,14 +32,13 @@
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
-                        <p style="font-size: 12px;">
-                        303-305, Golden Square, Beside D-mart <br>
-                        Mota Varachha, Surat 394101,<br>
-                        Gujarat India. <br>
-                        <strong>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 52px;">
-                        +91 9724259460</a><br></strong>
-                        <strong style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
-                        <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></strong> <br>
+                        <p class="text-break" style="font-weight: 700;">
+                            Headquarter - USA <br>    
+                            Branch - Surat, India | Ahmedabad, India. <br>
+                        <div>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 47px;">
+                        +91 9724259460</a><br></div>
+                        <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
+                        <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></div> <br>
                         </p>
                         <div class="social-links">
                         <a href="https://www.instagram.com/webitoinfotech/" target="blank" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -108,9 +107,10 @@
 </div>
 
 
-<div id="preloader"></div>
+
 <a href="https://wa.me/+919104500673?text=Hello , I have a questions about your services. Can you please help me?"
-    target="_blank" style="position: fixed;bottom: 89px;right: 18px;"><span class="whatsappIcon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+    target="_blank" style="position: fixed;bottom: 89px;right: 18px;
+    z-index: 20;"><span class="whatsappIcon"><img src="{{ asset('assets/img/index/illustration/whatsapp.gif') }}" alt=""></span></a>
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;" aria-label="Top To Scroll"><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i></a>
 <script>
 // function redirectLinks(url) {

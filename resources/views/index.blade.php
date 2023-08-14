@@ -12,7 +12,7 @@
     web development company in surat | It Company in surat| flutter development Company in surat | it company in mota
     varachha | Best It Company In India | Best Software Company in India | Webito Infotech - The Best It Company | Webito
     Infotech - The Best It Company In surat | it company near me"')
-@section('meta-url', 'https://staging.webitoinfotech.com/')
+@section('meta-url', 'https://webitoinfotech.com/')
 @section('meta-title', 'Webito Infotech - The Best IT Company in Surat')
 
 
@@ -81,7 +81,8 @@
                                     </div>
                                     <input type="hidden" name="fullDate" id="fullDate">
                                     <div class="col-md-6 p-5" style="    background: white;">
-                                        <h5 class="card-title titleText">Meeting Duration <span style="font-size: 14px;">(Minutes)</span></h5>
+                                        <h5 class="card-title titleText">Meeting Duration <span
+                                                style="font-size: 14px;">(Minutes)</span></h5>
                                         <input type="text" class="col-12 meetingDuration" id="meetingDuration"
                                             value="30" oninput="timeDuration()">
                                         <br><br>
@@ -128,11 +129,11 @@
                         </div>
                         <div class="row d-flex justify-content-between">
                             {{-- <div class="col-md-6"> --}}
-                                <button type="button" class="textButton backBtn" type="button">Back</button>
+                            <button type="button" class="textButton backBtn" type="button">Back</button>
                             {{-- </div> --}}
                             {{-- <div class="col-md-6 d-flex justify-content-end"> --}}
-                                <button type="button" class="textButton confirmMeeting" disabled
-                                    style="opacity:0.5">Confirm</button>
+                            <button type="button" class="textButton confirmMeeting" disabled
+                                style="opacity:0.5">Confirm</button>
                             {{-- </div> --}}
                         </div>
                     </div>
@@ -143,7 +144,7 @@
                             </div>
                             <div>
                                 <h3 class="d-flex justify-content-center" style="color:#0675e8;">Book A
-                                   <span>(Meeting)</span> 
+                                    <span>(Meeting)</span>
                                 </h3>
                                 <p class="confirmText bg_dark">
                                     Thank you for request us for meeting appointment. Your appointment request
@@ -175,13 +176,19 @@
             </div>
             <div class="intro-content left">
                 <h2>We are here to grow your business</h2>
-                <p class="p-margin20">We deliver web and mobile app development services to global businesses since 2020,
+                <div class="section-header">
+                <p class="p-margin20 text-left mt-3">We deliver web and mobile app development services to global businesses since 2020,
                     with 100% project
                     delivery success. Hire the best programmers at affordable prices. Our design-focused approach and
                     project execution processes help you
                     to deliver the right solutions.</p>
-                <a href="{{ url('contact') }}"><div class="btn">Let's Start</div></a>   
-                <a href="#"><div class="btn book_meeting">Book A Meeting</div></a>   
+                </div>
+                <a href="{{ url('contact') }}">
+                    <div class="btn">Let's Start</div>
+                </a>
+                <a href="#">
+                    <div class="btn book_meeting">Book A Meeting</div>
+                </a>
             </div>
         </div>
     </section>
@@ -202,6 +209,93 @@
             </div>
         </section>
         <!--==========================/About Us Section============================-->
+
+        <!--==========================Transalating Your Ideas Section============================-->
+        <section id="ideas_section">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Translating your ideas into reality.</h3>
+                    <p class="p-padding20">We work with companies large and small in the India and beyond. From
+                        sophisticated API-driven platforms to cutting-edge websites, we will assist you from concept to
+                        completion, bringing your ideas to life.</p>
+                </header>
+                <div class="row">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/laravel.svg') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>Laravel</h3>
+                                <p class="p-padding20">Laravel is our go-to back-end technology, Our impressive team of
+                                    talented developers has successfully finished over 30 projects. We deliver reliable and
+                                    high-performance solutions.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <a href="{{ route('backend.laravel') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/flutter.svg') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>Flutter</h3>
+                                <p class="p-padding20">The synergy of our seasoned onshore developers and our extensive
+                                    expertise has been the driving force behind our achievement in delivering over 50
+                                    tailor-made Flutter mobile applications.</p>
+                            </div>
+                            <div class="third-ideas mt-4">
+                                <a href="{{ route('mobile.flutter') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/react.svg') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>React</h3>
+                                <p class="p-padding20">Our exceptional team of developers has an impressive track record of
+                                    delivering over 45+ React projects with great success. At the moment, we are fully
+                                    immersed in tackling our most ambitious React project to date.</p>
+                            </div>
+                            <div class="third-ideas mt-4">
+                                <a href="{{ route('frontend.reactjs') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                        <div class="mb-4 p-4 ideas-sec-hover ideas-bg">
+                            <div class="first-ideas d-flex justify-content-center mb-5">
+                                <img src="{{ asset('assets/img/index/illustration/.net.svg') }}" alt="">
+                            </div>
+                            <div class="second-ideas">
+                                <h3>.Net</h3>
+                                <p class="p-padding20">We have a large range of brilliant developers who have successfully
+                                    completed more than 20 .NET projects. Currently, we are engaged in working on our
+                                    biggest project yet.</p>
+                            </div>
+                            <div class="third-ideas">
+                                <a href="{{ route('backend.dotnet') }}" target="_blank">
+                                    <div class="btn">View More</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--==========================Services Section============================-->
         <section id="services" class="section-bg">
             <div class="container">
@@ -338,23 +432,25 @@
 
 
             </div>
-            <div class="container-fluid">
-                <div class="row counters">
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $clients }}</span></h1>
-                        <p>Clients</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $projects }}</span></h1>
-                        <p>Projects</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $hours }}</span></h1>
-                        <p>Hours Of Support</p>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center media-query-by-p">
-                        <h1><span class="counter">{{ $employees }}</span></h1>
-                        <p>Hard Workers</p>
+            <div class="counter-bg">
+                <div class="container">
+                    <div class="row counters">
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $clients }}</span></h1>
+                            <p>Clients</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $projects }}</span></h1>
+                            <p>Projects</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $hours }}</span></h1>
+                            <p>Hours Of Support</p>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center media-query-by-p">
+                            <h1><span class="counter">{{ $employees }}</span></h1>
+                            <p>Hard Workers</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,111 +471,79 @@
                     <h3 class="h-paddingbottom30">Team</h3>
                 </div>
                 <div class="row">
-                    <section class="customer-logos mb-0 slider slik-container ">
-                        {{-- krishna --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/kp_img.webp') }}"
+                    <section class="customer-logos mb-0 slider slik-container">
+                        @foreach ($team_img as $team_images)
+                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/'. $team_images->image) }}"
                                 class="grid__item-img remove" alt="Image 3">
                         </div>
-                        {{-- chelsi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/cv_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 4">
-                        </div>
-                        {{-- rushikesh --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ra_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 5">
-                        </div>
-                        {{-- shivani --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ss_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 6">
-                        </div>
-                        {{-- shruti --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/sm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 1">
-                        </div>
-                        {{-- prachi --}}
-                        <div class="slide  side-img-p"><img src="{{ asset('assets/img/team/pd_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 7">
-                        </div>
-                        {{-- juli --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dj_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 8">
-                        </div>
-                        {{-- rutvik --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/rk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 10">
-                        </div>
-                        {{-- atul --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/am_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 11">
-                        </div>
-                        {{-- princi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/pm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 13">
-                        </div>
-                        {{-- nishtha --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/nb_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 14">
-                        </div>
-                        {{-- harmi --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/hv_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 16">
-                        </div>
-                        {{-- dipesh --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/db_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 17">
-                        </div>
-                        {{-- divya --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dt_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 18">
-                        </div>
-                        {{-- chirag --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/cs_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- parth --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/pak_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- harshit --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/hm_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- dhruv --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/dk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- ankita --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ag_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- janvi --}}
-                        {{-- mansi --}}
-                        {{-- jenil --}}
-                        {{-- darshna --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/td_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- vishal --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/vk_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- shreya --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/srs_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- meet --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/md_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- dhruvi --}}
-                        {{-- mukund --}}
-                        {{-- archit --}}
-                        <div class="slide side-img-p"><img src="{{ asset('assets/img/team/ma_img.webp') }}"
-                                class="grid__item-img remove" alt="Image 19">
-                        </div>
-                        {{-- keval --}}
-                        {{-- zeel --}}
+                        @endforeach
                     </section>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/manav.jpg" class="img-fluid remove" alt="manav-kanpariya">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Manav Kanpariya</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://mobile.twitter.com/manav_kanpariya"><i
+                                                class="fa fa-twitter"></i></a>
+                                        <a href="https://m.facebook.com/profile.php?id=100005575876256"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/mr_kanpariya?igshid=YmMyMTA2M2Y="><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a
+                                            href="https://www.linkedin.com/in/manav-kanpariya-8488a4193/?originalSubdomain=in"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/brijesh.webp" class="img-fluid remove" alt="brijesh-goyani">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Brijesh Goyani</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://twitter.com/goyani_brijesh"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/brijesh.goyani.24"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/brijesh_goyani?igshid=gpyxfim09pem"><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/in/brijesh-goyani-497969189/"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp data" data-wow-delay="0.3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="member">
+                            <img src="assets/img/index/team/ravi.webp" class="img-fluid remove" alt="ravi-sheladiya">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ravi Sheladiya</h4>
+                                    <span>Director</span>
+                                    <div class="social">
+                                        <a href="https://twitter.com/ravisheladiya1?s=21&amp;t=bOsNGPQFR5Pp3yzzcnsVug"><i
+                                                class="fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/ravi.sheladiya1?mibextid=LQQJ4d"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a href="https://instagram.com/ravi__s?igshid=MzRlODBiNWFlZA=="><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a href="http://www.linkedin.com/in/ravisheladiya"><i
+                                                class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -544,7 +608,7 @@
                     }
                 }
             </style>
-           
+
             <link rel="stylesheet" type="text/css"
                 href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
             <link rel="stylesheet" type="text/css"
@@ -591,7 +655,7 @@
                     <div class="section-header">
                         <h3 class="h-paddingbottom30">Our Clients</h3>
                     </div>
-                    <div class="customer-logos slider">
+                    <div class="customer-logos1 slider">
                         @foreach ($our_client as $client)
                             <a href="{{ $client->link ? $client->link : '#' }}">
                                 <div class="slide"><img src="{{ asset('assets/img/index/clients/' . $client->image) }}"
@@ -647,7 +711,43 @@
             $(document).ready(function() {
                 $('.customer-logos').slick({
                     slidesToShow: 6,
-                    slidesToScroll: 1,
+                    slidesToScroll: 5,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+
+                    responsive: [{
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 5,
+                                autoplaySpeed: 700,
+                                slidesToScroll:5,
+                            }
+                        },
+                        {
+                            breakpoint: 992,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 4,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                autoplaySpeed: 700,
+                            }
+                        }
+                    ]
+                });
+            });
+            $(document).ready(function() {
+                $('.customer-logos1').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 5,
                     autoplay: true,
                     autoplaySpeed: 1500,
                     arrows: false,
@@ -657,19 +757,24 @@
                     responsive: [{
                             breakpoint: 1200,
                             settings: {
-                                slidesToShow: 5
+                                slidesToShow: 5,
+                                slidesToScroll: 5,
                             }
                         },
                         {
                             breakpoint: 992,
                             settings: {
-                                slidesToShow: 4
+                                slidesToShow: 4,
+                                slidesToScroll: 4,
+
                             }
                         },
                         {
                             breakpoint: 768,
                             settings: {
-                                slidesToShow: 3
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+
                             }
                         }
                     ]

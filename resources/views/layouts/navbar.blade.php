@@ -92,7 +92,7 @@
 
                                 </li>
                                 <li class="menu-item ">
-                                    <a href="/team" aria-label="Team Page"> Team</a>
+                                    <a href="/#team" aria-label="Team Page"> Team</a>
 
                                 </li>
                                 <li class="menu-item has-children mega-menu">
@@ -239,6 +239,9 @@
         <style>
             li.activeJs a {
     color: #0576EB !important;
+}
+ul.sub-menu a {
+    color: #111!important;
 }
         </style>
         <!--Off Canvas Navigation Start-->

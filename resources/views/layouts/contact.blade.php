@@ -5,7 +5,6 @@
         overflow: hidden;
         position: relative;
     }
-
 </style>
 
 <div class="contain">
@@ -20,20 +19,23 @@
             <div class="info">
                 <div class="information">
                     <img src="https://img.icons8.com/cute-clipart/36/4a90e2/globe.png" />
-                    <!-- <img src="img/location.png" class="icon" alt="" /> -->
-                    <p> 303-305, Golden Square, besides DMart, Mota Varachha, Surat, Gujarat-394101, India.</p>
+
+                    <p> Headquarter - USA <br>
+                        Branch - Surat, India | Ahmedabad, India.</p>
                 </div>
                 <div class="information">
                     <img src="https://img.icons8.com/cute-clipart/36/4a90e2/apple-mail.png" />
-                    <!-- <img src="img/email.png" class="icon" alt="" /> -->
-                    <p style="white-space: pre-line;"> social@webitoinfotech.com
+
+                    <p style="white-space: pre-line;"><a href="mailto:social@webitoinfotech.com" target="_blank" style="margin-top: -15px;">
+                            social@webitoinfotech.com</a>
                         webitoinfotech.com</p>
                 </div>
                 <div class="information">
                     <img src="https://img.icons8.com/cute-clipart/36/4a90e2/ringing-phone.png" />
-                    <!-- <img src="img/phone.png" class="icon" alt="" /> -->
-                    <p> +91 97242 59460 <br>
-                        +91 86905 86753</p>
+
+                    <p> <a href="tel:9724259460">+91 97242 59460</a> <br>
+                        <a href="tel:8690586753">+91 86905 86753</a>
+                    </p>
                 </div>
             </div>
             <div class="social-media">
@@ -48,7 +50,8 @@
                     <a href="https://instagram.com/webitoinfotech?igshid=YmMyMTA2M2Y=" target="_blank">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/webito-infotech/mycompany/?viewAsMember=true" target="_blank">
+                    <a href="https://www.linkedin.com/company/webito-infotech/mycompany/?viewAsMember=true"
+                        target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -66,17 +69,19 @@
                     </div>
                 @endif
                 <div class="input-contain">
-                    <input type="text" name="name" class="input" autocomplete="off" required/>
+                    <input type="text" name="name" class="input" autocomplete="off" required />
                     <label for="name" class="bg_contact">Username</label>
                     <span>Username</span>
                 </div>
                 <div class="input-contain">
-                    <input type="email" name="email" class="input" autocomplete="off"   required />
+                    <input type="email" name="email" class="input" autocomplete="off" required />
                     <label for="email" class="bg_contact">Email</label>
                     <span>Email</span>
                 </div>
                 <div class="input-contain">
-                    <input type="tel" minlength="10" maxlength="10" title="10 digit mobile number" onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));" name="phone" class="input" autocomplete="off" required/>
+                    <input type="tel" minlength="10" maxlength="10" title="10 digit mobile number"
+                        onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));"
+                        name="phone" class="input" autocomplete="off" required />
                     <label for="phone" class="bg_contact">Phone</label>
                     <span>Phone</span>
                 </div>

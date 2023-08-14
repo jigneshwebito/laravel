@@ -149,7 +149,9 @@ input[type="number"] {
 #scrollUp {
     bottom: 30px;
     right: 16px;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
+    border-radius:8px;
+    padding: 10px 14px;
     text-align: center;
     cursor: pointer;
     border: 2px solid #83c3ff;
