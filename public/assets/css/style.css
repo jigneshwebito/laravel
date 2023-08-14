@@ -3655,7 +3655,8 @@ button.active li:nth-child(5) {
     /* border-radius:22px; */
 }
 .whatsappIcon img{
-    height: 4.5rem;
+    /* height: 4.5rem; */
+    height:59px;
     margin-right: -4px;
 }
 .whatsappIcon i{
@@ -3870,7 +3871,10 @@ background:var(--color-7);
 #ideas_section .first-ideas img{
     height: 11rem;
 }
-
+#ideas_section p{
+    font-size: 16px;
+    line-height: 24px;
+}
 .ideas-sec-hover:hover{
     background: white;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.15);
@@ -3892,9 +3896,9 @@ body.dark-mode .counter-bg{
     background-color:var(--color-5);
     /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
 } 
-#ideas_section p{
-    font-size: 14px;
-    line-height: 24px;
+#about{
+    background: var(--color-11);
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* .color-grey{

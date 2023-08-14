@@ -32,13 +32,13 @@
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
-                        <p class="text-break">
+                        <p class="text-break" style="font-weight: 700;">
                             Headquarter - USA <br>    
                             Branch - Surat, India | Ahmedabad, India. <br>
-                        <strong>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 52px;">
-                        +91 9724259460</a><br></strong>
-                        <strong style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
-                        <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></strong> <br>
+                        <div>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 47px;">
+                        +91 9724259460</a><br></div>
+                        <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
+                        <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></div> <br>
                         </p>
                         <div class="social-links">
                         <a href="https://www.instagram.com/webitoinfotech/" target="blank" class="instagram"><i class="fa fa-instagram"></i></a>

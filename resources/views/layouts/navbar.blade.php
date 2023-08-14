@@ -92,7 +92,7 @@
 
                                 </li>
                                 <li class="menu-item ">
-                                    <a href="/team" aria-label="Team Page"> Team</a>
+                                    <a href="/#team" aria-label="Team Page"> Team</a>
 
                                 </li>
                                 <li class="menu-item has-children mega-menu">

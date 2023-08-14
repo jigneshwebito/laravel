@@ -713,7 +713,7 @@
                     slidesToShow: 6,
                     slidesToScroll: 5,
                     autoplay: true,
-                    autoplaySpeed: 700,
+                    autoplaySpeed: 2000,
                     arrows: false,
                     dots: false,
                     pauseOnHover: false,
@@ -722,6 +722,7 @@
                             breakpoint: 1200,
                             settings: {
                                 slidesToShow: 5,
+                                autoplaySpeed: 700,
                                 slidesToScroll:5,
                             }
                         },
@@ -737,7 +738,7 @@
                             settings: {
                                 slidesToShow: 3,
                                 slidesToScroll: 3,
-                                autoplaySpeed: 2000,
+                                autoplaySpeed: 700,
                             }
                         }
                     ]
