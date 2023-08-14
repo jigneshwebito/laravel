@@ -176,11 +176,13 @@
             </div>
             <div class="intro-content left">
                 <h2>We are here to grow your business</h2>
-                <p class="p-margin20">We deliver web and mobile app development services to global businesses since 2020,
+                <div class="section-header">
+                <p class="p-margin20 text-left mt-3">We deliver web and mobile app development services to global businesses since 2020,
                     with 100% project
                     delivery success. Hire the best programmers at affordable prices. Our design-focused approach and
                     project execution processes help you
                     to deliver the right solutions.</p>
+                </div>
                 <a href="{{ url('contact') }}">
                     <div class="btn">Let's Start</div>
                 </a>

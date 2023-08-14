@@ -3892,3 +3892,11 @@ body.dark-mode .counter-bg{
     background-color:var(--color-5);
     /* box-shadow: inset 0px 0px 12px 0px rgb(0 0 0 / 10%); */
 } 
+#ideas_section p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* .color-grey{
+    color: var(--color-10);
+} */
