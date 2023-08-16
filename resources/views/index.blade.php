@@ -213,7 +213,7 @@
         <!--==========================Transalating Your Ideas Section============================-->
         <section id="ideas_section">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header pt-4">
                     <h3>Translating your ideas into reality.</h3>
                     <p class="p-padding20">We work with companies large and small in the India and beyond. From
                         sophisticated API-driven platforms to cutting-edge websites, we will assist you from concept to
