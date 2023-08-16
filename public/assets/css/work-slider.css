@@ -223,11 +223,11 @@
 }
 
 .marvel-container.spiderman {
-  background-color: var(--captain-light-background);
+  background-color: var(--captain-light-background)
 }
 
 .marvel-container.spiderman .img-container .img-wrapper .background::after {
-  background-color: var(--captain-dark-background);
+  background-color: var(--captain-dark-background)
 }
 
 .marvel-container.spiderman .purchase .purchase-btn {
@@ -236,11 +236,11 @@
 }
 
 .marvel-container.ironman {
-  background-color: var(--captain-light-background);
+  background-color: var(--captain-light-background)
 }
 
 .marvel-container.ironman .img-container .img-wrapper .background::after {
-  background-color: var(--captain-dark-background);
+  background-color: var(--captain-dark-background)
 }
 
 .marvel-container.ironman .purchase .purchase-btn {
@@ -249,11 +249,11 @@
 }
 
 .marvel-container.captain {
-  background-color: var(--captain-light-background);
+  background-color: var(--captain-light-background)
 }
 
 .marvel-container.captain .img-container .img-wrapper .background::after {
-  background-color: var(--captain-dark-background);
+  background-color: var(--captain-dark-background)
 }
 
 .marvel-container.captain .purchase .purchase-btn {
@@ -363,8 +363,7 @@
 
 @media only screen and (min-width: 1200px) {
   .mr-l {
-      background: ;
-      /* margin-left:115px; */
+      background:;
       margin-bottom: 35px
   }
 }

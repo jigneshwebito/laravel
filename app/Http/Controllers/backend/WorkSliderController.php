@@ -80,7 +80,7 @@ class WorkSliderController extends Controller
         // dd($request->all());
         $path = $request->profile_image;
         $image_name = str_replace('C:\fakepath\\', '', $path);
-        dd($image_name);
+        // dd($image_name);
         $folderPath = public_path('assets/img/index/work-slider/');
 
         $image_parts = explode(";base64,", $request->image);
@@ -112,11 +112,9 @@ class WorkSliderController extends Controller
     }
     public function ClientsStore(Request $request)
     {
-        // try {
+        try {
             $image_name = $request->Profile_image_card;
-            // dd($path);
-            // $image_name = str_replace('C:\fakepath\\', '', $path);
-            // dd($image_name);
+           
             $saveFile = new  WorkSlider;
             //PROFILE FRONT IMAGE
             if ($request->Profile_image_card) {
@@ -124,7 +122,7 @@ class WorkSliderController extends Controller
                 $file_image_rename = str_replace(' ', '_', $file_image);
                 $image_name = date('YmdHi') . $image_name->getClientOriginalName();
                 $file1 = $file_image->move(public_path('/assets/img/Portfolio/app/'), $image_name);
-                // $inputs['profile_photo'] = $image_name;
+               
                 $saveFile->image = $image_name;
             } else {
                 $saveFile->image = null;
@@ -134,10 +132,9 @@ class WorkSliderController extends Controller
             $saveFile->review = $request->review;
             $saveFile->save();
             return redirect('/work-slider');
-            // return Response::json(array('success' => true));
-        // } catch (\Throwable $th) {
-        //     return Response::json(array('success' => 408));
-        // }
+        } catch (\Throwable $th) {
+            return redirect('/work-slider');
+        }
     }
 
     /**
@@ -176,42 +173,31 @@ class WorkSliderController extends Controller
     public function update(Request $request)
     {
         try {
-
             $saveFile = [];
-            //  $saveFile->name = $imageName;
-
+            $image_name = $request->Profile_image_card;
+           
+           
             //PROFILE FRONT IMAGE
-            if ($request->p_image && $request->p_imagePathProfileFront) {
-                $original_image_parts = explode(";base64,", $request->p_imagePathProfileFront);
-                $original_image_base64 = base64_decode($original_image_parts[1]);
-                $imageDimension = getimagesizefromstring($original_image_base64);
-
-                if ($imageDimension[0] > 500 && $imageDimension[1] > 500) {
-                    $imagePath  = Image::make($request->p_imagePathProfileFront)->resize(500, 500)->encode('data-url');
-                    $imageArr = explode(";base64,", $imagePath);
-                    $data = base64_decode($imageArr[1]);
-                } else {
-                    $imageArr = explode(";base64,",  $request->p_imagePathProfileFront);
-                    $data = $original_image_base64;
-                }
-
-                $extension = explode("image/", $imageArr[0]);
-                $original_name = 3 . '-' . uniqid() . '.' . $extension[1];
-
-                $imageName = public_path('/assets/img/Portfolio/app/' . $original_name);
-
-                file_put_contents($imageName, $data);
-
-                $saveFile['image'] = $original_name;
+            if ($request->Profile_image_card) {
+                $file_image = $request->file('Profile_image_card');
+                $file_image_rename = str_replace(' ', '_', $file_image);
+                $image_name = date('YmdHi') . $image_name->getClientOriginalName();
+                $file1 = $file_image->move(public_path('/assets/img/Portfolio/app/'), $image_name);
+               
+                $saveFile['image'] = $image_name;
+            } else {
+                $saveFile['image'] = null;
             }
             $saveFile['name'] = $request->name;
             $saveFile['year'] = $request->year;
             $saveFile['review'] = $request->review;
-            WorkSlider::where('id', $request->id)->update($saveFile);
+            WorkSlider::where('id', $request->work_id)->update($saveFile);
 
-            return Response::json(array('success' => true));
+            return redirect('/work-slider');
+
         } catch (\Throwable $th) {
-            return Response::json(array('success' => 408));
+            return redirect('/work-slider');
+
         }
     }
 
