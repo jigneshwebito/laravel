@@ -13,8 +13,8 @@
 <meta name="keywords" content="@yield('meta-keyword')">
 <meta property="og:title" content="@yield('meta-title')">
 <meta property="og:description" content="@yield('meta-description')">
-<meta property="og:image" content="https://staging.webitoinfotech.com/public/assets/img/index/logo/logo.png">
-<meta property="og:site_name" content="https://staging.webitoinfotech.com/">
+<meta property="og:image" content="{{ asset('assets/img/index/logo/logo.png') }}">
+<meta property="og:site_name" content="{{ env('APP_URL') }}">
 <meta property="og:image:height" content="185">
 <meta name="robots" content="INDEX,FOLLOW" />
 
