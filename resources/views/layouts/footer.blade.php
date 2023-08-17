@@ -33,10 +33,10 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Me</h4>
                         <p class="text-break" style="font-weight: 700;">
-                            Headquarter - USA <br>    
-                            Branch - Surat, India | Ahmedabad, India. <br>
-                        <div>Phone:<a href="tel:8690586753"> +91 8690586753</a> / <br><a href="tel:9724259460" style="padding-left: 47px;">
-                        +91 9724259460</a><br></div>
+                            Headquatered - New Jersey, <br>    
+                            United States. <br>
+                        <div>Phone:<a href="tel:8690586753"> +91 8690586753</a>  <br><a href="tel:+1 (512) 954-4288" style="padding-left: 47px;">
+                            +1 (512) 954-4288</a><br></div>
                         <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
                         <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></div> <br>
                         </p>
@@ -61,9 +61,9 @@
         </div>
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><a href="https://webitoinfotech.com/" target="_blank"
-                        class="footer-copywritelink">WEBITO INFOTECH PRIVATE LIMITED</a></strong>. All
-                Rights Reserved
+                &copy; <span
+                class="copyright-year"></span> <strong><a href="https://webitoinfotech.com/" target="_blank"
+                        class="footer-copywritelink">WEBITO INFOTECH</a></strong>. All Rights Reserved. Various trademarks held by their respective owners.
             </div>
         </div>
     </footer>
@@ -116,6 +116,9 @@
 // function redirectLinks(url) {
 //     window.location.href = url;
 // }
+let date =  new Date().getFullYear();
+console.log(date);
+$('.copyright-year').text(date);
 $(document).ready(function() {
     var open = false;
 
