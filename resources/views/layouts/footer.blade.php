@@ -45,6 +45,9 @@
                         <a href="https://in.linkedin.com/company/webito-infotech" target="blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
                         <a href="https://twitter.com/InfotechWebito" target="blank" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/webitoinfotech" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://cardddle.com/" target="blank" class="cardddle">                        
+                            <img src="{{ asset('assets/img/index/illustration/cardddle.png') }}" alt="cardddle" style="height: 1.3rem;">
+                        </a>
                         </div>
                         </div>
                     <div class="col-lg-3 col-md-6 footer-newsletter">
