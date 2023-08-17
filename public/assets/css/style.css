@@ -3867,10 +3867,10 @@ background:var(--color-7);
     font-weight: 600;
     border: 2px solid white;
 }
-
+/* 
 #ideas_section .first-ideas img{
     height: 11rem;
-}
+} */
 #ideas_section p{
     font-size: 16px;
     line-height: 24px;
