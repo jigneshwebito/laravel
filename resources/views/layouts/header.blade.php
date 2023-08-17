@@ -72,7 +72,7 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 <!-- local css -->
 <link href="{{ asset('assets/css/contact.css?556') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/style.css?901') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/navbar-style.css?388') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/navbar-style.css') }}?{{ filemtime(public_path('assets/css/navbar-style.css')) }}" rel="stylesheet">
 
 <!-- fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
