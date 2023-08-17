@@ -88,7 +88,6 @@ class pagesController extends Controller
 
         $localIP = getHostByName(getHostName());
         $getData = count(personal_info::where('time', '>=', Carbon::now()->subMinutes(5)->toDateTimeString())->where('ip', $localIP)->get());
-        // dd($getData);
         $data['getData'] = $getData;
         $getItemsOneDay = personal_info::where('ip', $localIP)->where('time', '>=', Carbon::now()->subdays(1))->get();
         return view('career.hiring')->with($data, $getItemsOneDay);
@@ -97,7 +96,9 @@ class pagesController extends Controller
     //team pages//
     public function teampage()
     {
-        return view('team.team');
+        $data['senior'] = Employee::Where('position',1)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
+        $data['junior'] = Employee::Where('position',2)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
+        return view('team.team')->with($data);
     }
 
     //policy pages//
