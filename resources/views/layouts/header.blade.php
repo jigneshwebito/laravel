@@ -51,8 +51,8 @@
 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> --}}
 {{-- <script src="https://demo.hasthemes.com/pustok-preview/pustok/js/plugins.js"></script> --}}
 <!-- Favicons -->
-<link href="{{ asset('assets/img/index/logo/favicon-2.png') }}" rel="icon">
-<link href="{{ asset('assets/img/index/logo/favicon-1.png') }}" rel="webito">
+<link rel="icon" href="{{ asset('assets/img/index/logo/favicon-2.png') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('assets/img/index/logo/favicon-1.png') }}" type="image/x-icon">
 
 <script src="{{ asset('https://kit.fontawesome.com/a076d05399.js') }}"></script>
 <script src="{{ asset('assets/js/pustok.min.js') }}"></script>
