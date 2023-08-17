@@ -474,7 +474,7 @@
                     <section class="customer-logos mb-0 slider slik-container">
                         @foreach ($team_img as $team_images)
                         <div class="slide side-img-p"><img src="{{ asset('assets/img/team/'. $team_images->image) }}"
-                                class="grid__item-img remove" alt="Image 3">
+                                class="grid__item-img remove" alt="{{$team_images->image}}">
                         </div>
                         @endforeach
                     </section>
