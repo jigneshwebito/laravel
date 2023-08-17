@@ -176,14 +176,14 @@
             </div>
             <div class="intro-content left">
                 <h2>We are here to grow your business</h2>
-                <div class="section-header">
+                <div class="section-header mb-4">
                 <p class="p-margin20 text-left mt-3">We deliver web and mobile app development services to global businesses since 2020,
                     with 100% project
                     delivery success. Hire the best programmers at affordable prices. Our design-focused approach and
                     project execution processes help you
                     to deliver the right solutions.</p>
                 </div>
-                <a href="{{ url('contact') }}">
+                <a href="{{ url('contact') }}" class="mr-3">
                     <div class="btn">Let's Start</div>
                 </a>
                 <a href="#">
@@ -213,7 +213,7 @@
         <!--==========================Transalating Your Ideas Section============================-->
         <section id="ideas_section">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header pt-4">
                     <h3>Translating your ideas into reality.</h3>
                     <p class="p-padding20">We work with companies large and small in the India and beyond. From
                         sophisticated API-driven platforms to cutting-edge websites, we will assist you from concept to
@@ -391,7 +391,7 @@
                     <p>Have an idea? Work with us and see how it goes. We promise to go the extra mile for every project
                         that we take onboard.</p>
                 </header>
-                <div class="row row-eq-height justify-content-center">
+                <div class="row row-eq-height justify-content-center mt-5">
                     <div class="col-lg-4 mb-4">
                         <div class="card wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
                             <i class="card-wow" aria-hidden="true"><img
@@ -481,7 +481,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp"
                         style="visibility: visible; animation-name: fadeInUp;">
                         <div class="member">
-                            <img src="assets/img/index/team/manav.jpg" class="img-fluid remove" alt="manav-kanpariya">
+                            <img src="{{ asset('assets/img/index/team/manav.jpg') }}" class="img-fluid remove" alt="manav-kanpariya">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Manav Kanpariya</h4>
@@ -504,7 +504,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp" data-wow-delay="0.2s"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                         <div class="member">
-                            <img src="assets/img/index/team/brijesh.webp" class="img-fluid remove" alt="brijesh-goyani">
+                            <img src="{{ asset('assets/img/index/team/brijesh.webp') }}" class="img-fluid remove" alt="brijesh-goyani">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Brijesh Goyani</h4>
@@ -525,7 +525,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-4 wow fadeInUp data" data-wow-delay="0.3s"
                         style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
                         <div class="member">
-                            <img src="assets/img/index/team/ravi.webp" class="img-fluid remove" alt="ravi-sheladiya">
+                            <img src="{{ asset('assets/img/index/team/ravi.webp') }}" class="img-fluid remove" alt="ravi-sheladiya">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Ravi Sheladiya</h4>
@@ -738,7 +738,7 @@
                             settings: {
                                 slidesToShow: 3,
                                 slidesToScroll: 3,
-                                autoplaySpeed: 700,
+                                autoplaySpeed: 1500,
                             }
                         }
                     ]

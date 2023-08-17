@@ -68,7 +68,7 @@ button:focus {
     position: relative;
 }
 body.dark-mode .bg_contact{
-    color: var(--color-5);
+    color: white;
 }
 .bg_contact{
     color: #fff;
@@ -125,8 +125,8 @@ body.dark-mode .bg_contact{
     margin: 1rem 0;
 }
 body.dark-mode .input{
-    border: 2px solid var(--color-5);
-    color: var(--color-5);
+    border: 2px solid white;
+    color: white;
 
 
 }
@@ -171,8 +171,8 @@ textarea.input {
     transform: translateY(0);
 }
 body.dark-mode .btn{
-    background-color: var(--color-5);
-    border:2px solid var(--color-5);
+    background-color: white;
+    border:2px solid white;
 
 }
 .btn {

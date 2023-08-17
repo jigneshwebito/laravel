@@ -339,7 +339,7 @@ ul.sub-menu a {
 
                             <li><a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"> Portfolio</a>
                             </li>
-                            <li><a href="/team" aria-label="Team Page">Team</a>
+                            <li><a href="/#team" aria-label="Team Page">Team</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="/technology">Technology</a>

@@ -32,9 +32,11 @@
     </style>
     <div class="content-wrapper">
         <div class="container-full">
+            <form action="/work-slider/update" method="POST" enctype="multipart/form-data">
+                @csrf
             <section class="content">
 
-
+                <input type="hidden" name="work_id" value="{{ $tm->id }}">
                 <span class="profile_image_preview_span">
                     <img class="profile_front_image_preview" src="" style="height: 100px;" />
                 </span>
@@ -63,11 +65,11 @@
                 </script> --}}
 
 
-                <button type='button' class="btn btn-primary" id="save1"
-                    onclick="pageRedirectProfileUpdate()">Save</button>
+                <button type='submit' class="btn btn-primary" id="save1">Save</button>
             </section>
+            </form>
 
-            <div class="modal fade" id="profile_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+            {{-- <div class="modal fade" id="profile_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
                 aria-hidden="true" data-backdrop="static" data-keyboard="false">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -99,11 +101,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
-    <script>
+    {{-- <script>
         function pageRedirectProfileUpdate() {
 
             var profile_image = $('#Profile_image_card').val();
@@ -238,5 +240,5 @@
                 $('#Profile_image_card').val('');
             }
         });
-    </script>
+    </script> --}}
 @endsection

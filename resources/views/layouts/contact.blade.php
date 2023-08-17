@@ -54,6 +54,10 @@
                         target="_blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
+                    <a href="https://cardddle.com/"
+                        target="_blank">
+                        <img src="{{ asset('assets/img/index/illustration/cardddle.png') }}" alt="" style="height: 1.4rem;">
+                    </a>
                 </div>
             </div>
         </div>
