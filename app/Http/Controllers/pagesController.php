@@ -96,9 +96,16 @@ class pagesController extends Controller
     //team pages//
     public function teampage()
     {
-        $data['senior'] = Employee::Where('position',1)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
-        $data['junior'] = Employee::Where('position',2)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
-        $data['freshers'] = Employee::Where('position',3)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
+        $data['senior'] = Employee::Where('position',1)->whereNull('deleted_at')->get();
+        $data['junior'] = Employee::Where('position',2)->whereNull('deleted_at')->get();
+        $data['freshers'] = Employee::Where('position',3)->whereNull('deleted_at')->get();
+        $data['junior-freshers-count'] = Employee::where('position',2)->OrWhere('position',3)->whereNull('deleted_at')->count();
+
+        $totalCount = $data['junior-freshers-count'];
+        $firstHalfCount = ceil($totalCount / 2);
+        $secondHalfCount = $totalCount - $firstHalfCount;
+        $data['thirdCircle'] = Employee::where([['position',2],['deleted_at',null]])->OrWhere([['position',3],['deleted_at',null]])->take($firstHalfCount)->get();
+        $data['fourCircle'] = Employee::where([['position',2],['deleted_at',null]])->OrWhere([['position',3],['deleted_at',null]])->skip($firstHalfCount)->take($secondHalfCount)->get();
         return view('team.team')->with($data);
     }
 

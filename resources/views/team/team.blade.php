@@ -131,7 +131,7 @@
                         <div class="junior_employee"></div>
                         <div class="juniorCircle">
                             <div class="thirdCircle">
-                                @foreach ($junior as $key=> $junior_images)
+                                @foreach ($thirdCircle as $key=> $junior_images)
                                 <div class="shadow_effect seniorItem itemsEMP itemEMP1" datatab="{{$key+1}}">
                                     <img src="{{ asset('assets/img/team/'.$junior_images->image) }}"
                                         class="img-fluid avatar-xxl rounded-circle user_img_left
@@ -150,7 +150,7 @@
                         <div class="office_employee"></div>
                         <div class="employeeCircle">
                             <div class="fourthCircle">
-                                @foreach ($freshers as $key=> $freshers_images)
+                                @foreach ($fourCircle as $key=> $freshers_images)
                                 <div class="shadow_effect seniorItem itemEMP
                                         itemEMP1"
                                     datatab="{{$key+1}}">

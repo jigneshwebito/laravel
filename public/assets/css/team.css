@@ -39,14 +39,14 @@ body {
 
 a {
     /* text-decoration: underline; */
-    color: var(--color-link);
+    /* color: var(--color-link); */
     outline: none;
 }
 
 a:focus,
 a:hover {
-    text-decoration: none;
-    color: var(--color-link-hover);
+    /* text-decoration: none; */
+    /* color: var(--color-link-hover); */
     outline: none;
 }
 
