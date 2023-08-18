@@ -36,10 +36,10 @@
                             Headquatered - New Jersey, <br>    
                             United States.<br>
                             Branch - Surat, India | Ahmedabad, India. <br>
-                        <div>Phone:<a href="tel:8690586753"> +91 8690586753</a>  <br><a href="tel:+1 (512) 954-4288" style="padding-left: 47px;">
+                        <div>Phone : <a href="tel:8690586753"> +91 8690586753</a>  <br><a href="tel:+1 (512) 954-4288" style="padding-left: 54px;">
                             +1 (512) 954-4288</a><br></div>
-                        <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email:
-                        <a href="mailto:social@webitoinfotech.com" target="_blank">social@webitoinfotech.com</a></div> <br>
+                        <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email :
+                        <a href="mailto:social@webitoinfotech.com" target="_blank"> social@webitoinfotech.com</a></div> <br>
                         </p>
                         <div class="social-links">
                         <a href="https://www.instagram.com/webitoinfotech/" target="blank" class="instagram"><i class="fa fa-instagram"></i></a>
