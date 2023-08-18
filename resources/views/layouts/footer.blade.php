@@ -36,7 +36,7 @@
                             Headquatered - New Jersey, <br>    
                             United States.<br>
                             Branch - Surat, India | Ahmedabad, India. <br>
-                        <div>Phone : <a href="tel:8690586753"> +91 8690586753</a>  <br><a href="tel:+1 (512) 954-4288" style="padding-left: 54px;">
+                        <div class="mt-2">Phone : <a href="tel:8690586753"> +91 8690586753</a>  <br><a href="tel:+1 (512) 954-4288" style="padding-left: 54px;">
                             +1 (512) 954-4288</a><br></div>
                         <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Email :
                         <a href="mailto:social@webitoinfotech.com" target="_blank"> social@webitoinfotech.com</a></div> <br>
@@ -46,9 +46,9 @@
                         <a href="https://in.linkedin.com/company/webito-infotech" target="blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
                         <a href="https://twitter.com/InfotechWebito" target="blank" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/webitoinfotech" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://cardddle.com/" target="blank" class="cardddle">                        
+                        {{-- <a href="https://cardddle.com/" target="blank" class="cardddle">                        
                             <img src="{{ asset('assets/img/index/illustration/cardddle.png') }}" alt="cardddle" style="height: 1.6rem;">
-                        </a>
+                        </a> --}}
                         </div>
                         </div>
                     <div class="col-lg-3 col-md-6 footer-newsletter">
