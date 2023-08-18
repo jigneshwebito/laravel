@@ -47,7 +47,7 @@
                         <a href="https://twitter.com/InfotechWebito" target="blank" class="twitter"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/webitoinfotech" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="https://cardddle.com/" target="blank" class="cardddle">                        
-                            <img src="{{ asset('assets/img/index/illustration/cardddle.svg') }}" alt="cardddle" style="width: 2rem;">
+                            <img src="{{ asset('assets/img/index/illustration/cardddle.png') }}" alt="cardddle" style="height: 1.6rem;">
                         </a>
                         </div>
                         </div>
