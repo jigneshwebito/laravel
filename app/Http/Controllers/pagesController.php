@@ -98,6 +98,7 @@ class pagesController extends Controller
     {
         $data['senior'] = Employee::Where('position',1)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
         $data['junior'] = Employee::Where('position',2)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
+        $data['freshers'] = Employee::Where('position',3)->whereNull('deleted_at')->orderBy('position', 'ASC')->get();
         return view('team.team')->with($data);
     }
 
