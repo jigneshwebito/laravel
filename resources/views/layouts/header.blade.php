@@ -51,8 +51,8 @@
 integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> --}}
 {{-- <script src="https://demo.hasthemes.com/pustok-preview/pustok/js/plugins.js"></script> --}}
 <!-- Favicons -->
-<link href="{{ asset('assets/img/index/logo/favicon-2.png') }}" rel="icon">
-<link href="{{ asset('assets/img/index/logo/favicon-1.png') }}" rel="webito">
+<link rel="icon" href="{{ asset('assets/img/index/logo/favicon-2.png') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('assets/img/index/logo/favicon-1.png') }}" type="image/x-icon">
 
 <script src="{{ asset('https://kit.fontawesome.com/a076d05399.js') }}"></script>
 <script src="{{ asset('assets/js/pustok.min.js') }}"></script>
@@ -72,7 +72,7 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 <!-- local css -->
 <link href="{{ asset('assets/css/contact.css?556') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/style.css?901') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/navbar-style.css?388') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/navbar-style.css') }}?{{ filemtime(public_path('assets/css/navbar-style.css')) }}" rel="stylesheet">
 
 <!-- fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">

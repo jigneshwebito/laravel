@@ -1,7 +1,8 @@
 @extends('master')
 @section('title', 'Team - Webito Infotech')
 
-@section('meta-description', 'Meet the talented and dedicated team of experts behind Webitoinfotech.com. Our team brings together a wealth of experience and knowledge.')
+@section('meta-description', 'Meet the talented and dedicated team of experts behind Webitoinfotech.com. Our team brings
+    together a wealth of experience and knowledge.')
 @section('meta-url', 'https://webitoinfotech.com/team')
 @section('meta-keyword', 'Team - Webito Infotech')
 @section('meta-title', 'Team - Webito Infotech')
@@ -59,9 +60,11 @@
 
                     <!-- Brand LOGO -->
                     <div class="brand_icon ">
-                        <img src="{{ asset('assets/img/team/fire_gif.gif') }}" class="img-fluid
+                        <img src="{{ asset('assets/img/team/fire_gif.gif') }}"
+                            class="img-fluid
                                 fire_gif" alt="">
-                        <img src="{{ asset('assets/img/team/logo.png') }}" class="img-fluid
+                        <img src="{{ asset('assets/img/team/logo.png') }}"
+                            class="img-fluid
                                 brand_logo" alt="">
                     </div>
                     <!-- End Brand LOGO -->
@@ -72,21 +75,30 @@
                         <div class="ceo_Circle">
                             <div class="firstCircle">
                                 <div class="shadow_effect seniorItem
-                                        item_Dot itemDot_1" data_tab="1" onmouseenter="func()" onmouseleave="func2()">
-                                    <img src="{{ asset('assets/img/team/ra_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
+                                        item_Dot itemDot_1"
+                                    data_tab="1" onmouseenter="func()" onmouseleave="func2()">
+                                    <img src="{{ asset('assets/img/index/team/brijesh.webp') }}"
+                                        class="img-fluid avatar-xxl rounded-circle user_img_left
+                                            senior_emp"
+                                        alt="seniorEMP">
                                 </div>
 
                                 <div class="shadow_effect seniorItem
-                                        item_Dot itemDot_2" data_tab="2" onmouseenter="func()" onmouseleave="func2()">
-                                    <img src="{{ asset('assets/img/team/ra_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
+                                        item_Dot itemDot_2"
+                                    data_tab="2" onmouseenter="func()" onmouseleave="func2()">
+                                    <img src="{{ asset('assets/img/index/team/manav.jpg') }}"
+                                        class="img-fluid avatar-xxl rounded-circle user_img_left
+                                            senior_emp"
+                                        alt="seniorEMP">
                                 </div>
 
                                 <div class="shadow_effect seniorItem
-                                        item_Dot itemDot_3" data_tab="3" onmouseenter="func()" onmouseleave="func2()">
-                                    <img src="{{ asset('assets/img/team/ra_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
+                                        item_Dot itemDot_3"
+                                    data_tab="3" onmouseenter="func()" onmouseleave="func2()">
+                                    <img src="{{ asset('assets/img/index/team/ravi.webp') }}"
+                                        class="img-fluid avatar-xxl rounded-circle user_img_left
+                                            senior_emp"
+                                        alt="seniorEMP">
                                 </div>
                             </div>
                         </div>
@@ -98,57 +110,17 @@
                         <div class="Senior_employee"></div>
                         <div class="holderCircle">
                             <div class="dotCircle">
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot1" data-tab="1">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
+                                @foreach ($senior as $key=> $senior_images)
+                                    <div class="shadow_effect seniorItem itemDot
+                                itemDot1"
+                                        data-tab="{{$key+1}}">
+                                        <img src="{{ asset('assets/img/team/'.$senior_images->image) }}"
+                                            class="img-fluid avatar-xxl rounded-circle user_img
+                                senior_emp"
+                                            alt="{{$senior_images->image}}">
+                                    </div>
+                                @endforeach
 
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot2" data-tab="2">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot3" data-tab="3">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot4" data-tab="4">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot5" data-tab="5">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot6" data-tab="6">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot7" data-tab="7">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemDot
-                                        itemDot8" data-tab="7">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect itemDot seniorItem
-                                        itemDot9" data-tab="9">
-                                    <img src="{{ asset('assets/img/team/cv_thumb.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,72 +131,15 @@
                         <div class="junior_employee"></div>
                         <div class="juniorCircle">
                             <div class="thirdCircle">
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP1" datatab="1">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
+                                @foreach ($thirdCircle as $key=> $junior_images)
+                                <div class="shadow_effect seniorItem itemsEMP itemEMP1" datatab="{{$key+1}}">
+                                    <img src="{{ asset('assets/img/team/'.$junior_images->image) }}"
+                                        class="img-fluid avatar-xxl rounded-circle user_img_left
+                                            senior_emp"
+                                        alt="{{$junior_images->image}}">
                                 </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP2" datatab="2">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP3" datatab="3">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP4" datatab="4">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP5" datatab="5">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left 
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP6" data-tab="6">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP7" datatab="7">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP8" datatab="8">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP9" datatab="9">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP10" datatab="10">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP11" datatab="11">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP12" datatab="12">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP13" datatab="13">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP14" datatab="14">
-                                    <img src="{{ asset('assets/img/team/bg_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img_left
-                                            senior_emp" alt="seniorEMP">
-                                </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>
@@ -235,104 +150,17 @@
                         <div class="office_employee"></div>
                         <div class="employeeCircle">
                             <div class="fourthCircle">
+                                @foreach ($fourCircle as $key=> $freshers_images)
                                 <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP1" datatab="1">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
+                                        itemEMP1"
+                                    datatab="{{$key+1}}">
+                                    <img src="{{ asset('assets/img/team/'.$freshers_images->image) }}"
+                                        class="img-fluid avatar-xxl rounded-circle user_img
+                                            senior_emp"
+                                        alt="{{$freshers_images->image}}">
                                 </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP2" datatab="2">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP3" datatab="3">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP4" datatab="4">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP5" datatab="5">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP6" data-tab="6">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP7" datatab="7">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP8" datatab="8">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP9" datatab="9">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP10" datatab="10">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP11" datatab="11">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP12" datatab="12">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP13" datatab="13">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
-                                <div class="shadow_effect seniorItem itemEMP
-                                        itemEMP14" datatab="14">
-                                    <img src="{{ asset('assets/img/team/sm_img.webp') }}" class="img-fluid
-                                            
-                                            avatar-xxl rounded-circle user_img
-                                            senior_emp" alt="seniorEMP">
-                                </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>
@@ -350,57 +178,46 @@
 
             <!-- Start Sidebar -->
             <!-- <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="click_link">Thanos Effects</a>
-                <a href="#" class="myList">Rotation Effects</a>
-                <a href="#" class="tween_max">TweenMax Effects</a>
-                <a href="#" class="tetris_effect">Tetris Effects</a>
-            </div> -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#" class="click_link">Thanos Effects</a>
+                    <a href="#" class="myList">Rotation Effects</a>
+                    <a href="#" class="tween_max">TweenMax Effects</a>
+                    <a href="#" class="tetris_effect">Tetris Effects</a>
+                </div> -->
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
                 <!-- <a href="#" class="click_link" >Thanos Effects</a> -->
                 <div>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/gowvgfsi.json"
-                        trigger="click" class="click_link"
-                        colors="outline:#0b0c1f,primary:#4bb3fd,secondary:#ffc738,tertiary:#ebe6ef"
-                        stroke="25"
+                    <lord-icon src="https://cdn.lordicon.com/gowvgfsi.json" trigger="click" class="click_link"
+                        colors="outline:#0b0c1f,primary:#4bb3fd,secondary:#ffc738,tertiary:#ebe6ef" stroke="25"
                         style="width:80px;height:80px">
                     </lord-icon>
                 </div>
 
                 <!-- <a href="#" class="myList">Rotation Effects</a> -->
                 <div>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/zgwtpghp.json" class="myList"
-                        trigger="click"
+                    <lord-icon src="https://cdn.lordicon.com/zgwtpghp.json" class="myList" trigger="click"
                         colors="primary:#ffc738,secondary:#121331,tertiary:#ebe6ef,quaternary:#92140c,quinary:#2ca58d,senary:#b26836"
-                        stroke="25"
-                        style="width:80px;height:80px">
+                        stroke="25" style="width:80px;height:80px">
                     </lord-icon>
                 </div>
 
 
                 <!-- <a href="#" class="tween_max">TweenMax Effects</a> -->
-               <div>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/pimvysaa.json"
-                        trigger="click" class="tween_max"
+                <div>
+                    <lord-icon src="https://cdn.lordicon.com/pimvysaa.json" trigger="click" class="tween_max"
                         colors="outline:#121331,primary:#b26836,secondary:#ffc738" stroke="25"
                         style="width:80px;height:80px">
                     </lord-icon>
-               </div>
+                </div>
 
 
                 <!-- <a href="#" class="tetris_effect">Tetris Effects</a> -->
                 <div>
-                    <lord-icon
-                        src="https://cdn.lordicon.com/hoplyqtl.json"
-                        trigger="click" class="tetris_effect" stroke="25"
-                        colors="outline:#121331,primary:#ffc738"
-                        style="width:80px;height:80px">
+                    <lord-icon src="https://cdn.lordicon.com/hoplyqtl.json" trigger="click" class="tetris_effect"
+                        stroke="25" colors="outline:#121331,primary:#ffc738" style="width:80px;height:80px">
                     </lord-icon>
                 </div>
             </div>
@@ -409,8 +226,10 @@
                 <!-- <span class="menu_icon" onclick="openNav()">&#9776;</span> -->
                 <span class="menu_icon" onclick="openNav()">
 
-                    <svg width="30" height="65" viewBox="0 0 501 465" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M95.8987 68.3928C112.252 83.7157 126.225
+                    <svg width="30" height="65" viewBox="0 0 501 465" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M95.8987 68.3928C112.252 83.7157 126.225
                                 125.939 163.921 120.267C156.624 137.751 123.98
                                 179.566 110.547 166.462C104.275 160.349 100.04
                                 84.5494 95.8987 68.3928ZM178.449 110.828C199.182
@@ -465,7 +284,8 @@
             <!-- end -->
             <ul class="main_container bounce_effects">
                 <li class="item disintegration_target border_orange
-                            border_run bounce1" id="animationImg" style="transform: translate(0px , 0px);">
+                            border_run bounce1"
+                    id="animationImg" style="transform: translate(0px , 0px);">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="01"></a>
                 </li>
 
@@ -484,7 +304,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce5" id="animationImg">
+                            bounce5"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="05"></a>
                 </li>
 
@@ -503,7 +324,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce9" id="animationImg">
+                            bounce9"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="10"></a>
                 </li>
 
@@ -512,12 +334,14 @@
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce11" id="animationImg">
+                            bounce11"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="12"></a>
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce12" id="animationImg">
+                            bounce12"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="13"></a>
                 </li>
 
@@ -527,7 +351,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce14" id="animationImg">
+                            bounce14"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="15"></a>
                 </li>
 
@@ -536,12 +361,14 @@
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce16" id="animationImg">
+                            bounce16"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="17"></a>
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce17" id="animationImg">
+                            bounce17"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="18"></a>
                 </li>
 
@@ -555,7 +382,8 @@
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce20" id="animationImg">
+                            bounce20"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="21"></a>
                 </li>
 
@@ -565,7 +393,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce22" id="animationImg">
+                            bounce22"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="23"></a>
                 </li>
 
@@ -578,12 +407,14 @@
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce25" id="animationImg">
+                            bounce25"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="25"></a>
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce26" id="animationImg">
+                            bounce26"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="26"></a>
                 </li>
 
@@ -592,12 +423,14 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce28" id="animationImg">
+                            bounce28"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="28"></a>
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce29" id="animationImg">
+                            bounce29"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="29"></a>
                 </li>
 
@@ -607,7 +440,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce31" id="animationImg">
+                            bounce31"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="28"></a>
                 </li>
 
@@ -616,7 +450,8 @@
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce33" id="animationImg">
+                            bounce33"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="30"></a>
                 </li>
 
@@ -630,12 +465,14 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce36" id="animationImg">
+                            bounce36"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="30"></a>
                 </li>
 
                 <li class="item disintegration_target border_green
-                            bounce37" id="animationImg">
+                            bounce37"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="31"></a>
                 </li>
 
@@ -645,7 +482,8 @@
                 </li>
 
                 <li class="item disintegration_target border_orange
-                            bounce39" id="animationImg">
+                            bounce39"
+                    id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="33"></a>
                 </li>
             </ul>

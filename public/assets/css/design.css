@@ -39,6 +39,7 @@ img {
     }
 } */
 p {
+    color: var(--color-10);
     font-size: 15px;
     line-height: 26px;
     font-weight: 500;
