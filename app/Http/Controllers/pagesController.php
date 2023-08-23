@@ -106,6 +106,9 @@ class pagesController extends Controller
         $secondHalfCount = $totalCount - $firstHalfCount;
         $data['thirdCircle'] = Employee::where([['position',2],['deleted_at',null]])->OrWhere([['position',3],['deleted_at',null]])->take($firstHalfCount)->get();
         $data['fourCircle'] = Employee::where([['position',2],['deleted_at',null]])->OrWhere([['position',3],['deleted_at',null]])->skip($firstHalfCount)->take($secondHalfCount)->get();
+
+        $data['mobileView'] = Employee::where('deleted_at',null)->orderBy('position','asc')->get();
+        // dd($data['mobileView']);
         return view('team.team')->with($data);
     }
 
