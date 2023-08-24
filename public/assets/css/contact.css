@@ -343,12 +343,12 @@ body.dark-mode .contact-info h3 {
 }
 
 .big-circle b {
-    background-image: url(/assets/img/index/logo/favicon-1.png);
+    background-image: url(../img/index/logo/favicon-1.png);
     background-size: cover;
 }
 
 body.dark-mode .big-circle b {
-    background-image: url(/assets/img/index/logo/favicon-2.png);
+    background-image: url(../img/index/logo/favicon-2.png);
     background-size: cover;
 }
 
@@ -364,7 +364,7 @@ body.dark-mode .big-circle b {
 }
 
 .contact-us-bgcolor {
-    background-image: url(/assets/img/index/illustration/contact-line-img.webp);
+    background-image: url(../img/index/illustration/contact-line-img.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

@@ -1663,12 +1663,12 @@ ul.mobile-menu.main-mobile-menu {
 }
 
 .main-logo {
-    background-image: url(/assets/img/index/logo/logo.svg);
+    background-image: url(../img/index/logo/logo.svg);
     background-size: cover;
 }
 
 body.dark-mode .main-logo {
-    background-image: url(/assets/img/index/logo/logo-dark.svg);
+    background-image: url(../img/index/logo/logo-dark.svg);
     background-size: cover;
     height: 80px;
     width: 200px;
