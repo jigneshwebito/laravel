@@ -282,7 +282,22 @@
                                 432.354Z" />
                     </svg></span>
             </div>
-          
+            <style>
+                  .green {
+                        background-color: #00FF38;
+                    }
+                    .orange {
+                        background-color: #FFAF00;
+                    }
+                    .blue {
+                        background-color: #00CEFE;
+                        
+                    }
+                    .white{
+                        background-color:white;
+                    }
+            </style>
+            
             <!-- end -->
             <ul class="main_container bounce_effects image-list">
                 {{-- <li class="item disintegration_target border_orange
@@ -291,7 +306,10 @@
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="01"></a>
                 </li> --}}
                 @foreach ($mobileView as $key => $mobileViewImages)
-                    <li class="item disintegration_target border_green image-item
+                @php
+            $colorClass = $colors[$key % count($colors)];
+          @endphp
+                    <li class="item disintegration_target {{ $colorClass }} border_green image-item
                         bounce2" id="animationImg">
                         <a href="#"><img src="{{ asset('assets/img/team/' . $mobileViewImages->image) }}"
                                 alt="{{ $mobileViewImages->image }}"></a>

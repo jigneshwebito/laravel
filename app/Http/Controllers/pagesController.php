@@ -108,7 +108,8 @@ class pagesController extends Controller
         $data['fourCircle'] = Employee::where([['position',2],['deleted_at',null]])->OrWhere([['position',3],['deleted_at',null]])->skip($firstHalfCount)->take($secondHalfCount)->get();
 
         $data['mobileView'] = Employee::where('deleted_at',null)->orderBy('position','asc')->get();
-        // dd($data['mobileView']);
+        $data['colors'] = ["green", "white","blue" ,"orange"];
+
         return view('team.team')->with($data);
     }
 
