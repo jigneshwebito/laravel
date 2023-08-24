@@ -268,14 +268,14 @@ ul.sub-menu a {
                     <nav class="off-canvas-nav">
                         <ul class="mobile-menu main-mobile-menu">
                             <li class="menu-item-has-children {{ request()->is('/') ? 'activeJs' : '' }}">
-                                <a href="/" >Home</a>
+                                <a href="/" class="nav-focus">Home</a>
                             </li>
                             <li class="menu-item-has-children {{ request()->is('about') ? 'activeJs' : '' }}">
-                                <a href="{{ url('about') }}" class="">About Us</a>
+                                <a href="{{ url('about') }}" class="nav-focus">About Us</a>
                             </li>
                             <li class="menu-item-has-children">
                                 {{-- <p> --}}
-                                <a href="/services">Services</a>
+                                <a href="/services" class="nav-focus">Services</a>
                                 {{-- </p> --}}
 
                                 <ul class="sub-menu1">
@@ -337,12 +337,12 @@ ul.sub-menu a {
                                 </ul>
                             </li>
 
-                            <li><a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"> Portfolio</a>
+                            <li><a href="https://portfolio.webitoinfotech.com/" target="_blank"  class="nav-focus" aria-label="Portfolio"> Portfolio</a>
                             </li>
-                            <li><a href="/team" aria-label="Team Page">Team</a>
+                            <li><a href="/team" aria-label="Team Page" class="nav-focus">Team</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="/technology">Technology</a>
+                                <a href="/technology" class="nav-focus">Technology</a>
                                 <ul class="sub-menu1">
                                     <li class="menu-item-has-children">
                                         <a href="technology/mobile"> <i class="fa fa-mobile sub-menu-title-i"
