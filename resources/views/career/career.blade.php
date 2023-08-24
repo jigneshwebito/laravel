@@ -65,16 +65,16 @@
                     </div> --}}
                     <div id="jobData" class="d-flex flex-wrap"></div>
                     <a href="https://webito.keka.com/careers" target="_blank">
-                    <button class="ml-2 mt-4 pt-2" id="desc-contact-btn1">View All Job Details</button>
+                        <button class="ml-2 mt-4 pt-2" id="desc-contact-btn1">View All Job Details</button>
                     </a>
                 </div>
-                <div class="listing-block">
+                {{-- <div class="listing-block">
                     <h3>Open Positions in Engineering</h3>
                     <div class="listing-row">
-                        <!---->
+                    
                         <div class="listing-box"><a href="/hiring?id=8">
                                 <div class="position-name">
-                                    <h4>Mern Stack Developer</h4>
+                                    <h4>Mer11n Stack Developer</h4>
                                 </div>
                                 <div class="position-number">
                                     <p>4 Positions</p><span class="fa fa-long-arrow-right"></span>
@@ -341,7 +341,7 @@
 
 
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="find-job-section">
                 <div class="bg-color-box">
@@ -580,6 +580,7 @@
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Krishna" src="{{ asset('assets/img/team/kp_img.webp') }}">
                         </div>
+                      
                         <p>"For me, it's been almost more than a year in Webito. I am proud to say Webito and I had started
                             our journey together. I have seen Webito growing wonderfully into an amazing workplace. Here
                             every employee is always given a chance to share his/her problems which helps to establish a
@@ -593,6 +594,7 @@
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Chelsi" src="{{ asset('assets/img/team/cv_img.webp') }}">
                         </div>
+                       
                         <p>"As a curious employee, I got the right exposure as I had the opportunity to connect with learned
                             colleagues, enthusiastic clients, and start-up founders. The learning is great through practical
                             experiences and the growth opportunities are good. I have been with the organization for more
@@ -1243,6 +1245,7 @@
         })
     })
 </script>
+
 <script>
     function expandAll() {
         $(".collapsible-header").addClass("active");
@@ -1299,7 +1302,7 @@
             <div class="col-sm-6 col-12">
                 <div class="listing">
 
-<div class="listing-box"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
+<div class="listing-box mb-3"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
         <div class="position-name">
             <h4>${job.title}</h4>
         </div>

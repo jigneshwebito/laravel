@@ -96,7 +96,7 @@ h2 {
 }
 
 .position-listing .listing-box a {
-    /* background: #fff; */
+    background: #fff;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
     border-radius: 4px;
     padding: 26px 30px;
@@ -426,7 +426,7 @@ body.dark-mode .collapsible-header {
 }
 
 body.dark-mode .listing-box a {
-    color: white;
+    color: black;
 }
 
 body.dark-mode .listing-box {
