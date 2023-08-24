@@ -14,14 +14,14 @@
                         <div class="main-navigation flex-lg-right">
                             <ul class="main-menu menu-right ">
                                 <li class="menu-item">
-                                    <a href="/" class="">Home</a>
+                                    <a href="/" class="nav-focus">Home</a>
                                 </li>
                                 <li class="
                                         menu-item">
-                                    <a href="{{ url('about') }}"> About us</a>
+                                    <a href="{{ url('about') }}" class="nav-focus"> About us</a>
                                 </li>
                                 <li class="menu-item has-children mega-menu">
-                                    <a href="/services">Services <i class="fa fa-chevron-down dropdown-arrow"></i></a>
+                                    <a href="/services" class="nav-focus">Services <i class="fa fa-chevron-down dropdown-arrow"></i></a>
                                     <ul class="sub-menu four-column">
                                         <li class="cus-col-25">
 
@@ -88,15 +88,15 @@
                                     </ul>
                                 </li>
                                 <li class="menu-item ">
-                                    <a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"> Portfolio</a>
+                                    <a href="https://portfolio.webitoinfotech.com/" class="nav-focus" target="_blank" aria-label="Portfolio"> Portfolio</a>
 
                                 </li>
                                 <li class="menu-item ">
-                                    <a href="/#team" aria-label="Team Page"> Team</a>
+                                    <a href="/#team" aria-label="Team Page" class="nav-focus"> Team</a>
 
                                 </li>
                                 <li class="menu-item has-children mega-menu">
-                                    <a href="/technology"> Technology <i
+                                    <a href="/technology" class="nav-focus"> Technology <i
                                             class="fa fa-chevron-down dropdown-arrow"></i></a>
                                     <ul class="sub-menu four-column">
                                         <li class="cus-col-25">

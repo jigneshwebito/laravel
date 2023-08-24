@@ -3186,6 +3186,15 @@ a:hover:after{
     height: 55px;
     text-align: center;
 }
+/* .button-social-icons.active{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+} */
 
 button svg {
     transform: rotate(-180deg);
@@ -3217,7 +3226,7 @@ button ul li a {
     color: black;
     font-size: 20px;
     background: white;
-    border: 0.4px solid gray;
+    border: 1px solid #686363;
     width: 45px;
     height: 45px;
     margin: 0 auto;
@@ -3904,3 +3913,11 @@ body.dark-mode .counter-bg{
 /* .color-grey{
     color: var(--color-10);
 } */
+/* chelsi vachhani
+24-08-2023 */
+.nav-focus:focus{
+    color:black !important;
+}
+body.dark-mode .nav-focus:focus{
+    color:white !important;
+}
