@@ -1,7 +1,8 @@
 @extends('master')
 @section('title', 'Team - Webito Infotech')
 
-@section('meta-description', 'Meet the talented and dedicated team of experts behind Webitoinfotech.com. Our team brings
+@section('meta-description',
+    'Meet the talented and dedicated team of experts behind Webitoinfotech.com. Our team brings
     together a wealth of experience and knowledge.')
 @section('meta-url', 'https://webitoinfotech.com/team')
 @section('meta-keyword', 'Team - Webito Infotech')
@@ -110,14 +111,14 @@
                         <div class="Senior_employee"></div>
                         <div class="holderCircle">
                             <div class="dotCircle">
-                                @foreach ($senior as $key=> $senior_images)
+                                @foreach ($senior as $key => $senior_images)
                                     <div class="shadow_effect seniorItem itemDot
                                 itemDot1"
-                                        data-tab="{{$key+1}}">
-                                        <img src="{{ asset('assets/img/team/'.$senior_images->image) }}"
+                                        data-tab="{{ $key + 1 }}">
+                                        <img src="{{ asset('assets/img/team/' . $senior_images->image) }}"
                                             class="img-fluid avatar-xxl rounded-circle user_img
                                 senior_emp"
-                                            alt="{{$senior_images->image}}">
+                                            alt="{{ $senior_images->image }}">
                                     </div>
                                 @endforeach
 
@@ -131,15 +132,15 @@
                         <div class="junior_employee"></div>
                         <div class="juniorCircle">
                             <div class="thirdCircle">
-                                @foreach ($thirdCircle as $key=> $junior_images)
-                                <div class="shadow_effect seniorItem itemsEMP itemEMP1" datatab="{{$key+1}}">
-                                    <img src="{{ asset('assets/img/team/'.$junior_images->image) }}"
-                                        class="img-fluid avatar-xxl rounded-circle user_img_left
+                                @foreach ($thirdCircle as $key => $junior_images)
+                                    <div class="shadow_effect seniorItem itemsEMP itemEMP1" datatab="{{ $key + 1 }}">
+                                        <img src="{{ asset('assets/img/team/' . $junior_images->image) }}"
+                                            class="img-fluid avatar-xxl rounded-circle user_img_left
                                             senior_emp"
-                                        alt="{{$junior_images->image}}">
-                                </div>
+                                            alt="{{ $junior_images->image }}">
+                                    </div>
                                 @endforeach
-                                
+
                             </div>
                         </div>
                     </div>
@@ -150,17 +151,17 @@
                         <div class="office_employee"></div>
                         <div class="employeeCircle">
                             <div class="fourthCircle">
-                                @foreach ($fourCircle as $key=> $freshers_images)
-                                <div class="shadow_effect seniorItem itemEMP
+                                @foreach ($fourCircle as $key => $freshers_images)
+                                    <div class="shadow_effect seniorItem itemEMP
                                         itemEMP1"
-                                    datatab="{{$key+1}}">
-                                    <img src="{{ asset('assets/img/team/'.$freshers_images->image) }}"
-                                        class="img-fluid avatar-xxl rounded-circle user_img
+                                        datatab="{{ $key + 1 }}">
+                                        <img src="{{ asset('assets/img/team/' . $freshers_images->image) }}"
+                                            class="img-fluid avatar-xxl rounded-circle user_img
                                             senior_emp"
-                                        alt="{{$freshers_images->image}}">
-                                </div>
+                                            alt="{{ $freshers_images->image }}">
+                                    </div>
                                 @endforeach
-                                
+
                             </div>
                         </div>
                     </div>
@@ -178,12 +179,12 @@
 
             <!-- Start Sidebar -->
             <!-- <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#" class="click_link">Thanos Effects</a>
-                    <a href="#" class="myList">Rotation Effects</a>
-                    <a href="#" class="tween_max">TweenMax Effects</a>
-                    <a href="#" class="tetris_effect">Tetris Effects</a>
-                </div> -->
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <a href="#" class="click_link">Thanos Effects</a>
+                                <a href="#" class="myList">Rotation Effects</a>
+                                <a href="#" class="tween_max">TweenMax Effects</a>
+                                <a href="#" class="tetris_effect">Tetris Effects</a>
+                            </div> -->
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -281,20 +282,32 @@
                                 432.354Z" />
                     </svg></span>
             </div>
+            <style>
+                
+                
+            </style>
+
             <!-- end -->
-            <ul class="main_container bounce_effects">
-                <li class="item disintegration_target border_orange
+            <ul class="main_container bounce_effects image-list">
+                {{-- <li class="item disintegration_target border_orange
                             border_run bounce1"
                     id="animationImg" style="transform: translate(0px , 0px);">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="01"></a>
-                </li>
+                </li> --}}
+                @foreach ($mobileView as $key => $mobileViewImages)
+                    @php
+                        $colorClass = $colors[$key % count($colors)];
+                    @endphp
+                    <li class="item disintegration_target {{ $colorClass }} border_green image-item
+                        bounce2"
+                        id="animationImg">
+                        <a href="#"><img src="{{ asset('assets/img/team/' . $mobileViewImages->image) }}"
+                                alt="{{ $mobileViewImages->image }}"></a>
+                    </li>
+                @endforeach
 
-                <li class="item disintegration_target border_green
-                            bounce2" id="animationImg">
-                    <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="02"></a>
-                </li>
 
-                <li class="item disintegration_target bounce3" id="animationImg">
+                {{-- <li class="item disintegration_target bounce3" id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="03"></a>
                 </li>
 
@@ -485,7 +498,7 @@
                             bounce39"
                     id="animationImg">
                     <a href="#"><img src="{{ asset('assets/img/team/cv_thumb.webp') }}" alt="33"></a>
-                </li>
+                </li> --}}
             </ul>
         </div><!-- end container -->
 

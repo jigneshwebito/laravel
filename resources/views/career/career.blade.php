@@ -65,16 +65,16 @@
                     </div> --}}
                     <div id="jobData" class="d-flex flex-wrap"></div>
                     <a href="https://webito.keka.com/careers" target="_blank">
-                    <button class="ml-2 mt-4 pt-2" id="desc-contact-btn1">View All Job Details</button>
+                        <button class="ml-2 mt-4 pt-2" id="desc-contact-btn1">View All Job Details</button>
                     </a>
                 </div>
-                <div class="listing-block">
+                {{-- <div class="listing-block">
                     <h3>Open Positions in Engineering</h3>
                     <div class="listing-row">
-                        <!---->
+                    
                         <div class="listing-box"><a href="/hiring?id=8">
                                 <div class="position-name">
-                                    <h4>Mern Stack Developer</h4>
+                                    <h4>Mer11n Stack Developer</h4>
                                 </div>
                                 <div class="position-number">
                                     <p>4 Positions</p><span class="fa fa-long-arrow-right"></span>
@@ -341,7 +341,7 @@
 
 
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="find-job-section">
                 <div class="bg-color-box">
@@ -569,17 +569,17 @@
         $test = DB::table('testimonials')->get();
     @endphp
     {{-- @foreach ($test as $test) --}}
-    <section class="team-testimonial" id="about">
+    {{-- <section class="team-testimonial" id="about">
 
         <div class="container">
 
             <h2> What our team says?</h2>
             <div class=" team-testimonial-slider show-more-item" role="toolbar">
-                {{-- krishna --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Krishna" src="{{ asset('assets/img/team/kp_img.webp') }}">
                         </div>
+                      
                         <p>"For me, it's been almost more than a year in Webito. I am proud to say Webito and I had started
                             our journey together. I have seen Webito growing wonderfully into an amazing workplace. Here
                             every employee is always given a chance to share his/her problems which helps to establish a
@@ -588,11 +588,11 @@
                             "</p>
                     </div>
                 </div>
-                {{-- chelsi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Chelsi" src="{{ asset('assets/img/team/cv_img.webp') }}">
                         </div>
+                       
                         <p>"As a curious employee, I got the right exposure as I had the opportunity to connect with learned
                             colleagues, enthusiastic clients, and start-up founders. The learning is great through practical
                             experiences and the growth opportunities are good. I have been with the organization for more
@@ -600,7 +600,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Rushikesh --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide02" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Rushikesh" src="{{ asset('assets/img/team/ra_img.webp') }}">
@@ -613,7 +612,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Shruti --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Shruti" src="{{ asset('assets/img/team/sm_img.webp') }}">
@@ -627,7 +625,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- keval --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Keval" src="">
@@ -640,7 +637,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- Prachi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Prachi" src="{{ asset('assets/img/team/pd_img.webp') }}">
@@ -656,10 +652,8 @@
             </div>
 
             <div class=" team-testimonial-slider show-more-item" style="display: none;" role=" toolbar">
-                {{-- parth --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
-                        {{-- { asset('assets/img/team/jd_img.webp') }} --}}
                         <div class="img-box"><img alt="Parth" src="{{ asset('assets/img/team/pak_img.webp') }}">
                         </div>
                         <p>"I just love working for this company due to its values and that these are demonstrated each and
@@ -668,7 +662,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Zeel --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Zeel" src="{{ asset('assets/img/team/js_img.webp') }}">
@@ -681,7 +674,6 @@
                             ."</p>
                     </div>
                 </div>
-                {{-- shivani --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide02" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Shivani" src="{{ asset('assets/img/team/ss_img.webp') }}">
@@ -690,12 +682,9 @@
                             Working on super complex problems that have not been explored before, makes the whole experience
                             more like discovery rather than engineering. I think Webito’s best assets are its people. I have
                             worked with a group of great people who make coming to work a great pleasure."</p>
-                        {{-- <div class="team-profile">
-                            <h6>Shivani Savliya</h6>
-                            </div> --}}
+                    
                     </div>
                 </div>
-                {{-- rutvik --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Rutvik" src="{{ asset('assets/img/team/rk_img.webp') }}">
@@ -707,7 +696,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- dipesh --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/db_img.webp') }}">
@@ -722,7 +710,6 @@
                     </div>
                 </div>
 
-                {{-- chirag --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/cs_img.webp') }}">
@@ -736,7 +723,6 @@
             </div>
 
             <div class=" team-testimonial-slider show-more-item" style="display: none;" role=" toolbar">
-                {{-- Juli --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Juli" src="{{ asset('assets/img/team/dj_img.webp') }}">
@@ -747,7 +733,6 @@
                             generosity that people support each other every day."</p>
                     </div>
                 </div>
-                {{-- princi laravel --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Princi" src="{{ asset('assets/img/team/pm_img.webp') }}">
@@ -758,10 +743,8 @@
                             "</p>
                     </div>
                 </div>
-                {{-- dhruvi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
-                        {{-- {{ asset('assets/img/team/sk_img.webp') }} --}}
                         <div class="img-box"><img alt="dhruvi" src="{{ asset('assets/img/team/ds_img.webp') }}">
                         </div>
                         <p>"I love working with Webito. At the start, everything was new to me. There were many things that
@@ -774,7 +757,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Atul --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Atul" src="{{ asset('assets/img/team/am_img.webp') }}">
@@ -786,7 +768,6 @@
                             forward to being associated for many more years to come."</p>
                     </div>
                 </div>
-                {{-- harmi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Harmi" src="{{ asset('assets/img/team/hv_img.webp') }}">
@@ -797,10 +778,8 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Mukund --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
                     <div class="team-testimonial-content">
-                        {{-- {{ asset('assets/img/team/hv_img.webp') }} --}}
                         <div class="img-box"><img alt="Mukund" src="{{ asset('assets/img/team/pak_img.webp') }}">
                         </div>
                         <p>I have enjoyed working with Node JS because of its versatility and the ability to use it across
@@ -812,10 +791,9 @@
             </div>
 
             <div class=" team-testimonial-slider show-more-item" style="display: none;" role=" toolbar">
-                {{-- priyanka kapadiya --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide05" style="">
                     <div class="team-testimonial-content">
-                        {{--  --}}
+                  
                         <div class="img-box"><img alt="priyanka" src="{{ asset('assets/img/team/pk_img.webp') }}">
                         </div>
                         <p>"Working with Webito has been a wonderful experience. I had been entrusted with opportunities and
@@ -824,10 +802,8 @@
                             "</p>
                     </div>
                 </div>
-                {{-- shreya --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide05" style="">
                     <div class="team-testimonial-content">
-                        {{--  --}}
                         <div class="img-box"><img alt="sherya" src="{{ asset('assets/img/team/srs_img.webp') }}">
                         </div>
                         <p>"Webito Infotech provides me with a vision that helped me broaden my horizon. Here, I always feel
@@ -836,7 +812,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Archit --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/ma_img.webp') }}">
@@ -852,7 +827,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- Purvisha --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide00" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Purvisha" src="{{ asset('assets/img/team/pv_img.webp') }}">
@@ -864,7 +838,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- priyanka flutter --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/prk_img.webp') }}">
@@ -881,7 +854,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- nishtha --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Nishtha" src="{{ asset('assets/img/team/nb_img.webp') }}">
@@ -895,10 +867,8 @@
             </div>
 
             <div class=" team-testimonial-slider show-more-item" style="display: none;" role=" toolbar">
-                {{-- janvi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide01" style="">
                     <div class="team-testimonial-content">
-                        {{-- {{ asset('assets/img/team/nb_img.webp') }} --}}
                         <div class="img-box"><img alt="Janvi" src="{{ asset('assets/img/team/jd_img.webp') }}">
                         </div>
                         <p>Working as a frontend developer has allowed me to collaborate with designers and other developers
@@ -907,7 +877,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- Meet --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide05" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Meet" src="{{ asset('assets/img/team/md_img.webp') }}">
@@ -918,7 +887,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- ankita --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide05" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/ag_img.webp') }}">
@@ -931,7 +899,6 @@
                         </p>
                     </div>
                 </div>
-                {{-- vishal --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="vishal" src="{{ asset('assets/img/team/vk_img.webp') }}">
@@ -942,10 +909,8 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Mansi --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
-                        {{-- assets/img/team/td_img.webp --}}
                         <div class="img-box"><img alt="Mansi" src="{{ asset('assets/img/team/mb_img.webp') }}">
                         </div>
                         <p>"I love working with Webito. At the start, everything was new to me. There were many things that
@@ -959,7 +924,6 @@
                     </div>
                 </div>
 
-                {{-- Darshna --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="" src="{{ asset('assets/img/team/td_img.webp') }}">
@@ -977,10 +941,8 @@
             </div>
 
             <div class=" team-testimonial-slider show-more-item" style="display: none;" role=" toolbar">
-                {{-- harshit --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide03" style="">
                     <div class="team-testimonial-content">
-                        {{-- assets/img/team/td_img.webp --}}
                         <div class="img-box"><img alt="harshit" src="{{ asset('assets/img/team/hm_img.webp') }}">
                         </div>
                         <p>"I love working with Webito. At the start, everything was new to me. There were many things that
@@ -993,7 +955,6 @@
                             "</p>
                     </div>
                 </div>
-                {{-- Dhruv --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide04" style="">
                     <div class="team-testimonial-content">
                         <div class="img-box"><img alt="Dhruv" src="{{ asset('assets/img/team/dk_img.webp') }}">
@@ -1005,10 +966,8 @@
                         </p>
                     </div>
                 </div>
-                {{-- jenil --}}
                 <div class="team-col" tabindex="-1" role="option" aria-describedby="slick-slide05" style="">
                     <div class="team-testimonial-content">
-                        {{-- assets/img/team/ag_img.webp --}}
                         <div class="img-box"><img alt="jenil" src="{{ asset('assets/img/team/jr_img.webp') }}">
                         </div>
                         <p>As a React JS developer, I build web applications that are easy to use and adapt to different
@@ -1027,7 +986,7 @@
 
         </div>
 
-    </section>
+    </section> --}}
     {{-- @endforeach --}}
 
     {{-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -1243,6 +1202,7 @@
         })
     })
 </script>
+
 <script>
     function expandAll() {
         $(".collapsible-header").addClass("active");
@@ -1299,7 +1259,7 @@
             <div class="col-sm-6 col-12">
                 <div class="listing">
 
-<div class="listing-box"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
+<div class="listing-box mb-3"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
         <div class="position-name">
             <h4>${job.title}</h4>
         </div>

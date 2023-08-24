@@ -132,7 +132,7 @@ body.dark-mode #careers-detail-box p{
 }
 
 #careers-detail-box .career-detail ul li {
-    background: url(/assets/img/career/circle-black.png) no-repeat left 5px;
+    background: url(../img/career/circle-black.png) no-repeat left 5px;
     list-style: none;
     width: 47%;
     float: left;
@@ -314,7 +314,7 @@ textarea.message.effect-1 {
     appearance: none;
     font-weight: 400;
     color: #323a45;
-    background: url(/assets/img/career/drop-down.png) no-repeat right 20px;
+    background: url(../img/career/drop-down.png) no-repeat right 20px;
     padding: 10px 13px 5px 0px;
     border-radius: 0px;
 }

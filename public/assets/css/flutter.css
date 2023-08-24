@@ -531,7 +531,7 @@ body.dark-mode .benefit-sec[_ngcontent-c3] .benefit-dec[_ngcontent-c3] ul.soluti
     display: block;
     color: #fff;
     font-size: 14px;
-    background: url(/assets/img/technologies/mobile/ckeck-icon.png) no-repeat;
+    background: url(../img/technologies/mobile/ckeck-icon.png) no-repeat;
     padding-left: 30px;
     margin-bottom: 10px;
     text-align: left;
@@ -545,7 +545,7 @@ body.dark-mode .benefit-sec[_ngcontent-c3] .benefit-dec[_ngcontent-c3] ul.soluti
     display: block;
     color: #000;
     font-size: 14px;
-    background: url(/assets/img/technologies/mobile/check-mark-icon.png) no-repeat;
+    background: url(../img/technologies/mobile/check-mark-icon.png) no-repeat;
     padding-left: 30px;
     margin-bottom: 10px;
     text-align: left;
@@ -3380,7 +3380,7 @@ body.dark-mode .technologies-sec .technologies-block .tech-box .icon-box svg g {
 }
 
 .globalNav[_ngcontent-c1] .linkInfoGroup[_ngcontent-c1]::before {
-    background: url(/assets/images/comapny-bg-menu.jpg) center center no-repeat;
+    background: url(../images/comapny-bg-menu.jpg) center center no-repeat;
     content: "";
     position: absolute;
     left: 0;
@@ -3397,7 +3397,7 @@ body.dark-mode .technologies-sec .technologies-block .tech-box .icon-box svg g {
 }
 
 .globalNav[_ngcontent-c1] .linkInfoGroup.cyan-gradient[_ngcontent-c1]::before {
-    background: url(/assets/images/discovery-workshop-menu-bg.jpg) center center/cover no-repeat;
+    background: url(../images/discovery-workshop-menu-bg.jpg) center center/cover no-repeat;
     border-radius: 5px 0 0 5px
 }
 
@@ -3469,7 +3469,7 @@ body.dark-mode .technologies-sec .technologies-block .tech-box .icon-box svg g {
 }
 
 .globalNav[_ngcontent-c1] .linkInfoGroup_webp[_ngcontent-c1]::before {
-    background: url(/assets/images/comapny-bg-menu.webp) center center no-repeat;
+    background: url(../images/comapny-bg-menu.webp) center center no-repeat;
     content: "";
     position: absolute;
     left: 0;
@@ -3486,7 +3486,7 @@ body.dark-mode .technologies-sec .technologies-block .tech-box .icon-box svg g {
 }
 
 .globalNav[_ngcontent-c1] .linkInfoGroup_webp.cyan-gradient[_ngcontent-c1]::before {
-    background: url(/assets/images/discovery-workshop-menu-bg.webp) center center/cover no-repeat;
+    background: url(../images/discovery-workshop-menu-bg.webp) center center/cover no-repeat;
     border-radius: 5px 0 0 5px
 }
 
@@ -4936,8 +4936,11 @@ html[_ngcontent-c1] {
 
 @font-face {
     font-family: icomoon;
-    src: url(/assets/fonts/icomoon/icomoon.eot?l9miza);
-    src: url(/assets/fonts/icomoon/icomoon.eot?l9miza#iefix) format("embedded-opentype"), url(/assets/fonts/icomoon/icomoon.ttf?l9miza) format("truetype"), url(/assets/fonts/icomoon/icomoon.woff?l9miza) format("woff"), url(/assets/fonts/icomoon/icomoon.svg?l9miza#icomoon) format("svg");
+    src: url(../fonts/icomoon/icomoon.eot?l9miza);
+    src: url(../fonts/icomoon/icomoon.eot?l9miza#iefix) format("embedded-opentype"), 
+    url(../fonts/icomoon/icomoon.ttf?l9miza) format("truetype"), 
+    url(../fonts/icomoon/icomoon.woff?l9miza) format("woff"),
+     url(../fonts/icomoon/icomoon.svg?l9miza#icomoon) format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: block
