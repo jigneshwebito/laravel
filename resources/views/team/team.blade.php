@@ -15,7 +15,7 @@
     $metaname = 'Software development Company, Application Development Company Team';
     $metaproperty = 'Webito Infotech - Transforming Ideas. Digitally.';
     ?>
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/team.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/team.css') }}?{{ filemtime(public_path('assets/css/team.css')) }}" />
     <script>
         !(function() {
             document.documentElement.className = "js";
@@ -53,7 +53,7 @@
 
     <script src="{{ asset('assets/js/main.js') }}"></script> --}}
 
-    <link rel="stylesheet" href="{{ asset('assets/css/team-new.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/team-new.css') }}?{{ filemtime(public_path('assets/css/team-new.css')) }}">
     <section class="position-relative team_section " style="overflow-x:clip;">
         <div class="container">
             <div class="row ">
