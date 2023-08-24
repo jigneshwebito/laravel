@@ -492,7 +492,7 @@ body {
 }
 
 .item img {
-  /* visibility: hidden; */
+  visibility: hidden;
   width: 100%;
   display: block;
 }
@@ -1182,7 +1182,7 @@ body {
 
 @media only screen and (min-width:1050px) and (max-width:1499px) {
   .brand_icon {
-    left: 47%;
+    left: 46%;
   }
 }
 
@@ -1219,4 +1219,24 @@ body {
   -o-transition: 3s;
   transition: 3s;
   margin-left: 50% !important;
+}
+
+/* chelsi vachhani
+24-08-2023
+Mobile View Image border Color */
+
+.green:before {
+  background-color: #00FF38;
+}
+
+.yellow:before {
+  background-color: #FFAF00;
+}
+
+.blue:before {
+  background-color: #00CEFE;
+
+}
+.pink:before{
+  background-color:#C758FD;
 }
