@@ -394,8 +394,10 @@
                 <div class="row row-eq-height justify-content-center mt-5">
                     <div class="col-lg-4 mb-4">
                         <div class="card wow bounceInUp" style="visibility: visible; animation-name: bounceInUp;">
-                            <i class="card-wow" aria-hidden="true"><img
-                                    src="https://img.icons8.com/carbon-copy/65/4a90e2/good-quality.png" /></i>
+                            <i class="card-wow" aria-hidden="true">
+                                {{-- <img src="https://img.icons8.com/carbon-copy/65/4a90e2/good-quality.png" /> --}}
+                                <img src="{{ asset('assets/img/index/why-choose/quality.svg') }}" style="height: 4rem;"/>
+                            </i>
                             <div class="card-body">
                                 <h5 class="card-title">Quality</h5>
                                 <p class="card-text">We know that what is value of quality.We never compromise with
@@ -406,8 +408,11 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="card wow bounceInUp">
-                            <i class="card-wow"><img
-                                    src="https://img.icons8.com/carbon-copy/60/4a90e2/innovation.png" /></i>
+                            <i class="card-wow">
+                                {{-- <img
+                                    src="https://img.icons8.com/carbon-copy/60/4a90e2/innovation.png" /> --}}
+                                    <img src="{{ asset('assets/img/index/why-choose/innovation.svg') }}" style="height: 4rem;"/>
+                                </i>
                             <div class="card-body">
                                 <h5 class="card-title">Innovation</h5>
                                 <p class="card-text">Our team always trying to innovate something new and make your
@@ -418,8 +423,11 @@
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="card wow bounceInUp">
-                            <i class="card-wow"><img src="https://img.icons8.com/wired/60/4a90e2/satisfaction.png"
-                                    alt="icon" /></i>
+                            <i class="card-wow">
+                                {{-- <img src="https://img.icons8.com/wired/60/4a90e2/satisfaction.png"
+                                    alt="icon" /> --}}
+                                    <img src="{{ asset('assets/img/index/why-choose/satisfaction.svg') }}" style="height: 4rem;"/>
+                                </i>
                             <div class="card-body">
                                 <h5 class="card-title">100% Satisfaction</h5>
                                 <p class="card-text">Your Satisfaction is our first Priority.We always ready to satisfy
