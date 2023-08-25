@@ -99,7 +99,7 @@
                 </li>
                 <li>
                     <a href="/team" aria-label="Team Page"><i class=" fa"><img src="{{ asset('assets/img/direct_links/team.svg') }}" alt="Team"
-                                class="directImg" style="padding: 10px;" />
+                                class="directImg" style="padding: 3px;" />
                         </i></a>
                 </li>
                 <li>
