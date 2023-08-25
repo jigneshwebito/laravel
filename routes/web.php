@@ -58,13 +58,13 @@ route::get('/services/devops-development', 'App\Http\Controllers\pagesController
 
 //Technology pages//
 route::get('/technology', 'App\Http\Controllers\pagesController@technology');
-route::get('/technology/mobile', 'App\Http\Controllers\pagesController@mobile');
-route::get('/technology/backend-development', 'App\Http\Controllers\pagesController@backend');
-route::get('/technology/frontend', 'App\Http\Controllers\pagesController@frontend');
-route::get('/technology/database', 'App\Http\Controllers\pagesController@database');
-route::get('/technology/cms', 'App\Http\Controllers\pagesController@cms');
-route::get('/technology/devops', 'App\Http\Controllers\pagesController@devops');
-route::get('/technology/master', 'App\Http\Controllers\pagesController@master');
+route::get('/technology/mobile', 'App\Http\Controllers\pagesController@mobile')->name('technology.mobile');
+route::get('/technology/backend-development', 'App\Http\Controllers\pagesController@backend')->name('technology.backend-development');
+route::get('/technology/frontend', 'App\Http\Controllers\pagesController@frontend')->name('technology.frontend');
+route::get('/technology/database', 'App\Http\Controllers\pagesController@database')->name('technology.database');
+route::get('/technology/cms', 'App\Http\Controllers\pagesController@cms')->name('technology.cms');
+route::get('/technology/devops', 'App\Http\Controllers\pagesController@devops')->name('technology.devops');
+route::get('/technology/master', 'App\Http\Controllers\pagesController@master')->name('technology.master');
 
 //Mobile pages//
 route::get('/technology/mobile/ios', 'App\Http\Controllers\pagesController@ios');
