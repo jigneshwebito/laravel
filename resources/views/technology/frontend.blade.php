@@ -29,35 +29,35 @@
     <?php $title = 'Front end Technologies we work with'; ?>
 
     <?php
-    $link1 = 'technology/frontend/angular';
+    $link1 = 'frontend/angular';
     $box1icon = 'https://img.icons8.com/ios-filled/50/4a90e2/angularjs.png';
     $box1title = 'AngularJS Development';
     $box1paragraph = 'Experts in using JS based framework to build web solutions for enterprises, Ecommerce, social media apps, streaming apps, etc.';
     ?>
 
     <?php
-    $link2 = 'technology/frontend/reactjs';
+    $link2 = 'frontend/reactjs';
     $box2icon = 'https://img.icons8.com/ios-filled/50/4a90e2/react-native.png';
     $box2title = 'ReactJS Development';
     $box2paragraph = 'Crafting dynamic user interfaces to deliver stunning web solutions that work perfectly on web and mobile platforms in less time.';
     ?>
 
     <?php
-    $link3 = 'technology/frontend/vue';
+    $link3 = 'frontend/vue';
     $box3icon = 'https://img.icons8.com/windows/50/4a90e2/vuejs.png';
     $box3title = 'VueJS Development';
     $box3paragraph = 'Experienced with using the VueJS tools with scalability needed to build large-scale apps where customization is complex.';
     ?>
 
     <?php
-    $link4 = 'technology/frontend/html5';
+    $link4 = 'frontend/html5';
     $box4icon = 'https://img.icons8.com/material-sharp/50/4a90e2/html-5.png';
     $box4title = 'HTML5 Development';
     $box4paragraph = 'Leveraging the benefits of CSS3 and jQuery combined, our experienced team builds rich and powerful mobile friendly web solutions.';
     ?>
 
     <?php
-    $link5 = 'technology/frontend/typescript';
+    $link5 = 'frontend/typescript';
     $box5icon = 'https://img.icons8.com/ios-filled/50/4a90e2/typescript.png';
     $box5title = 'Typescript Development';
     $box5paragraph = 'With TypeScript combined with JS, we are making a huge improvement over plain JS, to deliver web solutions without painful bugs.';
