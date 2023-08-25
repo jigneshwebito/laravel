@@ -25,9 +25,10 @@
                             <li><i class="ion-ios-arrow-right"></i> <a href="/">Home</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/career" aria-label="Career Page">Career</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/rules">Rules</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="https://blog.webitoinfotech.com/" target="_blank">Blogs</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/terms">Terms</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/policy">Privacy policy</a></li>
-                            {{-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Blogs</a></li> --}}
+                            
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
