@@ -84,25 +84,26 @@
         <div>
             <ul>
                 <li>
-                    <a href="#"> <i class="fa"><img src="{{ asset('assets/img/direct_links/hire.png') }}" alt="Hire"
+                    <a href="/"> <i class="fa"><img src="{{ asset('assets/img/direct_links/home.svg') }}" alt="Hire"
                                 class="directImg" style="padding: 5px;" /></i></a>
                 </li>
                 <li>
-                    <a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"><i class=" fa"><img src="{{ asset('assets/img/direct_links/portfolio.png') }}" alt="Portfolio"
+                    <a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"><i class=" fa">
+                        <img src="{{ asset('assets/img/direct_links/portfolio.svg') }}" alt="Portfolio"
                                 class="directImg" /></i></a>
                 </li>
                 <li>
                     <a href="/about#our_events" aria-label="Our Events"><i class=" fa"><img
-                                src="{{ asset('assets/img/direct_links/events.png') }}" class="directImg" alt="Events"
+                                src="{{ asset('assets/img/direct_links/event.svg') }}" class="directImg" alt="Events"
                                 style="padding: 8px;" /></i></a>
                 </li>
                 <li>
-                    <a href="/team" aria-label="Team Page"><i class=" fa"><img src="{{ asset('assets/img/direct_links/team.png') }}" alt="Team"
+                    <a href="/team" aria-label="Team Page"><i class=" fa"><img src="{{ asset('assets/img/direct_links/team.svg') }}" alt="Team"
                                 class="directImg" style="padding: 10px;" />
                         </i></a>
                 </li>
                 <li>
-                    <a href="/career" aria-label="career"><i class=" fa"><img src="{{ asset('assets/img/direct_links/career.png') }}" alt="Career"
+                    <a href="/career" aria-label="career"><i class=" fa"><img src="{{ asset('assets/img/direct_links/career.svg') }}" alt="Career"
                                 class="directImg" style="padding: 5px;" />
                         </i></a>
                 </li>
