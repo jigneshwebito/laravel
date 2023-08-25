@@ -1,5 +1,5 @@
 @extends('master')
-@section('title', 'Webito Infotech - The Best IT Company in Surat | Ahemdabad')
+@section('title', 'Webito Infotech - The Best IT Company in Surat | Ahmedabad')
 
 @section('meta-description',
     'Webitoinfotech.com is a leading web development and app development that offers innovative
@@ -13,7 +13,7 @@
     varachha | Best It Company In India | Best Software Company in India | Webito Infotech - The Best It Company | Webito
     Infotech - The Best It Company In surat | it company near me"')
 @section('meta-url', 'https://webitoinfotech.com/')
-@section('meta-title', 'Webito Infotech - The Best IT Company in Surat | Ahemdabad')
+@section('meta-title', 'Webito Infotech - The Best IT Company in Surat | Ahmedabad')
 
 
 @section('homepage-contain')
