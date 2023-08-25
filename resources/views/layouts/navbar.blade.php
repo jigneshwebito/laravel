@@ -382,7 +382,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ url('technology.database') }}"> <i class="fa fa-database sub-menu-title-i"
+                                        <a href="{{ route('technology.database') }}"> <i class="fa fa-database sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;DATABASE</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/database/mysql">MYSQL</a></li>
@@ -394,7 +394,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ url('technology.devops') }}"><i class="fa fa-sitemap sub-menu-title-i"
+                                        <a href="{{ route('technology.devops') }}"><i class="fa fa-sitemap sub-menu-title-i"
                                                 aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;INFRA & DEVOPS</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/devops/aws">AWS</a></li>
@@ -406,7 +406,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="{{ url('technology.cms') }}"> <i class="fa fa-cart-plus sub-menu-title-i"
+                                        <a href="{{ route('technology.cms') }}"> <i class="fa fa-cart-plus sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;CMS</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/cms/magento">Magento</a></li>
