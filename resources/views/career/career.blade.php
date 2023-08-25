@@ -1257,7 +1257,7 @@
                     jobLocationsString = jobLocationsString.slice(0, -2);
 
                     htmlContent += `
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-md-6 col-12">
                 <div class="listing">
 
 <div class="listing-box mb-3"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
