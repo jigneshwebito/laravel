@@ -18,7 +18,8 @@
     $metaproperty = 'Webito Infotech - Career Development Company';
     ?>
 
-    <link href="{{ asset('assets/css/career.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('assets/css/career.css') }}?{{ filemtime(public_path('assets/css/career.css')) }}" rel="stylesheet">
 
     <section class="main-page-header">
         <div class="container">
