@@ -1,5 +1,5 @@
 <section _ngcontent-c3="" class="quote-sec pad-t-b"
-    style="background-image:url('public/assets/img/technologies/mobile/request-quote-bg.png')">
+    >
     <div _ngcontent-c3="" class="container">
         <h2 _ngcontent-c3="">Request a Quote</h2>
         <p _ngcontent-c3="" class="sub-title">Share a brief about your project and get a guaranteed response

@@ -1433,6 +1433,9 @@ input[type="number"] {
     font-size: 20px;
     color: #0576EB;
 }
+.off-canvas-wrapper .off-canvas-social a:focus {
+    color: #0576EB !important;
+}
 
 .off-canvas-wrapper .off-canvas-social a:hover {
     color: #0576EB;

@@ -25,9 +25,10 @@
                             <li><i class="ion-ios-arrow-right"></i> <a href="/">Home</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/career" aria-label="Career Page">Career</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/rules">Rules</a></li>
+                            <li><i class="ion-ios-arrow-right"></i> <a href="https://blog.webitoinfotech.com/" target="_blank">Blogs</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/terms">Terms</a></li>
                             <li><i class="ion-ios-arrow-right"></i> <a href="/policy">Privacy policy</a></li>
-                            {{-- <li><i class="ion-ios-arrow-right"></i> <a href="#">Blogs</a></li> --}}
+                            
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
@@ -83,25 +84,26 @@
         <div>
             <ul>
                 <li>
-                    <a href="#"> <i class="fa"><img src="{{ asset('assets/img/direct_links/hire.png') }}" alt="Hire"
+                    <a href="/"> <i class="fa"><img src="{{ asset('assets/img/direct_links/home.svg') }}" alt="Hire"
                                 class="directImg" style="padding: 5px;" /></i></a>
                 </li>
                 <li>
-                    <a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"><i class=" fa"><img src="{{ asset('assets/img/direct_links/portfolio.png') }}" alt="Portfolio"
+                    <a href="https://portfolio.webitoinfotech.com/" target="_blank" aria-label="Portfolio"><i class=" fa">
+                        <img src="{{ asset('assets/img/direct_links/portfolio.svg') }}" alt="Portfolio"
                                 class="directImg" /></i></a>
                 </li>
                 <li>
                     <a href="/about#our_events" aria-label="Our Events"><i class=" fa"><img
-                                src="{{ asset('assets/img/direct_links/events.png') }}" class="directImg" alt="Events"
+                                src="{{ asset('assets/img/direct_links/event.svg') }}" class="directImg" alt="Events"
                                 style="padding: 8px;" /></i></a>
                 </li>
                 <li>
-                    <a href="/team" aria-label="Team Page"><i class=" fa"><img src="{{ asset('assets/img/direct_links/team.png') }}" alt="Team"
-                                class="directImg" style="padding: 10px;" />
+                    <a href="/team" aria-label="Team Page"><i class=" fa"><img src="{{ asset('assets/img/direct_links/team.svg') }}" alt="Team"
+                                class="directImg" style="padding: 3px;" />
                         </i></a>
                 </li>
                 <li>
-                    <a href="/career" aria-label="career"><i class=" fa"><img src="{{ asset('assets/img/direct_links/career.png') }}" alt="Career"
+                    <a href="/career" aria-label="career"><i class=" fa"><img src="{{ asset('assets/img/direct_links/career.svg') }}" alt="Career"
                                 class="directImg" style="padding: 5px;" />
                         </i></a>
                 </li>

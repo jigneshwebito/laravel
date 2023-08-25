@@ -67,7 +67,7 @@
                                                 <li><a href="/services/design-development#wireframe">Wireframe</a></li>
                                                 <li><a href="/services/design-development#design">UI / UX Design</a>
                                                 </li>
-                                                <li>UI / UX Design</li>
+                                                {{-- <li>UI / UX Design</li> --}}
                                             </ul>
                                         </li>
                                         <li class="cus-col-25">
@@ -82,7 +82,7 @@
                                                         Delivery</a></li>
                                                 <li><a href="/services/devops-development#monitoring">Monitoring</a>
                                                 </li>
-                                                <li>Monitoring</li>
+                                                {{-- <li>Monitoring</li> --}}
                                             </ul>
                                         </li>
                                     </ul>
@@ -345,7 +345,7 @@ ul.sub-menu a {
                                 <a href="/technology" class="nav-focus">Technology</a>
                                 <ul class="sub-menu1">
                                     <li class="menu-item-has-children">
-                                        <a href="technology/mobile"> <i class="fa fa-mobile sub-menu-title-i"
+                                        <a href="{{ route('technology.mobile') }}"> <i class="fa fa-mobile sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;MOBILE</a>
                                         <ul class="sub-menu">
                                             <li><a href="technology/mobile/ios">IOS</a></li>
@@ -357,7 +357,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/technology/backend-development"> <i class="fa fa-cogs sub-menu-title-i"
+                                        <a href="{{ route('technology.backend-development') }}"> <i class="fa fa-cogs sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;BACK-END</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/backend/node">Node</a></li>
@@ -370,7 +370,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/technology/frontend"> <i class="fa fa-code sub-menu-title-i"
+                                        <a href="{{ route('technology.frontend') }}"> <i class="fa fa-code sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;FRONT-END</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/frontend/angular">Angular</a></li>
@@ -382,7 +382,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/technology/database"> <i class="fa fa-database sub-menu-title-i"
+                                        <a href="{{ route('technology.database') }}"> <i class="fa fa-database sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;DATABASE</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/database/mysql">MYSQL</a></li>
@@ -394,7 +394,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/technology/devops"><i class="fa fa-sitemap sub-menu-title-i"
+                                        <a href="{{ route('technology.devops') }}"><i class="fa fa-sitemap sub-menu-title-i"
                                                 aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;INFRA & DEVOPS</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/devops/aws">AWS</a></li>
@@ -406,7 +406,7 @@ ul.sub-menu a {
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="/technology/cms"> <i class="fa fa-cart-plus sub-menu-title-i"
+                                        <a href="{{ route('technology.cms') }}"> <i class="fa fa-cart-plus sub-menu-title-i"
                                                 aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;CMS</a>
                                         <ul class="sub-menu">
                                             <li><a href="/technology/cms/magento">Magento</a></li>

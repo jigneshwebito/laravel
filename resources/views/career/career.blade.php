@@ -18,7 +18,8 @@
     $metaproperty = 'Webito Infotech - Career Development Company';
     ?>
 
-    <link href="{{ asset('assets/css/career.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('assets/css/career.css') }}?{{ filemtime(public_path('assets/css/career.css')) }}" rel="stylesheet">
 
     <section class="main-page-header">
         <div class="container">
@@ -1256,7 +1257,7 @@
                     jobLocationsString = jobLocationsString.slice(0, -2);
 
                     htmlContent += `
-            <div class="col-sm-6 col-12">
+            <div class="col-sm-6 col-md-6 col-12">
                 <div class="listing">
 
 <div class="listing-box mb-3"><a href="https://webito.keka.com/careers/jobdetails/${job.id}" target="_blank">
