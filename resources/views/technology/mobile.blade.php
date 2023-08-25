@@ -27,35 +27,35 @@
     <?php $title = 'Mobile Technologies We Use'; ?>
 
     <?php
-    $link1 = 'technology/mobile/ios';
+    $link1 = 'mobile/ios';
     $box1icon = 'https://img.icons8.com/ios-filled/50/4a90e2/mac-os.png';
     $box1title = 'iOS Apps Development';
     $box1paragraph = 'Crafting apps for iPhone, iPad, Apple Watch, Apple TV, etc. with AI & ML integration and more, keeping users at the core.';
     ?>
 
     <?php
-    $link2 = 'technology/mobile/android';
+    $link2 = 'mobile/android';
     $box2icon = 'https://img.icons8.com/metro/50/4a90e2/android-os.png';
     $box2title = 'Android Apps Development';
     $box2paragraph = 'Our dev team helps you craft native Android apps for Smartphones, Tablets, Android Wear, and Android TV from the scratch.';
     ?>
 
     <?php
-    $link3 = 'technology/mobile/react-native';
+    $link3 = 'mobile/react-native';
     $box3icon = 'https://img.icons8.com/ios-filled/50/4a90e2/react-native.png';
     $box3title = 'React Native Apps Development';
     $box3paragraph = 'Delivering affordable yet fast, powerful, and high performing cross-platform apps with native look and feel.';
     ?>
 
     <?php
-    $link4 = 'technology/mobile/flutter';
+    $link4 = 'mobile/flutter';
     $box4icon = 'https://img.icons8.com/ios-filled/50/4a90e2/flutter.png';
     $box4title = 'Flutter Apps Development';
     $box4paragraph = 'Crafting apps for iPhone, iPad, Apple Watch, Apple TV, etc. with AI & ML integration and more, keeping users at the core.';
     ?>
 
     <?php
-    $link5 = 'technology/mobile/ionic';
+    $link5 = 'mobile/ionic';
     $box5icon = 'https://img.icons8.com/ios-filled/50/4a90e2/ionic.png';
     $box5title = 'Ionic Apps Development';
     $box5paragraph = 'Crafting fast and interactive hybrid applications that work perfectly on web, mobile and desktop devices using Ionic.';
