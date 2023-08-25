@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
     integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous" />
 {{-- <script type="text/javascript" src="/assets/lib/ajax/swiper.min.js"></script> --}}
-<link rel="stylesheet" href="{{ asset('assets/css/work-slider.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/work-slider.css') }}?{{ filemtime(public_path('assets/css/work-slider.css')) }}" />
 @php
     use App\Models\WorkSlider;
     $workData = WorkSlider::all();
