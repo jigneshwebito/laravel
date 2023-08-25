@@ -67,7 +67,7 @@
                                                 <li><a href="/services/design-development#wireframe">Wireframe</a></li>
                                                 <li><a href="/services/design-development#design">UI / UX Design</a>
                                                 </li>
-                                                <li>UI / UX Design</li>
+                                                {{-- <li>UI / UX Design</li> --}}
                                             </ul>
                                         </li>
                                         <li class="cus-col-25">
@@ -82,7 +82,7 @@
                                                         Delivery</a></li>
                                                 <li><a href="/services/devops-development#monitoring">Monitoring</a>
                                                 </li>
-                                                <li>Monitoring</li>
+                                                {{-- <li>Monitoring</li> --}}
                                             </ul>
                                         </li>
                                     </ul>
