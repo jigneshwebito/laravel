@@ -60,7 +60,7 @@ button:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.social-icons a:hover,a:focus{
+.social-icons a:hover{
     color: white !important;
 }
 .contact-form {
