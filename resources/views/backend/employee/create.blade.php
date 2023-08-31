@@ -33,6 +33,7 @@
             height: 7rem;
         }
     </style>
+
     <div class="content-wrapper">
         <div class="container-full">
             <section class="content">
@@ -40,7 +41,7 @@
                 <!-- image input -->
                 <h1>Employee Details</h1>
                 <br>
-               
+             
                 <label class="form-label" for="form4Example2">Upload Image</label>
                 <div class="form-outline mb-4">
                     <input type="file" name="employee_image" id="employee_image" class="form-control"
@@ -52,22 +53,22 @@
 
                 <label class="form-label" for="form4Example2">Image Name</label>
                 <div class="form-outline mb-4">
-                    <input type="text" name="emp_img_name" id="emp_img_name" class="form-control" required />
+                    <input type="text" name="emp_img_name" id="emp_img_name" class="form-control" value="{{ isset($employee->image) ? $employee->image : '' }}" required />
                 </div>
                 <label class="form-label" for="form4Example2">Employee Name</label>
                 <div class="form-outline mb-4">
-                    <input type="text" name="emp_name" id="emp_name" class="form-control" required />
+                    <input type="text" name="emp_name" id="emp_name" class="form-control" value="{{ isset($employee->name) ? $employee->name : '' }}" required />
                 </div>
                 <label class="form-label" for="form4Example2">Employee Content</label>
                 <div class="form-outline mb-4">
-                    <textarea name="emp_content" id="emp_content" cols="30" rows="10"></textarea>
+                    <textarea name="emp_content" id="emp_content" cols="30" rows="10" class="form-control">{{ isset($employee->content) ? $employee->content : '' }}</textarea>
                 </div>
                 <label class="form-label" for="form4Example2">Position</label>
                 <div class="form-outline mb-4">
                     <select name="position" id="position" class="form-control">
-                        <option value="senior">Senior</option>
-                        <option value="junior">Junior</option>
-                        <option value="fresher">Fresher</option>
+                        <option @if(isset($employee) && $employee->position == 1) selected  @endif value="senior">Senior</option>
+                        <option @if(isset($employee) && $employee->position == 2) selected  @endif value="junior">Junior</option>
+                        <option @if(isset($employee) && $employee->position == 3) selected  @endif value="fresher">Fresher</option>
                     </select>
                 </div>
                

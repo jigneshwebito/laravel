@@ -13,9 +13,11 @@ class EmployeeController extends Controller
     //
     public function index(Request $request)
     {
+        // $total_employee = Employee::orderBy('id', 'ASC')->get();
+
         // dd($total_employee);
         if ($request->ajax()) {
-            $total_employee = Employee::orderBy('id', 'ASC')->get();
+            $total_employee = Employee::orderBy('id', 'ASC')->withTrashed()->get();
         
         return Datatables::of($total_employee)
             ->addIndexColumn()
@@ -23,9 +25,13 @@ class EmployeeController extends Controller
                 return $row->name;
             })
             ->addColumn('emp_image', function ($row) {
+                // $image = '';
+                // $image_path = '/assets/img/team/' . $row->image;
+                // $url = asset($image_path);
+                // $image .= '<img src="' . $url . '" border="0" width="40" class="img-rounded" align="center" />';
+                // return $image;
                 $image = '';
-                $image_path = '/assets/img/team/' . $row->image;
-                $url = asset($image_path);
+                $url = asset('assets/img/team/' . $row->image);
                 $image .= '<img src="' . $url . '" border="0" width="40" class="img-rounded" align="center" />';
                 return $image;
             })
@@ -38,23 +44,37 @@ class EmployeeController extends Controller
                 $btn .= '<a href="' . url('employee/edit/' . $row->id)  . '">
                 
                 <div class="btn-group align-top">
-                    <button class="btn btn-sm editBtn btn-success" type="button">Edit
-                        <i class="fe fe-edit-2 ml-2"></i></button>
+                    <button class="btn btn-sm editBtn btn-success" type="button"><i class="ti-marker-alt"></i>
+                        </button>
                 </div>
                 </a>';
-                $btn .= ' <div class="btn-group align-top" style="margin-left: 5px;">
-                <button class="btn btn-sm btn-danger diaDeleteBtn deleteCard"
-                data-href="' . url('employee/delete/' . $row->id) . '" data-target="#deleteCardModel" data-id="' . $row->c_id . '"
-                    type="button" data-toggle="modal" data-target="#smallModal">Delete
-                    <i class="fe fe-trash-2"></i></button>
+                if ($row->deleted_at === null) {
+                    $btn .= ' <div class="btn-group align-top" style="margin-left: 5px;">
+                        <button class="btn btn-sm btn-danger deleteClient"
+                        data-href="' . url('employee/delete/' . $row->id) . '" data-target="#deleteClientModel" data-id="' . $row->id . '"
+                            type="button" data-toggle="modal"><i class=
+                            "ti-trash"></i>
+                            </button>
                     
-                </div>';
+                        </div>';
+                }else{
+                    $btn .= ' <a href="' . url('employee/restore/' . $row->id)  . '">
+                    <div class="btn-group align-top" style="margin-left: 5px;">
+                        <button class="btn btn-sm btn-danger"
+                        
+                            type="button">Restore
+                            </button>
+                            
+                        </div>
+                        </a>';
+                }
+                
                 return $btn;
             })
-            ->rawColumns(['action', 'name', 'image'])
+            ->rawColumns(['action', 'name', 'emp_image'])
             ->make('true');
         }
-        // $employee = Employee::all();
+    
         return view('backend.employee.index');
     }
     public function create()
@@ -91,7 +111,19 @@ class EmployeeController extends Controller
     }
     public function EmployeeEdit($id){
 
-        return view('backend.employee.create',['id',$id]);
+        $employee = Employee::where('id',$id)->first();
+        return view('backend.employee.create')->with('employee', $employee);
 
+    }
+    public function EmployeeDelete($id)
+    {
+        Employee::where('id', $id)->delete();
+        return redirect('/employee');
+    }
+    public function EmployeeRestore($id)
+    {
+        $record = Employee::withTrashed()->find($id);
+        $record->restore();
+        return redirect('/employee');
     }
 }

@@ -155,6 +155,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/employee/edit/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeEdit')->name('employee.edit');
     Route::post('/employee/update','App\Http\Controllers\backend\EmployeeController@EmployeeUpdate')->name('employee.update');
     Route::post('/employee/delete/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeDelete')->name('employee.delete');
+    Route::get('/employee/restore/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeRestore')->name('employee.restore');
 
     // Route::post
 
