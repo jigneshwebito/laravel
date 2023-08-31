@@ -44,7 +44,7 @@ class EmployeeController extends Controller
                 $btn .= '<a href="' . url('employee/edit/' . $row->id)  . '">
                 
                 <div class="btn-group align-top">
-                    <button class="btn btn-sm editBtn btn-success" type="button"><i class="ti-marker-alt"></i>
+                    <button class="btn btn-sm editBtn btn-success" type="button"><i class="ti-marker-alt" style="font-size:17px"></i>
                         </button>
                 </div>
                 </a>';
@@ -52,7 +52,7 @@ class EmployeeController extends Controller
                     $btn .= ' <div class="btn-group align-top" style="margin-left: 5px;">
                         <button class="btn btn-sm btn-danger deleteClient"
                         data-href="' . url('employee/delete/' . $row->id) . '" data-target="#deleteClientModel" data-id="' . $row->id . '"
-                            type="button" data-toggle="modal"><i class=
+                            type="button" data-toggle="modal"><i style="font-size:17px" class=
                             "ti-trash"></i>
                             </button>
                     
@@ -60,9 +60,9 @@ class EmployeeController extends Controller
                 }else{
                     $btn .= ' <a href="' . url('employee/restore/' . $row->id)  . '">
                     <div class="btn-group align-top" style="margin-left: 5px;">
-                        <button class="btn btn-sm btn-danger"
+                        <button class="btn btn-sm btn-primary"
                         
-                            type="button">Restore
+                            type="button"><i class="ti-upload" style="font-size:17px"></i>                             
                             </button>
                             
                         </div>
