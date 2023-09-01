@@ -13,9 +13,7 @@ class EmployeeController extends Controller
     //
     public function index(Request $request)
     {
-        // $total_employee = Employee::orderBy('id', 'ASC')->get();
-
-        // dd($total_employee);
+        
         if ($request->ajax()) {
             $total_employee = Employee::orderBy('id', 'ASC')->withTrashed()->get();
         
@@ -25,18 +23,33 @@ class EmployeeController extends Controller
                 return $row->name;
             })
             ->addColumn('emp_image', function ($row) {
-                // $image = '';
-                // $image_path = '/assets/img/team/' . $row->image;
-                // $url = asset($image_path);
-                // $image .= '<img src="' . $url . '" border="0" width="40" class="img-rounded" align="center" />';
-                // return $image;
                 $image = '';
                 $url = asset('assets/img/team/' . $row->image);
-                $image .= '<img src="' . $url . '" border="0" width="40" class="img-rounded" align="center" />';
+                if($row->deleted_at == null)
+                {
+                    $image .= '<img src="' . $url . '" border="0" width="40" class="img-rounded" align="center" style="    height: 5rem;
+                    width: 5rem;
+                    object-fit: cover;
+                    border-radius: 50%;"/>';
+                }
+                else{
+                    $image .= '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQYY3o2AXfHGYLK8AyrX_JTCM7ozjji2uwXSNnwo&s" border="0" width="40" class="img-rounded" align="center" style="    height: 5rem;
+                    width: 5rem;
+                    object-fit: cover;
+                    border-radius: 50%;"/>';
+                }
                 return $image;
             })
             ->addColumn('emp_position', function ($row) {
-                return $row->position;
+                if($row->position == 1)
+                {
+                    return "Senior";
+                }else if($row->position == 2)
+                {
+                    return "Junior";
+                }else{
+                    return "Fresher";
+                }
             })
             ->addColumn('action', function ($row) {
                 $btn = "";
@@ -44,25 +57,25 @@ class EmployeeController extends Controller
                 $btn .= '<a href="' . url('employee/edit/' . $row->id)  . '">
                 
                 <div class="btn-group align-top">
-                    <button class="btn btn-sm editBtn btn-success" type="button"><i class="ti-marker-alt" style="font-size:17px"></i>
+                    <button class="waves-effect waves-light btn btn-info btn-circle editBtn" type="button">
+                    <span class="mdi mdi-eye mdi-18px"></span>
                         </button>
                 </div>
                 </a>';
                 if ($row->deleted_at === null) {
                     $btn .= ' <div class="btn-group align-top" style="margin-left: 5px;">
-                        <button class="btn btn-sm btn-danger deleteClient"
+                        <button class="waves-effect waves-light btn btn-danger btn-circle deleteClient"
                         data-href="' . url('employee/delete/' . $row->id) . '" data-target="#deleteClientModel" data-id="' . $row->id . '"
-                            type="button" data-toggle="modal"><i style="font-size:17px" class=
-                            "ti-trash"></i>
+                            type="button" data-toggle="modal"><span class="mdi mdi-delete mdi-18px"></span>
                             </button>
                     
                         </div>';
                 }else{
                     $btn .= ' <a href="' . url('employee/restore/' . $row->id)  . '">
                     <div class="btn-group align-top" style="margin-left: 5px;">
-                        <button class="btn btn-sm btn-primary"
+                        <button class="waves-effect waves-light btn btn-sm btn-warning btn-circle"
                         
-                            type="button"><i class="ti-upload" style="font-size:17px"></i>                             
+                            type="button"><span class="ti-upload" style="font-size:17px"></span>                             
                             </button>
                             
                         </div>

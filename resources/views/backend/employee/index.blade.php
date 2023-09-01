@@ -1,5 +1,10 @@
 @extends('admin.admin_master')
 @section('admin')
+<style>
+    #total_revenue td:nth-child(3) {
+        text-align: center;
+    }
+</style>
     <div class="content-wrapper">
         <div class="container-full">
             <!-- Main content -->
@@ -12,7 +17,6 @@
                             <div class="box-header">
                                 <h4 class="box-title align-items-start flex-column">
                                     All Employee
-                                    <small class="subtitle">More than 100+ Reviews</small>
                                 </h4>
                                 <div style="float: right;"> <a href="{{ route('employee.create') }}"
                                         class="btn btn-primary">Add New</a></div>
@@ -23,16 +27,16 @@
                                         <thead>
                                             <tr class="text-uppercase bg-lightest">
                                                 <th style="min-width: 20px;"><span
-                                                        class="text-white clients-th">id</span></th>
+                                                        class="text-white clients-th text-capitalize">id</span></th>
                                                 <th style="min-width:140px"><span
-                                                        class="text-white clients-th">Employee Name</span></th>
+                                                        class="text-white clients-th text-capitalize">Employee Name</span></th>
                                                 <th style="min-width: 140px"><span
-                                                        class="text-white clients-th">Employee Image</span></th>
+                                                        class="text-white clients-th text-capitalize">Employee Image</span></th>
                                                 <th style="min-width: 140px"><span
-                                                        class="text-white clients-th">Employee Position</span></th>
+                                                        class="text-white clients-th text-capitalize">Employee Position</span></th>
                                            
                                                 <th style="min-width:100px"><span
-                                                        class="text-white clients-th">Action</span></th>
+                                                        class="text-white clients-th text-capitalize">Action</span></th>
                                             </tr>
                                         </thead>
                                        <tbody>
