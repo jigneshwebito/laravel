@@ -4,6 +4,11 @@
     #total_revenue td:nth-child(3) {
         text-align: center;
     }
+    .btn-circle{
+        width: 36px !important;
+    height: 36px !important;
+    line-height: 0px !important;
+    }
 </style>
     <div class="content-wrapper">
         <div class="container-full">
