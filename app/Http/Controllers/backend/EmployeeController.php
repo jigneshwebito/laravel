@@ -96,35 +96,76 @@ class EmployeeController extends Controller
     }
     public function EmployeeStore(Request $request)
     {
-        try{
-        $folderPath = public_path('assets/img/team/');
+        try {
+            $image_name = $request->employee_image;
+            $saveFile = new  Employee;
+            //EMPLOYEE IMAGE
+            if ($request->employee_image) {
+                $file_image = $request->file('employee_image');
+               
+                $image_name = $request->emp_img_name;
+                $file1 = $file_image->move(public_path('/assets/img/team/'), $image_name);
+               
+                $saveFile->image = $image_name;
+            } else {
+                $saveFile->image = null;
+            }
+            $saveFile->name = $request->emp_name;
+            $saveFile->image = $request->emp_img_name;
+            $saveFile->content = $request->emp_content;
+            if($request->position == "senior")
+            {
+                $saveFile->position = 1;
 
-        $image_parts = explode(";base64,", $request->employee_front_image);
-        $image_type_aux = explode("image/", $image_parts[0]);
+            }elseif($request->position == "junior"){
+                $saveFile->position = 2;
 
-        $image_type = $image_type_aux[1];
-        $image_base64 = base64_decode($image_parts[1]);
- 
-        $imageName = $request->emp_img_name . '.webp';
- 
-        $imageFullPath = $folderPath.$imageName;
- 
-        file_put_contents($imageFullPath, $image_base64);
-
-        $saveFile = new Employee;
-        $saveFile->image = $imageName;
-        $saveFile->name = $request->emp_name;
-        $saveFile->content = $request->emp_content;
-        $saveFile->position = $request->position;
-        $saveFile->save();
-        return Response::json(array('success' => true));
+            }else{
+                $saveFile->position = 3;
+            }
+            $saveFile->save();
+            return redirect('/employee');
         } catch (\Throwable $th) {
-            return Response::json(array('success' => 408));
+            return redirect('/employee');
+        }
+    }
+    public function EmployeeUpdate(Request $request)
+    {
+        try {
+            $saveFile = [];
+            $image_name = $request->employee_image;
+            //EMPLOYEE IMAGE
+            if ($request->employee_image) {
+                $file_image = $request->file('employee_image');
+                $image_name = $request->emp_img_name;
+                $file1 = $file_image->move(public_path('/assets/img/team/'), $image_name);
+               
+                $saveFile['image'] = $image_name;
+            } else {
+                $saveFile['image'] = null;
+            }
+            $saveFile['name'] = $request->emp_name;
+            $saveFile['image'] = $request->emp_img_name;
+            $saveFile['content'] = $request->emp_content;
+            if($request->position == "senior")
+            {
+                $saveFile['position'] = 1;
+            }elseif($request->position == "junior"){
+                $saveFile['position'] = 2;
+            }else{
+                $saveFile['position'] = 3;
+            }
+            Employee::where('id',$request->emp_id)->update($saveFile);
+            return view('backend.employee.index');
+
+        } catch (\Throwable $th) {
+            return redirect('/employee');
+
         }
     }
     public function EmployeeEdit($id){
 
-        $employee = Employee::where('id',$id)->first();
+        $employee = Employee::where('id',$id)->withTrashed()->first();
         return view('backend.employee.create')->with('employee', $employee);
 
     }
@@ -139,4 +180,5 @@ class EmployeeController extends Controller
         $record->restore();
         return redirect('/employee');
     }
+   
 }

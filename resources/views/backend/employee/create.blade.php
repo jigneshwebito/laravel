@@ -17,8 +17,8 @@
         }
 
         /* input {
-                    margin-top: 40px;
-                } */
+                        margin-top: 40px;
+                    } */
 
         .section {
             margin-top: 150px;
@@ -29,53 +29,64 @@
         .modal-lg {
             max-width: 1000px !important;
         }
-        .employee_front_image{
+
+        .employee_front_image {
             height: 7rem;
         }
     </style>
 
     <div class="content-wrapper">
         <div class="container-full">
-            <section class="content">
+            <form action="@if (isset($employee)) {{ route('employee.update') }} @else {{ route('employee_store_data') }} @endif" method="POST" enctype="multipart/form-data">
+                @csrf
+                <section class="content">
 
-                <!-- image input -->
-                <h1>Employee Details</h1>
-                <br>
-             
-                <label class="form-label" for="form4Example2">Upload Image</label>
-                <div class="form-outline mb-4">
-                    <input type="file" name="employee_image" id="employee_image" class="form-control"
-                        accept="image/jpg, image/jpeg, image/png">
-                </div>
-                <span class="profile_image_preview_span">
-                    <img class="employee_front_image" src="" style="height: 7rem;" />
-                </span><br>
+                    <!-- image input -->
+                    <h1>Employee Details</h1>
+                    <br>
+                    <input type="hidden" name="emp_id" value="{{ isset($employee) ? $employee->id : '' }}">
+                    <label class="form-label" for="form4Example2">Upload Image</label>
+                    <div class="form-outline mb-4">
+                        <input type="file" name="employee_image" id="employee_image" class="form-control"
+                            accept="image/jpg, image/jpeg, image/png">
+                    </div>
+                    <span class="profile_image_preview_span">
+                        <img class="employee_front_image" src="" style="height: 7rem;" />
+                    </span><br>
 
-                <label class="form-label" for="form4Example2">Image Name</label>
-                <div class="form-outline mb-4">
-                    <input type="text" name="emp_img_name" id="emp_img_name" class="form-control" value="{{ isset($employee->image) ? $employee->image : '' }}" required />
-                </div>
-                <label class="form-label" for="form4Example2">Employee Name</label>
-                <div class="form-outline mb-4">
-                    <input type="text" name="emp_name" id="emp_name" class="form-control" value="{{ isset($employee->name) ? $employee->name : '' }}" required />
-                </div>
-                <label class="form-label" for="form4Example2">Employee Content</label>
-                <div class="form-outline mb-4">
-                    <textarea name="emp_content" id="emp_content" cols="30" rows="10" class="form-control">{{ isset($employee->content) ? $employee->content : '' }}</textarea>
-                </div>
-                <label class="form-label" for="form4Example2">Position</label>
-                <div class="form-outline mb-4">
-                    <select name="position" id="position" class="form-control">
-                        <option @if(isset($employee) && $employee->position == 1) selected  @endif value="senior">Senior</option>
-                        <option @if(isset($employee) && $employee->position == 2) selected  @endif value="junior">Junior</option>
-                        <option @if(isset($employee) && $employee->position == 3) selected  @endif value="fresher">Fresher</option>
-                    </select>
-                </div>
-               
-                <button type='button' class="btn btn-primary"
-                    onclick="EmployeeDataSave()">Save</button>
-            </section>
-
+                    <label class="form-label" for="form4Example2">Image Name</label>
+                    <div class="form-outline mb-4">
+                        <input type="text" name="emp_img_name" id="emp_img_name" class="form-control"
+                            value="{{ isset($employee->image) ? $employee->image : '' }}" required />
+                    </div>
+                    <label class="form-label" for="form4Example2">Employee Name</label>
+                    <div class="form-outline mb-4">
+                        <input type="text" name="emp_name" id="emp_name" class="form-control"
+                            value="{{ isset($employee->name) ? $employee->name : '' }}" required />
+                    </div>
+                    <label class="form-label" for="form4Example2">Employee Content</label>
+                    <div class="form-outline mb-4">
+                        <textarea name="emp_content" id="emp_content" cols="30" rows="10" class="form-control">{{ isset($employee->content) ? $employee->content : '' }}</textarea>
+                    </div>
+                    <label class="form-label" for="form4Example2">Position</label>
+                    <div class="form-outline mb-4">
+                        <select name="position" id="position" class="form-control">
+                            <option @if (isset($employee) && $employee->position == 1) selected @endif value="senior">Senior</option>
+                            <option @if (isset($employee) && $employee->position == 2) selected @endif value="junior">Junior</option>
+                            <option @if (isset($employee) && $employee->position == 3) selected @endif value="fresher">Fresher</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        @if (isset($employee))
+                            Update
+                        @else
+                            Save
+                        @endif
+                    </button>
+                    {{-- <button type='button' class="btn btn-primary"
+                    onclick="EmployeeDataSave()">Save</button> --}}
+                </section>
+            </form>
             <div class="modal fade" id="profile_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
                 aria-hidden="true" data-backdrop="static" data-keyboard="false">
                 <div class="modal-dialog modal-lg" role="document">
@@ -114,7 +125,7 @@
     </div>
     <script>
         function EmployeeDataSave() {
-            
+
             var employee_image = $('#employee_image').val();
             var emp_img_name = $('#emp_img_name').val();
             var emp_name = $('#emp_name').val();
@@ -132,12 +143,12 @@
                 url: ' {{ route('employee_store_data') }}',
                 data: {
                     _token: '{{ csrf_token() }}',
-                    'employee_image': employee_image, 
-                    'emp_img_name': emp_img_name, 
+                    'employee_image': employee_image,
+                    'emp_img_name': emp_img_name,
                     'emp_name': emp_name,
                     'emp_content': emp_content,
-                    'position':position,
-                    'employee_front_image':employee_front_image,
+                    'position': position,
+                    'employee_front_image': employee_front_image,
                 },
 
                 dataType: 'json',
@@ -153,7 +164,7 @@
 
         }
     </script>
-    <script>
+    {{-- <script>
         var profile_avtar_fr = $('#profile_up_fr').val();
         var $profile_modal = $('#profile_modal');
         var profile_image = document.getElementById('profile_image');
@@ -247,5 +258,5 @@
                 $('#employee_image').val('');
             }
         });
-    </script>
+    </script> --}}
 @endsection
