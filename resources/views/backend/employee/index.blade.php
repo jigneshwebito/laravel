@@ -26,17 +26,12 @@
                                     <table class="table" id="total_revenue">
                                         <thead>
                                             <tr class="text-uppercase bg-lightest">
-                                                <th style="min-width: 20px;"><span
-                                                        class="text-white clients-th text-capitalize">id</span></th>
-                                                <th style="min-width:140px"><span
-                                                        class="text-white clients-th text-capitalize">Employee Name</span></th>
-                                                <th style="min-width: 140px"><span
-                                                        class="text-white clients-th text-capitalize">Employee Image</span></th>
-                                                <th style="min-width: 140px"><span
-                                                        class="text-white clients-th text-capitalize">Employee Position</span></th>
-                                           
-                                                <th style="min-width:100px"><span
-                                                        class="text-white clients-th text-capitalize">Action</span></th>
+                                                
+                                                <th class="text-capitalize text-white">Id</th>
+                                                <th class="text-capitalize text-white">Name</th>
+                                                <th class="text-capitalize text-white">Image</th>
+                                                <th class="text-capitalize text-white">Position</th>
+                                                <th class="text-capitalize text-white">Action</th>
                                             </tr>
                                         </thead>
                                        <tbody>
