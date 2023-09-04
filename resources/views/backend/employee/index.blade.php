@@ -55,11 +55,11 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content modal-content-demo">
                         <div class="modal-header">
-                            <h6 class="modal-title">Delete Client</h6><button aria-label="Close" class="close"
+                            <h6 class="modal-title">Delete User</h6><button aria-label="Close" class="close"
                                 data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
-                            <h6>Are You Sure You Want To Delete This Client ?</h6>
+                            <h6>Are You Sure You Want To Delete This User ?</h6>
                         </div>
                         <div class="modal-footer">
                             <form id="delete_user" method="post">
