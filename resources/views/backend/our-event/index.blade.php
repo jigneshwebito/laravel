@@ -52,52 +52,49 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            admin_reward_transcation = $('#total_revenue').DataTable({
-                "autoWidth": false,
-                "info": true,
-                "paging": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "sDom": 'lfrtip',
-                "ordering": true,
-                "searching": true,
-                "processing": false,
-                "serverSide": true,
-                "ajax": {
-                    url: '{{ url('/employee') }}',
-                    type: 'GET',
-                    // data: function(data) {
-                    //     data.plan_filter = $('#plan_filter').val();
-                    //     data.dateFilter = $('#dateFilter').val();
-                    // }
-                },
-                "columns": [{
-                        data: 'DT_RowIndex',
-                        name: 'DT_RowIndex'
-                    },
-                    {
-                        data: 'emp_name',
-                        name: 'emp_name'
-                    },
-                    {
-                        data: 'emp_image',
-                        name: 'emp_image'
-                    },
-                    {
-                        data: 'emp_position',
-                        name: 'emp_position'
-                    },
-                    {
-                            data: 'action',
-                            name: 'action',
-                            orderable: false,
-                            searchable: false
-                        },
-                ],
+        // $(document).ready(function() {
+        //     admin_reward_transcation = $('#total_revenue').DataTable({
+        //         "autoWidth": false,
+        //         "info": true,
+        //         "paging": true,
+        //         "lengthChange": false,
+        //         "pageLength": 10,
+        //         "sDom": 'lfrtip',
+        //         "ordering": true,
+        //         "searching": true,
+        //         "processing": false,
+        //         "serverSide": true,
+        //         "ajax": {
+        //             url: '{{ url('/employee') }}',
+        //             type: 'GET',
+              
+        //         },
+        //         "columns": [{
+        //                 data: 'DT_RowIndex',
+        //                 name: 'DT_RowIndex'
+        //             },
+        //             {
+        //                 data: 'emp_name',
+        //                 name: 'emp_name'
+        //             },
+        //             {
+        //                 data: 'emp_image',
+        //                 name: 'emp_image'
+        //             },
+        //             {
+        //                 data: 'emp_position',
+        //                 name: 'emp_position'
+        //             },
+        //             {
+        //                     data: 'action',
+        //                     name: 'action',
+        //                     orderable: false,
+        //                     searchable: false
+        //                 },
+        //         ],
 
-            });
+        //     });
            
-        });
+        // });
     </script>
     {{-- @endsection --}}

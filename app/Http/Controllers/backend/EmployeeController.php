@@ -96,22 +96,39 @@ class EmployeeController extends Controller
     }
     public function EmployeeStore(Request $request)
     {
+        
         try {
+           
+
             $image_name = $request->employee_image;
             $saveFile = new  Employee;
             //EMPLOYEE IMAGE
             if ($request->employee_image) {
+
+                // Get the file extension
+                $image = $request->file('employee_image');
+                $extension = $image->getClientOriginalExtension();
+
+                //Image name Get
+                $inputString = $request->emp_name;
+                $words = explode(' ', $inputString);
+                
+                if (count($words) >= 2) {
+                    $firstLetter = substr($words[0], 0, 1);
+                    $secondLetter = substr($words[1], 0, 1);
+                    $randomNumber = time();
+                    $originalImageName = $firstLetter . $secondLetter . '_' . $randomNumber. '.' . $extension;
+                }
+
                 $file_image = $request->file('employee_image');
-               
-                $image_name = $request->emp_img_name;
-                $file1 = $file_image->move(public_path('/assets/img/team/'), $image_name);
+                $file1 = $file_image->move(public_path('/assets/img/team/'), $originalImageName);
                
                 $saveFile->image = $image_name;
             } else {
                 $saveFile->image = null;
             }
             $saveFile->name = $request->emp_name;
-            $saveFile->image = $request->emp_img_name;
+            $saveFile->image = $originalImageName;
             $saveFile->content = $request->emp_content;
             if($request->position == "senior")
             {

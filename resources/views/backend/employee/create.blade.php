@@ -54,9 +54,8 @@
                         <img class="employee_front_image" src="" style="height: 7rem;" />
                     </span><br>
 
-                    <label class="form-label" for="form4Example2">Image Name</label>
                     <div class="form-outline mb-4">
-                        <input type="text" name="emp_img_name" id="emp_img_name" class="form-control"
+                        <input type="hidden" name="emp_img_name" id="emp_img_name" class="form-control"
                             value="{{ isset($employee->image) ? $employee->image : '' }}" required />
                     </div>
                     <label class="form-label" for="form4Example2">Employee Name</label>
@@ -120,7 +119,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <script>
