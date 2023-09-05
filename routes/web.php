@@ -122,9 +122,13 @@ route::get('/technology/cms/joomla', 'App\Http\Controllers\pagesController@jooml
 
 Route::post('/layouts/contact', 'App\Http\Controllers\EmailController@sendEmail')->name('sendEmailroute');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('admin.index');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+
+//     return view('admin.index');
+// })->name('dashboard');
+Route::group(['auth:sanctum', 'verified'], function () {
+    Route::get('dashboard','App\Http\Controllers\AdminController@dashboard')->name('dashboard');
+});
 
 route::get('/admin/logout', 'App\Http\Controllers\AdminController@Logout')->name('admin.logout');
 
@@ -155,6 +159,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/employee/edit/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeEdit')->name('employee.edit');
     Route::post('/employee/update','App\Http\Controllers\backend\EmployeeController@EmployeeUpdate')->name('employee.update');
     Route::post('/employee/delete/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeDelete')->name('employee.delete');
+    Route::get('/employee/restore/{id}','App\Http\Controllers\backend\EmployeeController@EmployeeRestore')->name('employee.restore');
 
     // Route::post
 

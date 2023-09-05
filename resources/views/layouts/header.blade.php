@@ -70,8 +70,8 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 <!-- local css -->
-<link href="{{ asset('assets/css/contact.css?556') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/style.css?901') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/contact.css') }}?{{ filemtime(public_path('assets/css/contact.css')) }}" rel="stylesheet">
+<link href="{{ asset('assets/css/style.css') }}?{{ filemtime(public_path('assets/css/style.css')) }}" rel="stylesheet">
 <link href="{{ asset('assets/css/navbar-style.css') }}?{{ filemtime(public_path('assets/css/navbar-style.css')) }}" rel="stylesheet">
 
 <!-- fonts -->
