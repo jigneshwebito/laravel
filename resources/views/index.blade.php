@@ -140,7 +140,7 @@
                     <div class="confirmMeetingContainer hidden">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-4">
-                                <img src="../assets/img/confirmMeeting.png" width="50%" alt="">
+                                {{-- <img src="../assets/img/confirmMeeting.png" width="50%" alt=""> --}}
                             </div>
                             <div>
                                 <h3 class="d-flex justify-content-center" style="color:#0675e8;">Book A
